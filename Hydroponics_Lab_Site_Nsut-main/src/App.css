@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 120 89% 11%;  /* #07370F */
+    --primary-foreground: 0 0% 98%;
+  }
+}
+
+#root {
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Custom styles below */
