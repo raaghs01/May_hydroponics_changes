@@ -31,15 +31,16 @@ export const Navbar = () => {
     { name: 'Social Interaction', path: '/social-interaction' },
     { name: 'News', path: '/news' },
     { name: 'Blog', path: '/blog' },
-    { name: 'FAQ', path: '/faq' },
-    { name: 'Achievements', path: '/achievements' },
-    { name: 'Training', path: '/training' },
+    // { name: 'FAQ', path: '/faq' },
+    // { name: 'Achievements', path: '/achievements' },
+    // { name: 'Training', path: '/training' },
     { name: 'Contact Us', path: '/contactus' },
+    { name: 'Get Involved', path: '/get-involved' },
   ];
 
   return (
     <>
-      {/* Welcome Banner */}
+      {/* Welcome Banner
       <motion.div 
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -48,7 +49,7 @@ export const Navbar = () => {
         <p className="text-sm md:text-base font-light tracking-wide">
           Welcome to the Future of Farming: Where Innovation Meets Sustainability
         </p>
-      </motion.div>
+      </motion.div> */}
 
       {/* Main Navigation */}
       <motion.nav

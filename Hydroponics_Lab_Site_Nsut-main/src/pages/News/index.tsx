@@ -54,6 +54,7 @@ const events = [
 export default function News() {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [filterOpen, setFilterOpen] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -90,7 +91,7 @@ export default function News() {
           </p>
         </div>
       </section>
-
+        
       {/* Carousel Section */}
       <section className="w-full bg-[#E8F3E8] py-10 flex flex-col items-center justify-center">
         <div className="relative w-full max-w-4xl h-72 md:h-96 mx-auto overflow-hidden rounded-xl shadow-lg">
@@ -144,50 +145,107 @@ export default function News() {
       </section>
 
       {/* Events Grid & Filter */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row gap-8">
-          {/* Filter Menu */}
-          <div className="md:w-1/5 mb-6 md:mb-0">
-            <div className="bg-[#07300f] text-white rounded-lg p-4 sticky top-24">
-              <h3 className="text-lg font-semibold mb-4">Filter</h3>
-              <div className="flex md:flex-col gap-2">
-                {eventCategories.map(cat => (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedCategory(cat)}
-                    className={`px-4 py-2 rounded-md text-left transition-colors ${selectedCategory === cat ? 'bg-[#0A3622] font-bold' : 'bg-[#07300f]/60 hover:bg-[#0A3622]/80'}`}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-          {/* Events Grid */}
-          <div className="md:w-4/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {filteredEvents.map((event, idx) => (
-              <a
-                key={idx}
-                href={event.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block bg-[#e8f5e9] rounded-lg shadow-lg hover:shadow-2xl transition-shadow overflow-hidden group"
+      <section className="bg-white py-12 relative">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center mb-8">
+            {/* Hamburger Filter */}
+            <div className="relative">
+              <button
+                className="md:hidden p-2 rounded bg-[#0A3622] text-white focus:outline-none"
+                onClick={() => setFilterOpen(!filterOpen)}
+                aria-label="Open filter menu"
               >
-                <div className="h-40 w-full overflow-hidden">
-                  <img src={event.image} alt={event.title} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+                <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+              {/* Dropdown for mobile */}
+              {filterOpen && (
+                <div className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg z-20">
+                  {eventCategories.map(cat => (
+                    <button
+                      key={cat}
+                      onClick={() => { setSelectedCategory(cat); setFilterOpen(false); }}
+                      className={`w-full text-left px-4 py-2 hover:bg-[#e8f5e9] ${selectedCategory === cat ? 'font-bold text-[#0A3622]' : ''}`}
+                    >
+                      {cat}
+                    </button>
+                  ))}
                 </div>
-                <div className="p-4">
-                  <h4 className="text-lg font-semibold text-[#07300f] mb-2">{event.title}</h4>
-                  <p className="text-gray-700 text-sm line-clamp-4">{event.desc}</p>
+              )}
+            </div>
+            {/* Inline filter for desktop */}
+            <div className="hidden md:flex gap-2 ml-2">
+              {eventCategories.map(cat => (
+                <button
+                  key={cat}
+                  onClick={() => setSelectedCategory(cat)}
+                  className={`px-4 py-2 rounded-md text-left transition-colors ${selectedCategory === cat ? 'bg-[#0A3622] text-white font-bold' : 'bg-[#e8f5e9] text-[#07300f] hover:bg-[#0A3622]/10'}`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+            {/* <h2 className="text-3xl font-montserrat text-[#0A3622] flex-1 text-center md:text-left ml-0 md:ml-8">Newsletter</h2> */}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                image: '/newsletter1.jpg',
+                title: 'Hydroponics at NSUT: A Hub for Innovation',
+                desc: 'Our facility continues to lead the way in sustainable agriculture, offering hands-on training and research opportunities for students and professionals.'
+              },
+              {
+                image: '/newsletter2.jpg',
+                title: 'Recent Event: Inauguration of New Research Wing',
+                desc: 'The new research wing was inaugurated last month, expanding our capacity for advanced hydroponics research and student projects.'
+              },
+              {
+                image: '/newsletter3.jpg',
+                title: 'Innovation: Automated Nutrient Delivery System',
+                desc: 'Our team has developed an automated system for precise nutrient delivery, improving crop yields and reducing resource use.'
+              },
+              {
+                image: '/newsletter4.jpg',
+                title: 'Recruitment: Join Our Research Team',
+                desc: 'We are recruiting passionate students and researchers for upcoming projects in climate-resilient agriculture and smart farming.'
+              },
+              {
+                image: '/newsletter5.jpg',
+                title: 'Community Outreach: Food Distribution Drive',
+                desc: 'Our latest food distribution drive provided fresh, chemical-free produce to over 300 families in need.'
+              },
+              {
+                image: '/newsletter6.jpg',
+                title: 'Upcoming Workshop: Hydroponics for Beginners',
+                desc: 'Sign up for our next workshop to learn the basics of hydroponic farming and sustainable food production.'
+              }
+            ].map((item, idx) => (
+              <div key={idx} className="bg-[#e8f5e9] rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-xl font-semibold text-[#07300f] mb-2">{item.title}</h3>
+                  <p className="text-gray-700 mb-4 flex-1">{item.desc}</p>
                 </div>
-              </a>
+              </div>
             ))}
-            {filteredEvents.length === 0 && (
-              <div className="col-span-full text-center text-gray-500 py-12">No events found in this category.</div>
-            )}
+          </div>
+          <div className="flex justify-end mt-6">
+            {/* <a
+              href="/news/newsletter"
+              className="inline-block bg-[#0A3622] text-white px-6 py-3 rounded shadow hover:bg-[#07300f] transition-colors duration-300"
+            >
+              More
+            </a> */}
           </div>
         </div>
       </section>
+
+      
+      
+
+      
+      
     </div>
   );
 } 

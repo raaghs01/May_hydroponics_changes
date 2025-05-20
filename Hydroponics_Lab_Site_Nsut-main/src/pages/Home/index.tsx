@@ -204,7 +204,7 @@ export const Home: FC = () => {
               {/* Know More Button aligned like About Us section */}
               <div className="mt-8 flex justify-start">
                 <Link
-                  to="/about"
+                  to="/vision-and-mission"
                   className="inline-block px-8 py-3 bg-[#07370f] text-white font-medium hover:bg-[#0A3622] transition-colors duration-300"
                 >
                   Read More
@@ -287,7 +287,7 @@ export const Home: FC = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <Link
-                  to="/Facilities"
+                  to="/about#facilities"
                   className="inline-block bg-[#0A3622] text-white px-8 py-3 rounded hover:bg-[#0A3622]/90 transition-colors duration-300"
                 >
                   Know More
@@ -319,7 +319,8 @@ export const Home: FC = () => {
                   </svg>
                 ),
                 title: "Comprehensive Training Programs",
-                description: "From beginners to advanced practitioners, we offer tailored training programs that provide theoretical knowledge and practical experience in hydroponics"
+                description: "From beginners to advanced practitioners, we offer tailored training programs that provide theoretical knowledge and practical experience in hydroponics",
+                link: "/training"
               },
               {
                 icon: (
@@ -328,7 +329,8 @@ export const Home: FC = () => {
                   </svg>
                 ),
                 title: "Cutting-Edge Research",
-                description: "Our facility is equipped with modern technology for conducting in-depth research on plant growth, nutrient optimization, and abiotic stress management."
+                description: "Our facility is equipped with modern technology for conducting in-depth research on plant growth, nutrient optimization, and abiotic stress management.",
+                link: "/about#research"
               },
               {
                 icon: (
@@ -337,7 +339,8 @@ export const Home: FC = () => {
                   </svg>
                 ),
                 title: "Space for Cultivation",
-                description: "We provide individuals and organizations with dedicated spaces within the center to grow plants of their choice using hydroponic systems."
+                description: "We provide individuals and organizations with dedicated spaces within the center to grow plants of their choice using hydroponic systems.",
+                link: "/about#facilities"
               },
               {
                 icon: (
@@ -347,7 +350,8 @@ export const Home: FC = () => {
                   </svg>
                 ),
                 title: "Industry and Community Engagement",
-                description: "We collaborate with industries, academic institutions, and local communities to promote the adoption of hydroponic farming."
+                description: "We collaborate with industries, academic institutions, and local communities to promote the adoption of hydroponic farming.",
+                link: "/get-involved"
               }
             ].map((item, index) => (
               <motion.div
@@ -358,9 +362,11 @@ export const Home: FC = () => {
                 className="text-center px-4"
               >
                 {item.icon}
-                <h3 className="text-[#FFFFFF] text-xl font-semibold mb-4">
-                  {item.title}
-                </h3>
+                <Link to={item.link} className="block group">
+                  <h3 className="text-[#FFFFFF] text-xl font-semibold mb-4 group-hover:underline">
+                    {item.title}
+                  </h3>
+                </Link>
                 <p className="text-white-700 leading-relaxed">
                   {item.description}
                 </p>
@@ -550,7 +556,7 @@ export const Home: FC = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-3xl font-montserrat text-white mb-8 text-center"
+              className="text-3xl font-montserrat text-[#0A3622] mb-8 text-center"
             >
               Frequently Asked Questions
             </motion.h2>
@@ -578,7 +584,7 @@ export const Home: FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden"
+                  className="bg-[#0A3622] backdrop-blur-sm rounded-lg overflow-hidden"
                 >
                   <div className="px-6 py-4 text-white">
                     <h3 className="font-medium mb-2">{item.question}</h3>
@@ -589,10 +595,10 @@ export const Home: FC = () => {
             </div>
 
             {/* More Button */}
-            <div className="text-center mt-8">
+            <div className="text-center  mt-8">
               <Link
                 to="/faq"
-                className="inline-block px-8 py-3 bg-white text-[#07300f] font-medium hover:bg-gray-100 transition-colors duration-300 rounded"
+                className="inline-block px-8 py-3 bg-[#0A3622] text-white font-medium hover:bg-gray-100 transition-colors duration-300 rounded"
               >
                 More Questions
               </Link>

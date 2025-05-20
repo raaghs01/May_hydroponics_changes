@@ -4,7 +4,7 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Contact } from './pages/ContactUs';
 // import { Gallery } from './pages/Gallery';
-import { News } from './pages/News';
+import News from './pages/News';
 // import { Facilities } from './pages/Facilities';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
@@ -12,9 +12,10 @@ import { Blog } from './pages/Blog';
 import { FAQ } from './pages/FAQ';
 import { Achievements } from './pages/Achievements';
 import { Training } from './pages/Training';
-import { Projects } from './pages/Projects';
-import { VisionAndMission } from './pages/VisionAndMission';
-import { SocialInteraction } from './pages/SocialInteraction';
+import { Projects }  from './pages/Projects';
+import VisionAndMission from './pages/VisionAndMission';
+import  SocialInteraction  from './pages/SocialInteraction';
+import GetInvolved from './pages/GetInvolved';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/vision-and-mission" element={<VisionAndMission />} />
             <Route path="/social-interaction" element={<SocialInteraction />} />
+            <Route path="/get-involved" element={<GetInvolved />} />
           </Routes>
         </div>
         <Footer />

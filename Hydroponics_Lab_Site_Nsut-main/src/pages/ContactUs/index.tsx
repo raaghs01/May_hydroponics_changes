@@ -41,65 +41,28 @@ export const Contact: FC = () => {
 
   return (
     <div className="min-h-screen">
-      {/* FAQ Section */}
-      <section className="bg-[#07300f] py-16">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-4xl font-montserrat text-white mb-4 text-center"
-          >
-            Growing Clarity:
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl text-gray-200 mb-8 text-center"
-          >
-            Your Questions, Our Answers
-          </motion.p>
-          <div className="space-y-4">
-            {faqItems.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden"
-              >
-                <button
-                  onClick={() => setOpenQuestion(openQuestion === index ? null : index)}
-                  className="w-full px-6 py-4 text-left flex justify-between items-center text-white hover:bg-white/5 transition-colors"
-                >
-                  <span className="font-medium">{item.question}</span>
-                  <svg
-                    className={`w-5 h-5 transform transition-transform ${
-                      openQuestion === index ? 'rotate-180' : ''
-                    }`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-                {openQuestion === index && (
-                  <div className="px-6 py-4 text-gray-200">
-                    {item.answer}
-                  </div>
-                )}
-              </motion.div>
-            ))}
-          </div>
+      {/* Hero Section */}
+      <section className="relative min-h-[50vh] flex items-center justify-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url("/system5.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+            filter: 'brightness(0.7)'
+          }}
+        />
+        {/* Content Overlay */}
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-montserrat mb-4 text-white">Getting in touch with COE HYDROPONICS:</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto text-white/90">
+            Have questions about our programs, training, or research? Use the form below or reach out directly.
+          </p>
         </div>
       </section>
+      
 
       {/* Contact Form Section */}
       <section className="py-24">
@@ -191,6 +154,67 @@ export const Contact: FC = () => {
                 Send
               </button>
             </form>
+          </div>
+          
+          
+        </div>
+      </section>
+          {/* FAQ Section */}
+          <section className="bg-[#07300f] py-16">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-4xl font-montserrat text-white mb-4 text-center"
+          >
+            Growing Clarity:
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-2xl text-gray-200 mb-8 text-center"
+          >
+            Your Questions, Our Answers
+          </motion.p>
+          <div className="space-y-4">
+            {faqItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenQuestion(openQuestion === index ? null : index)}
+                  className="w-full px-6 py-4 text-left flex justify-between items-center text-white hover:bg-white/5 transition-colors"
+                >
+                  <span className="font-medium">{item.question}</span>
+                  <svg
+                    className={`w-5 h-5 transform transition-transform ${
+                      openQuestion === index ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                {openQuestion === index && (
+                  <div className="px-6 py-4 text-gray-200">
+                    {item.answer}
+                  </div>
+                )}
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

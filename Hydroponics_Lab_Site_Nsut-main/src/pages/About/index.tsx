@@ -270,7 +270,7 @@ export const About: FC = () => {
       </div>
 
       {/* Facilities Section */}
-      <section className="py-20">
+      <section className="py-20" id="facilities">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -469,7 +469,7 @@ export const About: FC = () => {
               transition={{ duration: 0.8 }}
               className="text-3xl font-montserrat text-[#0A3622] text-center mb-12"
             >
-              Explore Our Facility
+              Our Gallery
             </motion.h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
