@@ -5,34 +5,34 @@ import { Link } from 'react-router-dom'
 export const Blog: FC = () => {
   const blogPosts = [
     {
-      title: "The Role of AI in Modern Hydroponic Systems",
-      excerpt: "Hydroponics is transforming agriculture by offering efficient, sustainable, and space-saving solutions for growing plants. With the...",
-      author: "MUSKAN RAGHAV",
-      date: "Nov 17",
-      readTime: "2 min read",
-      image: "/system19.png",
-      views: 2,
-      comments: 0
+      title: "The Future of Urban Agriculture",
+      date: "March 15, 2024",
+      author: "Dr. Sarah Chen",
+      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      excerpt: "Exploring how hydroponics is revolutionizing urban farming and food production...",
+      readTime: "5 min read",
+      views: 120,
+      comments: 8
     },
     {
-      title: "Sustainable Agriculture Through Smart Automation",
-      excerpt: "Smart automation systems are revolutionizing hydroponic farming by optimizing resource usage and improving crop yields...",
-      author: "DR. RAJESH KUMAR",
-      date: "Nov 15",
-      readTime: "3 min read",
-      image: "/system20.png",
-      views: 3,
-      comments: 1
-    },
-    {
-      title: "Future of Vertical Farming in Urban Areas",
-      excerpt: "As cities grow and agricultural land becomes scarce, vertical farming presents a viable solution for sustainable urban agriculture...",
-      author: "PRIYA SHARMA",
-      date: "Nov 12",
+      title: "Sustainable Water Management",
+      date: "March 10, 2024",
+      author: "Prof. James Wilson",
+      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+      excerpt: "Understanding the water-saving benefits of hydroponic systems...",
       readTime: "4 min read",
-      image: "/system21.png",
-      views: 4,
-      comments: 2
+      views: 95,
+      comments: 5
+    },
+    {
+      title: "Innovations in Nutrient Solutions",
+      date: "March 5, 2024",
+      author: "Dr. Maria Rodriguez",
+      image: "https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=800&q=80",
+      excerpt: "Latest developments in nutrient formulations for optimal plant growth...",
+      readTime: "6 min read",
+      views: 150,
+      comments: 12
     }
     // Add more blog posts as needed
   ]
