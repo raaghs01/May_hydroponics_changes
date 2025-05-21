@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { IoClose } from 'react-icons/io5';
 import { HiMenuAlt3 } from 'react-icons/hi';
-import { GiPlantRoots } from 'react-icons/gi';
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -65,8 +64,8 @@ export const Navbar = () => {
           <div className="flex items-center justify-between px-4 py-3">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <GiPlantRoots className="h-12 w-12 text-[#07300f]" />
-              <span className="text-xl font-semibold text-[#07300f]">NSUT Hydroponics</span>
+              <img src="/logo.png" alt="Company Logo" className="h-12 w-12" />
+              <span className="text-xl font-semibold text-[#064402]">HHTRF</span>
             </Link>
 
             {/* Desktop Navigation */}

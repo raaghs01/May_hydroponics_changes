@@ -78,17 +78,18 @@ export default function News() {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80")',
+            backgroundImage: 'url("/system5.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
             filter: 'brightness(0.7)'
           }}
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
         {/* Content Overlay */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-montserrat mb-4 text-white">News & Updates</h1>
-          <p className="text-xl max-w-3xl mx-auto text-white/90">
+          <h1 className="text-5xl font-montserrat font-weight: 600 mb-4 text-white">News & Updates</h1>
+          <p className="text-xl font-montserrat font-weight: 600 max-w-3xl mx-auto text-white/90">
             Stay connected with the latest happenings at the Centre of Excellence in Hydroponics! From groundbreaking research to inspiring events, we bring you updates that showcase our journey toward sustainable agricultural innovation. Explore our news and achievements to see how we're making an impact, one green initiative at a time.
           </p>
         </div>
@@ -110,8 +111,8 @@ export default function News() {
             />
           </AnimatePresence>
           <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-6 text-white">
-            <h2 className="text-2xl font-bold">{carouselItems[carouselIndex].title}</h2>
-            <p className="text-md">{carouselItems[carouselIndex].desc}</p>
+            <h2 className="text-2xl font-montserrat font-weight: 600">{carouselItems[carouselIndex].title}</h2>
+            <p className="text-md font-montserrat font-weight: 600">{carouselItems[carouselIndex].desc}</p>
           </div>
           {/* Carousel Controls */}
           <div className="absolute top-1/2 left-4 -translate-y-1/2 flex items-center">
@@ -153,7 +154,7 @@ export default function News() {
             {/* Hamburger Filter */}
             <div className="relative">
               <button
-                className="md:hidden p-2 rounded bg-[#0A3622] text-white focus:outline-none"
+                className="md:hidden p-2 rounded bg-[#0A3622] text-white focus:outline-none font-montserrat font-weight: 600"
                 onClick={() => setFilterOpen(!filterOpen)}
                 aria-label="Open filter menu"
               >
@@ -168,7 +169,7 @@ export default function News() {
                     <button
                       key={cat}
                       onClick={() => { setSelectedCategory(cat); setFilterOpen(false); }}
-                      className={`w-full text-left px-4 py-2 hover:bg-[#e8f5e9] ${selectedCategory === cat ? 'font-bold text-[#0A3622]' : ''}`}
+                      className={`w-full text-left px-4 py-2 hover:bg-[#e8f5e9] font-montserrat ${selectedCategory === cat ? 'font-weight: 600 text-[#0A3622]' : ''}`}
                     >
                       {cat}
                     </button>
@@ -182,7 +183,7 @@ export default function News() {
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 py-2 rounded-md text-left transition-colors ${selectedCategory === cat ? 'bg-[#0A3622] text-white font-bold' : 'bg-[#e8f5e9] text-[#07300f] hover:bg-[#0A3622]/10'}`}
+                  className={`px-4 py-2 rounded-md text-left transition-colors font-montserrat ${selectedCategory === cat ? 'bg-[#0A3622] text-white font-weight: 600' : 'bg-[#e8f5e9] text-[#07300f] hover:bg-[#0A3622]/10'}`}
                 >
                   {cat}
                 </button>
@@ -226,10 +227,10 @@ export default function News() {
               <div key={idx} className="bg-[#e8f5e9] rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
                 <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-xl font-semibold text-[#07300f] mb-2">{item.title}</h3>
-                  <p className="text-gray-700 mb-4 flex-1">{item.desc}</p>
+                  <h3 className="text-xl font-montserrat font-weight: 600 text-[#07300f] mb-2">{item.title}</h3>
+                  <p className="text-gray-700 font-montserrat font-weight: 600 mb-4 flex-1">{item.desc}</p>
                   <button
-                    className="mt-4 inline-block bg-[#0A3622] text-white px-6 py-3 rounded shadow hover:bg-[#07300f] transition-colors duration-300"
+                    className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
                     onClick={() => navigate('/pdf-viewer')}
                   >
                     Read More

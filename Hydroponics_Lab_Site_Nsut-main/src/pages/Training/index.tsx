@@ -68,11 +68,11 @@ export const Training = () => {
 
         {/* Green Box Overlay */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[900px] bg-[#003300] px-4 py-8 md:px-16 md:py-12">
-          <h1 className="text-4xl md:text-5xl font-['Marcellus'] text-white mb-4 md:mb-8 text-center tracking-wide">
+          <h1 className="text-4xl md:text-5xl font-montserrat font-weight: 600 text-white mb-4 md:mb-8 text-center tracking-wide">
             Training Programs
           </h1>
 
-          <p className="text-sm md:text-base text-white leading-relaxed font-['Questrial'] text-center">
+          <p className="text-sm md:text-base text-white leading-relaxed font-montserrat font-weight: 600 text-center">
             At the Centre of Excellence in Hydroponics, we offer diverse
             training programs to cater to all levels of interest and
             experience—from newcomers to seasoned practitioners. Each program is
@@ -81,7 +81,7 @@ export const Training = () => {
             practices.
           </p>
 
-          <p className="text-sm md:text-base text-white mt-2 md:mt-4 font-['Questrial'] text-center">
+          <p className="text-sm md:text-base text-white mt-2 md:mt-4 font-montserrat font-weight: 600 text-center">
             Explore our training options below:
           </p>
         </div>
@@ -105,10 +105,10 @@ export const Training = () => {
                 {/* Content Column */}
                 <div className="text-white w-full md:pr-16">
                   <div className="mb-4">
-                    <h2 className="text-2xl md:text-[28px] font-['Marcellus'] font-extrabold tracking-wide mb-0.5 text-center md:text-left">
+                    <h2 className="text-2xl md:text-[28px] font-montserrat font-weight: 600 tracking-wide mb-0.5 text-center md:text-left">
                       {program.title}
                     </h2>
-                    <p className="text-base font-['Questrial'] text-white/90 mb-1 text-center md:text-left">
+                    <p className="text-base font-montserrat font-weight: 600 text-white/90 mb-1 text-center md:text-left">
                       {program.instructor} | {program.details}
                     </p>
                     <div className="flex gap-1 justify-center md:justify-start">
@@ -119,26 +119,25 @@ export const Training = () => {
                   </div>
 
                   <div className="space-y-4">
-                    <p className="font-['Questrial'] text-white/90 leading-snug">
-                      <span className="font-['Marcellus'] font-extrabold text-base">
+                    <p className="font-montserrat font-weight: 600 text-white/90 leading-snug">
+                      <span className="font-montserrat font-weight: 600 text-base">
                         Ideal for:
                       </span>{" "}
                       {program.idealFor}
                     </p>
 
                     <div>
-                      <h3 className="text-lg font-['Marcellus'] font-extrabold tracking-wide mb-1">
+                      <h3 className="text-lg font-montserrat font-weight: 600 tracking-wide mb-1">
                         Overview:
                       </h3>
-                      <p className="font-['Questrial'] text-white/90 leading-snug">
+                      <p className="font-montserrat font-weight: 600 text-white/90 leading-snug">
                         {program.overview}
                       </p>
                     </div>
 
                     <Link
                       to="/apply"
-                      className="inline-block border border-white px-5 py-1.5 hover:bg-white hover:text-[#003300]
-                               transition-colors duration-300 font-['Questrial'] text-sm mt-2"
+                      className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
                     >
                       Read More ›
                     </Link>
@@ -146,10 +145,10 @@ export const Training = () => {
                 </div>
 
                 {/* Price Column */}
-                <div className="hidden md:block text-[40px] font-['Marcellus'] text-white">
+                <div className="hidden md:block text-[40px] font-montserrat font-weight: 600 text-white">
                   {program.price}
                 </div>
-                <div className="md:hidden text-2xl font-['Marcellus'] text-white mb-4 w-full text-center">
+                <div className="md:hidden text-2xl font-montserrat font-weight: 600 text-white mb-4 w-full text-center">
                   {program.price}
                 </div>
               </div>
@@ -171,7 +170,7 @@ export const Training = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-['Marcellus'] mb-4 md:mb-8"
+            className="text-3xl md:text-5xl font-montserrat font-weight: 600 mb-4 md:mb-8"
           >
             Start Today, Make an Impact Tomorrow
           </motion.h2>
@@ -181,7 +180,7 @@ export const Training = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-lg md:text-2xl font-['Questrial'] italic max-w-5xl mx-auto"
+            className="text-lg md:text-2xl font-montserrat font-weight: 600 italic max-w-5xl mx-auto"
           >
             No matter your background, you can make a meaningful contribution to
             the future of agriculture. Begin your journey with us and become a

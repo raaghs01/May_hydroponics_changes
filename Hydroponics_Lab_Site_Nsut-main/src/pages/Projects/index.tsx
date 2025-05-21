@@ -11,21 +11,20 @@ export const Projects: FC = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80")',
+            backgroundImage: 'url("/system5.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
             filter: 'brightness(0.7)'
           }}
         />
-        
-        {/* Content Overlay */}
-        <div className="relative z-10 container mx-auto px-4">
-          <motion.h1 
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-montserrat text-white text-center mb-6"
+            className="text-5xl md:text-7xl font-montserrat font-weight: 600 text-white text-center mb-6 drop-shadow-lg"
           >
             Our Projects
           </motion.h1>
@@ -33,7 +32,7 @@ export const Projects: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-white/90 text-center max-w-3xl mx-auto"
+            className="text-xl font-montserrat font-weight: 600 text-white/90 text-center max-w-3xl mx-auto drop-shadow"
           >
             Pioneering Sustainable Agriculture Through Innovation
           </motion.p>
@@ -45,15 +44,12 @@ export const Projects: FC = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col md:flex-row gap-16">
             {/* Title Section */}
-            <div className="w-full md:w-1/3">
-              <motion.h2
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                // transition={{ duration: 0.8 }}
-                className="text-[#003300] text-6xl font-['Marcellus'] leading-tight sticky top-24"
+            <div className="w-full md:w-1/3 flex flex-col justify-center items-center">
+              <h2
+                className="text-[#0A3622] text-6xl font-['Marcellus'] leading-tight sticky top-24 self-center font-montserrat font-weight: 600"
               >
                 Ongoing R&D Projects
-              </motion.h2>
+              </h2>
             </div>
 
             {/* Projects Grid - Changed to 3 columns */}
@@ -96,13 +92,13 @@ export const Projects: FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="bg-[#003300] p-6 flex flex-col min-h-[200px] group cursor-pointer hover:shadow-xl transition-all duration-300"
+                    className="bg-[#0A3622] p-6 flex flex-col min-h-[200px] group cursor-pointer hover:shadow-xl transition-all duration-300 font-montserrat font-weight: 600"
                   >
                     <div>
-                      <h3 className="text-white text-xl font-medium mb-4 font-['Marcellus']">
+                      <h3 className="text-white text-xl font-medium mb-4 font-['Marcellus'] font-montserrat font-weight: 600">
                         {project.title}
                       </h3>
-                      <p className="text-yellow-400 text-sm font-['Questrial']">
+                      <p className="text-white text-sm font-['Questrial'] font-montserrat font-weight: 600">
                         {project.description}
                       </p>
                     </div>
@@ -115,7 +111,7 @@ export const Projects: FC = () => {
       </div>
 
       {/* Completed Projects Section */}
-      <section className="py-20 bg-[#003300]">
+      <section className="py-20 bg-[#0A3622]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -123,7 +119,7 @@ export const Projects: FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-montserrat text-[#FFFFFF] mb-8 text-center">
+            <h2 className="text-4xl font-montserrat text-[#FFFFFF] mb-8 text-center font-weight: 600">
                Completed Projects
             </h2>
             {/* <p className="text-lg text-gray-700 text-center mb-12">
@@ -153,10 +149,10 @@ export const Projects: FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-lg shadow-lg"
+                  className="bg-white p-6 rounded-lg shadow-lg font-montserrat font-weight: 600"
                 >
-                  <h3 className="text-xl font-semibold text-[#0A3622] mb-4">{project.title}</h3>
-                  <p className="text-gray-700">{project.description}</p>
+                  <h3 className="text-xl font-semibold text-[#0A3622] mb-4 font-montserrat font-weight: 600">{project.title}</h3>
+                  <p className="text-gray-700 font-montserrat font-weight: 600">{project.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -209,7 +205,7 @@ export const Projects: FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center">
+            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center font-weight: 600">
              Innovations & Technologies Used
             </h2>
             {/* <p className="text-lg text-gray-700 text-center mb-12">
@@ -239,10 +235,10 @@ export const Projects: FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-[#003300] p-6 rounded-lg shadow-lg"
+                  className="bg-[#003300] p-6 rounded-lg shadow-lg font-montserrat font-weight: 600"
                 >
-                  <h3 className="text-xl font-semibold text-[#FFFFFF] mb-4">{tech.title}</h3>
-                  <p className="text-yellow-400">{tech.description}</p>
+                  <h3 className="text-xl font-semibold text-[#FFFFFF] mb-4 font-montserrat font-weight: 600">{tech.title}</h3>
+                  <p className="text-white font-montserrat font-weight: 600">{tech.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -390,10 +386,10 @@ export const Projects: FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center">
+            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center font-weight: 600">
              Project Gallery
             </h2>
-            <p className="text-lg text-gray-700 text-center mb-12">
+            <p className="text-lg text-gray-700 text-center mb-12 font-montserrat font-weight: 600">
               Visual highlights from our farms, labs, and installations.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -456,7 +452,7 @@ export const Projects: FC = () => {
       </section> */}
 
       {/* Pilot Programs Section */}
-      <section className="py-20 bg-[#003300]">
+      <section className="py-20 bg-[#e8f5e9]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -464,10 +460,10 @@ export const Projects: FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-montserrat text-[#FFFFFF] mb-8 text-center">
+            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center font-weight: 600">
                Pilot Programs
             </h2>
-            <p className="text-lg text-gray-100 text-center mb-12">
+            <p className="text-lg text-[#0A3622] text-center mb-12 font-montserrat font-weight: 600">
               Testing new systems and techniques before large-scale rollouts.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -494,10 +490,10 @@ export const Projects: FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-lg shadow-lg"
+                  className="bg-white p-6 rounded-lg shadow-lg font-montserrat font-weight: 600"
                 >
-                  <h3 className="text-xl font-semibold text-[#0A3622] mb-4">{program.title}</h3>
-                  <p className="text-gray-700">{program.description}</p>
+                  <h3 className="text-xl font-semibold text-[#0A3622] mb-4 font-montserrat font-weight: 600">{program.title}</h3>
+                  <p className="text-gray-700 font-montserrat font-weight: 600">{program.description}</p>
                 </motion.div>
               ))}
             </div>
