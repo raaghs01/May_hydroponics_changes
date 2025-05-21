@@ -26,30 +26,30 @@ const eventCategories = [
   'Research'
 ];
 
-const events = [
-  {
-    image: 'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80',
-    title: 'Call for Interviews: TA and SSA Position',
-    desc: 'The Centre is excited to announce interview calls for the positions of Teaching Assistant (TA) and Senior Scientific Associate (SSA). These roles are pivotal in supporting our training…',
-    category: 'Announcements',
-    link: 'https://nsut.ac.in/'
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
-    title: 'Hydroponics Training Program',
-    desc: 'Join our comprehensive training program to master hydroponic techniques and sustainable agriculture. Open for students and professionals…',
-    category: 'Events',
-    link: 'https://nsut.ac.in/'
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80',
-    title: 'Research Paper Published',
-    desc: 'Our team has published a new research paper on nutrient solutions for urban hydroponics. Read more about our findings and impact…',
-    category: 'Research',
-    link: 'https://nsut.ac.in/'
-  },
-  // Add more event objects as needed
-];
+// const events = [
+//   {
+//     image: 'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80',
+//     title: 'Call for Interviews: TA and SSA Position',
+//     desc: 'The Centre is excited to announce interview calls for the positions of Teaching Assistant (TA) and Senior Scientific Associate (SSA). These roles are pivotal in supporting our training…',
+//     category: 'Announcements',
+//     link: 'https://nsut.ac.in/'
+//   },
+//   {
+//     image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
+//     title: 'Hydroponics Training Program',
+//     desc: 'Join our comprehensive training program to master hydroponic techniques and sustainable agriculture. Open for students and professionals…',
+//     category: 'Events',
+//     link: 'https://nsut.ac.in/'
+//   },
+//   {
+//     image: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80',
+//     title: 'Research Paper Published',
+//     desc: 'Our team has published a new research paper on nutrient solutions for urban hydroponics. Read more about our findings and impact…',
+//     category: 'Research',
+//     link: 'https://nsut.ac.in/'
+//   },
+//   // Add more event objects as needed
+// ];
 
 export default function News() {
   const [carouselIndex, setCarouselIndex] = useState(0);
