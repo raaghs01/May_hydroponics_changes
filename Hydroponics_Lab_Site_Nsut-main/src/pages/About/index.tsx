@@ -141,11 +141,15 @@ export const About: FC = () => {
             
             <div className="bg-white/90 backdrop-blur-sm p-8 md:p-12 rounded-lg space-y-6 text-gray-800">
               <p className="text-lg md:text-xl leading-relaxed">
-                Netaji Subhas University of Technology (NSUT) is proud to announce the launch of its 709 square meter cutting-edge "Hydroponic Horticulture and Research Facility," a groundbreaking initiative aimed at advancing training and research in hydroponic crop production. This project, funded by the Delhi Knowledge Development Foundation (DKDF) with a grant of ₹78 lakhs is poised to revolutionize horticultural education and innovation. The facility boasts a state-of-the-art setup for various training and research activities. Key features include a classroom designed to accommodate students for theoretical sessions on hydroponics, a polyhouse equipped with five distinct hydroponic systems tailored to different groups of horticultural plants, a dedicated area for plant germination, and a well-equipped nursery for packaging and storage.
+              Netaji Subhas University of Technology (NSUT) proudly unveils the Centre of Excellence in Hydroponics Horticulture Training and Research Facility—a visionary 709-square-meter marvel that stands at the forefront of agricultural innovation. This state-of-the-art hub, brought to life through a generous ₹78 lakh grant from the Delhi Knowledge Development Foundation (DKDF), is set to redefine the landscape of hydroponic crop production, blending cutting-edge technology with a passion for sustainability.
               </p>
               
               <p className="text-lg md:text-xl leading-relaxed">
-                The primary goals of the Hydroponic Horticulture Facility are to establish a premier training and research hub, empower aspiring entrepreneurs and local farmers with the skills needed to set up, operate, and maintain hydroponic horticulture systems, focus on researching and developing innovative hydroponic cultivation methods for new horticultural crops, and build an ecosystem that significantly contributes to pollution control, water conservation, and the supply of fresh, healthy produce to the local community.
+              Our facility is a beacon of progress, meticulously designed to foster both education and innovation. It features a modern classroom where students immerse themselves in the theoretical foundations of hydroponics, a sophisticated polyhouse showcasing five distinct hydroponic systems tailored to diverse horticultural plants, a specialized plant germination zone, and a fully equipped nursery for seamless packaging and storage. Every element of this facility reflects our commitment to excellence, providing an unparalleled environment for learning, experimentation, and growth.
+
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed">
+              The Centre of Excellence in Hydroponics Horticulture Training and Research Facility at NSUT is more than a facility; it is a movement—a testament to the transformative power of hydroponics in shaping a greener, healthier, and more sustainable future. Join us as we cultivate not just plants, but a legacy of innovation and impact.
               </p>
             </div>
           </motion.div>
@@ -250,9 +254,8 @@ This paper examines the role of hydroponics in urban agriculture, focusing on it
                     title:
                       `Phytoremediation Potential of Hydroponically Grown Herbs: Mitigating Water Contamination with Basil and Mint
 
-Our research investigates the ability of hydroponically grown basil and mint to absorb and mitigate heavy metal contaminants in water. The study reveals their impressive 
-phytoremediation potential, offering a dual benefit of water purification and the production of safe, edible herbs—an innovative step 
-toward sustainable farming solutions.`,
+Our research investigates the ability of hydroponically grown basil and mint to absorb and mitigate heavy metal contaminants in water. The study reveals their impressive phytoremediation potential, offering a dual benefit of water purification and the production of safe, edible herbs—an innovative step toward sustainable farming solutions.
+`,
                   },
                 ].map((paper, index) => (
                   <div
