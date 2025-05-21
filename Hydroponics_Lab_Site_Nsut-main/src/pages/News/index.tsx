@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const carouselItems = [
   {
@@ -55,6 +56,7 @@ export default function News() {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [filterOpen, setFilterOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -226,6 +228,12 @@ export default function News() {
                 <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-semibold text-[#07300f] mb-2">{item.title}</h3>
                   <p className="text-gray-700 mb-4 flex-1">{item.desc}</p>
+                  <button
+                    className="mt-4 inline-block bg-[#0A3622] text-white px-6 py-3 rounded shadow hover:bg-[#07300f] transition-colors duration-300"
+                    onClick={() => navigate('/pdf-viewer')}
+                  >
+                    Read More
+                  </button>
                 </div>
               </div>
             ))}
