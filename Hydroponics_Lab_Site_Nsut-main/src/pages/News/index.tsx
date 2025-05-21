@@ -64,8 +64,8 @@ export default function News() {
   }, []);
 
  
-    ? events
-    : events.filter(e => e.category === selectedCategory);
+    // ? events
+    // : events.filter(e => e.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-white">
