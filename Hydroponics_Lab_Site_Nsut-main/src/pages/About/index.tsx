@@ -9,47 +9,47 @@ export const About: FC = () => {
 
   const images = [
     {
-      src: "/system11.png",
+      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
       alt: "Plant Growth in Hydroponic System",
       category: "Plant Growth"
     },
     {
-      src: "/system12.jpg",
+      src: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
       alt: "Hydroponic Facility Interior",
       category: "Facility"
     },
     {
-      src: "/system13.png",
+      src: "https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=800&q=80",
       alt: "Seedling Development",
       category: "Plant Growth"
     },
     {
-      src: "/system14.png",
+      src: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80",
       alt: "Hydroponic Setup",
       category: "Facility"
     },
     {
-      src: "/system15.png",
+      src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
       alt: "Mature Plants",
       category: "Plant Growth"
     },
     {
-      src: "/system16.png",
+      src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
       alt: "Seedling Tray",
       category: "Plant Growth"
     },
     {
-      src: "/system17.png",
+      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
       alt: "NFT System",
       category: "Facility"
     },
     {
-      src: "/system18.png",
+      src: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
       alt: "Plant Development",
       category: "Plant Growth"
     },
     {
-      src: "/system11.png",
+      src: "https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=800&q=80",
       alt: "Research Area",
       category: "Facility"
     },
@@ -85,7 +85,7 @@ export const About: FC = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/system5.jpg")',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
@@ -120,7 +120,7 @@ export const About: FC = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/hydroponic-plants-bg.jpg")',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1920&q=80")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
@@ -185,7 +185,7 @@ export const About: FC = () => {
         {/* Middle Column - Image */}
         <div className="relative h-[400px] md:h-auto">
           <img 
-            src="/system5.png"
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
             alt="Our Story"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -307,7 +307,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               className="relative h-[400px] lg:h-[500px]"
             >
               <img
-                src="/system6.png"
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
                 alt="NFT Horizontal Beds"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
@@ -414,7 +414,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               className="relative h-[400px] lg:h-[500px] order-1 lg:order-2"
             >
               <img
-                src="/system7.png"
+                src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80"
                 alt="A-Frame Systems"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
@@ -431,7 +431,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               className="relative h-[400px] lg:h-[500px]"
             >
               <img
-                src="/system8.png"
+                src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
                 alt="Vertical Tower Systems"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />

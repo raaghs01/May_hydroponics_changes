@@ -3,17 +3,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const carouselItems = [
   {
-    image: '/news1.jpg',
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
     title: 'Hydroponics Workshop: Empowering the Next Generation',
     desc: 'A hands-on event for students and faculty to learn about sustainable farming.'
   },
   {
-    image: '/news2.jpg',
+    image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80',
     title: 'Research Breakthrough: Water Efficiency',
     desc: 'Our latest research shows a 90% reduction in water usage with new systems.'
   },
   {
-    image: '/news3.jpg',
+    image: 'https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=1200&q=80',
     title: 'Community Outreach: Food Distribution Drive',
     desc: 'Delivering fresh, chemical-free produce to local communities.'
   }
@@ -26,30 +26,30 @@ const eventCategories = [
   'Research'
 ];
 
-const events = [
-  {
-    image: '/event1.jpg',
-    title: 'Call for Interviews: TA and SSA Position',
-    desc: 'The Centre is excited to announce interview calls for the positions of Teaching Assistant (TA) and Senior Scientific Associate (SSA). These roles are pivotal in supporting our training…',
-    category: 'Announcements',
-    link: 'https://nsut.ac.in/'
-  },
-  {
-    image: '/event2.jpg',
-    title: 'Hydroponics Training Program',
-    desc: 'Join our comprehensive training program to master hydroponic techniques and sustainable agriculture. Open for students and professionals…',
-    category: 'Events',
-    link: 'https://nsut.ac.in/'
-  },
-  {
-    image: '/event3.jpg',
-    title: 'Research Paper Published',
-    desc: 'Our team has published a new research paper on nutrient solutions for urban hydroponics. Read more about our findings and impact…',
-    category: 'Research',
-    link: 'https://nsut.ac.in/'
-  },
-  // Add more event objects as needed
-];
+// const events = [
+//   {
+//     image: 'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80',
+//     title: 'Call for Interviews: TA and SSA Position',
+//     desc: 'The Centre is excited to announce interview calls for the positions of Teaching Assistant (TA) and Senior Scientific Associate (SSA). These roles are pivotal in supporting our training…',
+//     category: 'Announcements',
+//     link: 'https://nsut.ac.in/'
+//   },
+//   {
+//     image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
+//     title: 'Hydroponics Training Program',
+//     desc: 'Join our comprehensive training program to master hydroponic techniques and sustainable agriculture. Open for students and professionals…',
+//     category: 'Events',
+//     link: 'https://nsut.ac.in/'
+//   },
+//   {
+//     image: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80',
+//     title: 'Research Paper Published',
+//     desc: 'Our team has published a new research paper on nutrient solutions for urban hydroponics. Read more about our findings and impact…',
+//     category: 'Research',
+//     link: 'https://nsut.ac.in/'
+//   },
+//   // Add more event objects as needed
+// ];
 
 export default function News() {
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -63,9 +63,9 @@ export default function News() {
     return () => clearInterval(timer);
   }, []);
 
-  const filteredEvents = selectedCategory === 'All'
-    ? events
-    : events.filter(e => e.category === selectedCategory);
+  // const filteredEvents = selectedCategory === 'All'
+  //   ? events
+  //   : events.filter(e => e.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-white">
@@ -76,7 +76,7 @@ export default function News() {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/system5.jpg")',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
@@ -191,32 +191,32 @@ export default function News() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image: '/newsletter1.jpg',
+                image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
                 title: 'Hydroponics at NSUT: A Hub for Innovation',
                 desc: 'Our facility continues to lead the way in sustainable agriculture, offering hands-on training and research opportunities for students and professionals.'
               },
               {
-                image: '/newsletter2.jpg',
+                image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
                 title: 'Recent Event: Inauguration of New Research Wing',
                 desc: 'The new research wing was inaugurated last month, expanding our capacity for advanced hydroponics research and student projects.'
               },
               {
-                image: '/newsletter3.jpg',
+                image: 'https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=800&q=80',
                 title: 'Innovation: Automated Nutrient Delivery System',
                 desc: 'Our team has developed an automated system for precise nutrient delivery, improving crop yields and reducing resource use.'
               },
               {
-                image: '/newsletter4.jpg',
+                image: 'https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80',
                 title: 'Recruitment: Join Our Research Team',
                 desc: 'We are recruiting passionate students and researchers for upcoming projects in climate-resilient agriculture and smart farming.'
               },
               {
-                image: '/newsletter5.jpg',
+                image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
                 title: 'Community Outreach: Food Distribution Drive',
                 desc: 'Our latest food distribution drive provided fresh, chemical-free produce to over 300 families in need.'
               },
               {
-                image: '/newsletter6.jpg',
+                image: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80',
                 title: 'Upcoming Workshop: Hydroponics for Beginners',
                 desc: 'Sign up for our next workshop to learn the basics of hydroponic farming and sustainable food production.'
               }
