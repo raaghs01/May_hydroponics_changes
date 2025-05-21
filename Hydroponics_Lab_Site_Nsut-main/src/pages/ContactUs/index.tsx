@@ -56,8 +56,8 @@ export const Contact: FC = () => {
         />
         {/* Content Overlay */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-montserrat mb-4 text-white">Getting in touch with COE HYDROPONICS:</h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto text-white/90">
+          <h1 className="text-4xl md:text-5xl font-montserrat font-weight: 600 mb-4 text-white">Getting in touch with COE HYDROPONICS:</h1>
+          <p className="text-lg md:text-xl font-montserrat font-weight: 600 max-w-2xl mx-auto text-white/90">
             Have questions about our programs, training, or research? Use the form below or reach out directly.
           </p>
         </div>
@@ -69,8 +69,8 @@ export const Contact: FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* Contact Info - Left Side */}
           <div className="bg-[#e8f5e9] p-12 lg:p-24 space-y-8 text-left">
-            <h2 className="text-4xl font-playfair text-[#07300f]">Get in Touch</h2>
-            <div className="space-y-4 text-gray-700">
+            <h2 className="text-4xl font-playfair font-montserrat font-weight: 600 text-[#07300f]">Get in Touch</h2>
+            <div className="space-y-4 text-gray-700 font-montserrat font-weight: 600">
               <p className="text-lg">Centre of Excellence</p>
               <p>Hydroponic Project</p>
               <p>NSUT, Dwarka</p>
@@ -106,39 +106,39 @@ export const Contact: FC = () => {
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm text-white mb-2 text-left">First Name</label>
+                  <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">First Name</label>
                   <input 
                     type="text" 
-                    className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30" 
+                    className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600" 
                   />
                 </div>
                 <div>
-                  <label className="block text-sm text-white mb-2 text-left">Last Name</label>
+                  <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Last Name</label>
                   <input 
                     type="text" 
-                    className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30" 
+                    className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600" 
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-sm text-white mb-2 text-left">Email *</label>
+                <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Email *</label>
                 <input 
                   type="email" 
                   required 
-                  className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30" 
+                  className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600" 
                 />
               </div>
               <div>
-                <label className="block text-sm text-white mb-2 text-left">Message</label>
+                <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Message</label>
                 <textarea 
                   rows={4} 
-                  className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30" 
+                  className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600" 
                 />
               </div>
               <div>
-                <label className="block text-sm text-white mb-2 text-left">Regarding: *</label>
+                <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Regarding: *</label>
                 <select 
-                  className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white focus:outline-none focus:border-white/30"
+                  className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white focus:outline-none focus:border-white/30 font-montserrat font-weight: 600"
                 >
                   <option value="" className="bg-[#07300f]">Choose an option</option>
                   <option value="collaboration" className="bg-[#07300f]">Collaboration</option>
@@ -149,7 +149,7 @@ export const Contact: FC = () => {
               </div>
               <button 
                 type="submit"
-                className="w-full bg-black text-white py-3 rounded-md hover:bg-black/90 transition-colors"
+                className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
               >
                 Send
               </button>
@@ -166,7 +166,7 @@ export const Contact: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl font-montserrat text-white mb-4 text-center"
+            className="text-4xl font-montserrat font-weight: 600 text-white mb-4 text-center"
           >
             Growing Clarity:
           </motion.h2>
@@ -174,7 +174,7 @@ export const Contact: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl text-gray-200 mb-8 text-center"
+            className="text-2xl font-montserrat font-weight: 600 text-gray-200 mb-8 text-center"
           >
             Your Questions, Our Answers
           </motion.p>
@@ -189,9 +189,9 @@ export const Contact: FC = () => {
               >
                 <button
                   onClick={() => setOpenQuestion(openQuestion === index ? null : index)}
-                  className="w-full px-6 py-4 text-left flex justify-between items-center text-white hover:bg-white/5 transition-colors"
+                  className="w-full px-6 py-4 text-left flex justify-between items-center text-white hover:bg-white/5 transition-colors font-montserrat font-weight: 600"
                 >
-                  <span className="font-medium">{item.question}</span>
+                  <span className="font-medium font-montserrat font-weight: 600">{item.question}</span>
                   <svg
                     className={`w-5 h-5 transform transition-transform ${
                       openQuestion === index ? 'rotate-180' : ''
@@ -209,7 +209,7 @@ export const Contact: FC = () => {
                   </svg>
                 </button>
                 {openQuestion === index && (
-                  <div className="px-6 py-4 text-gray-200">
+                  <div className="px-6 py-4 text-gray-200 font-montserrat font-weight: 600">
                     {item.answer}
                   </div>
                 )}

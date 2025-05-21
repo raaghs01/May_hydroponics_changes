@@ -5,7 +5,7 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
 
-export const About: FC = () => {
+const About: FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   const navigate = useNavigate()
 
@@ -87,21 +87,20 @@ export const About: FC = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80")',
+            backgroundImage: 'url("/system5.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
             filter: 'brightness(0.7)'
           }}
         />
-        
-        {/* Content Overlay */}
-        <div className="relative z-10 container mx-auto px-4">
-          <motion.h1 
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-montserrat text-white text-center mb-6"
+            className="text-5xl md:text-7xl font-montserrat text-white text-center mb-6 drop-shadow-lg"
           >
             About Us
           </motion.h1>
@@ -109,7 +108,7 @@ export const About: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-white/90 text-center max-w-3xl mx-auto"
+            className="text-xl text-white/90 text-center max-w-3xl mx-auto drop-shadow"
           >
             Pioneering Sustainable Agriculture Through Innovation
           </motion.p>
@@ -119,15 +118,7 @@ export const About: FC = () => {
       {/* Who are we? Section */}
       <div className="relative min-h-screen">
         {/* Background Image */}
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1920&q=80")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed'
-          }}
-        />
+        
 
         {/* Content Overlay */}
         <div className="relative z-10 container mx-auto px-4 py-24">
@@ -137,11 +128,10 @@ export const About: FC = () => {
             transition={{ duration: 0.8 }}
             className="max-w-5xl mx-auto"
           >
-            <h2 className="text-3xl md:text-6xl font-montserrat text-[#07300f] mb-12 text-center">
+            <h2 className="text-3xl md:text-5xl font-montserrat text-[#0A3622] mb-12 text-center font-weight: 600">
               Who are we?
             </h2>
-            
-            <div className="bg-white/90 backdrop-blur-sm p-8 md:p-12 rounded-lg space-y-6 text-gray-800">
+            <div className="bg-white/90 backdrop-blur-sm p-8 md:p-12 rounded-lg space-y-6 text-gray-800 font-montserrat text-left font-weight: 600">
               <p className="text-lg md:text-xl leading-relaxed">
               Netaji Subhas University of Technology (NSUT) proudly unveils the Centre of Excellence in Hydroponics Horticulture Training and Research Facility—a visionary 709-square-meter marvel that stands at the forefront of agricultural innovation. This state-of-the-art hub, brought to life through a generous ₹78 lakh grant from the Delhi Knowledge Development Foundation (DKDF), is set to redefine the landscape of hydroponic crop production, blending cutting-edge technology with a passion for sustainability.
               </p>
@@ -166,15 +156,15 @@ export const About: FC = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-[300px] text-center"
+            className="max-w-[300px] text-center font-montserrat font-weight: 600"
           >
-            <h2 className="text-5xl font-montserrat text-[#0A3622] mb-8">
+            <h2 className="text-5xl font-montserrat text-[#0A3622] mb-8 font-weight: 600">
               Our
               <br />
               Story
             </h2>
             <div className="w-12 h-1 bg-[#0A3622] mb-8 mx-auto" />
-            <p className="text-[#0A3622] text-xl font-medium">
+            <p className="text-[#0A3622] text-xl font-medium font-montserrat font-weight: 600">
               From Vision to Reality: Shaping
               <br />
               the Future of Sustainable
@@ -199,9 +189,9 @@ export const About: FC = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-[300px] mx-auto text-center"
+            className="max-w-[300px] mx-auto text-center font-montserrat font-weight: 600"
           >
-            <p className="text-white/90 leading-relaxed">
+            <p className="text-white/90 leading-relaxed font-montserrat font-weight: 600">
               Our journey began with a simple yet powerful vision: to revolutionize urban farming 
               through innovative hydroponic solutions. Today, we stand as a testament to that vision, 
               having created a state-of-the-art facility that serves as a beacon of sustainable agriculture.
@@ -216,8 +206,8 @@ export const About: FC = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col md:flex-row gap-16">
             {/* Title Section */}
-            <div className="w-full md:w-1/3">
-              <h2 className="text-[#003300] text-6xl font-['Marcellus'] leading-tight sticky top-24">
+            <div className="w-full md:w-1/3 font-montserrat font-weight: 600">
+              <h2 className="text-[#003300] text-6xl font-['Marcellus'] leading-tight sticky top-24 font-montserrat font-weight: 600">
                 Our Published Research Papers
               </h2>
             </div>
@@ -262,13 +252,13 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                 ].map((paper, index) => (
                   <div
                     key={index}
-                    className="bg-[#003300] p-8 rounded-lg flex flex-col min-h-[300px] justify-between group cursor-pointer hover:shadow-xl transition-all duration-300 relative"
+                    className="bg-[#003300] p-8 rounded-lg flex flex-col min-h-[300px] justify-between group cursor-pointer hover:shadow-xl transition-all duration-300 relative font-montserrat font-weight: 600"
                   >
                     <div>
-                      <h3 className="text-yellow-400 text-2xl font-medium mb-6 text-center font-['Marcellus']">
+                      <h3 className="text-yellow-400 text-2xl font-medium mb-6 text-center font-['Marcellus'] font-montserrat font-weight: 600">
                         {paper.journal}
                       </h3>
-                      <p className="text-white/90 text-base line-clamp-4 text-center font-['Questrial']">
+                      <p className="text-white/90 text-base line-clamp-4 text-center font-['Questrial'] font-montserrat font-weight: 600">
                         {paper.title}
                       </p>
                     </div>
@@ -298,7 +288,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl font-montserrat text-[#0A3622] text-center mb-12"
+            className="text-4xl font-montserrat text-[#0A3622] text-center mb-12 font-weight: 600"
           >
             Our Facilities
           </motion.h2>
@@ -324,13 +314,13 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-6 text-left"
+              className="space-y-6 text-left font-montserrat font-weight: 600"
             >
-              <h3 className="text-3xl font-montserrat text-[#0A3622] mb-8">
+              <h3 className="text-3xl font-montserrat text-[#0A3622] mb-8 font-weight: 600">
                 NFT Horizontal Beds
               </h3>
               
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-4 text-gray-700 font-montserrat font-weight: 600">
                 <li className="flex items-start space-x-3">
                   <span className="text-primary text-xl">•</span>
                   <span>Plants are grown in long horizontal beds or troughs filled with a growing medium or in nutrient-rich water.</span>
@@ -370,13 +360,13 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-6 text-left order-2 lg:order-1"
+              className="space-y-6 text-left order-2 lg:order-1 font-montserrat font-weight: 600"
             >
-              <h3 className="text-3xl font-montserrat text-[#0A3622] mb-8">
+              <h3 className="text-3xl font-montserrat text-[#0A3622] mb-8 font-weight: 600">
                 A-Frame Systems
               </h3>
               
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-4 text-gray-700 font-montserrat font-weight: 600">
                 <li className="flex items-start space-x-3">
                   <span className="text-primary text-xl">•</span>
                   <span>Plants are arranged on angled, triangular frames, allowing vertical stacking</span>
@@ -448,13 +438,13 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="space-y-6 text-left"
+              className="space-y-6 text-left font-montserrat font-weight: 600"
             >
-              <h3 className="text-3xl font-montserrat text-[#0A3622] mb-8">
+              <h3 className="text-3xl font-montserrat text-[#0A3622] mb-8 font-weight: 600">
                 Vertical Towers
               </h3>
               
-              <ul className="space-y-4 text-gray-700">
+              <ul className="space-y-4 text-gray-700 font-montserrat font-weight: 600">
                 <li className="flex items-start space-x-3">
                   <span className="text-primary text-xl">•</span>
                   <span>Plants are grown in stacked vertical columns or towers, with nutrient-rich water pumped from the base to the top and trickling down to all levels.</span>
@@ -489,7 +479,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-3xl font-montserrat text-[#0A3622] text-center mb-12"
+              className="text-3xl font-montserrat text-[#0A3622] text-center mb-12 font-weight: 600"
             >
               Our Gallery
             </motion.h3>
@@ -510,7 +500,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="text-white text-center p-4">
+                    <div className="text-white text-center p-4 font-montserrat font-weight: 600">
                       <p className="text-sm uppercase tracking-wider mb-2">{image.category}</p>
                       <p className="text-lg font-medium">{image.alt}</p>
                     </div>
@@ -571,7 +561,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               </motion.div>
 
               {/* Image info */}
-              <div className="absolute bottom-4 left-0 right-0 text-center text-white">
+              <div className="absolute bottom-4 left-0 right-0 text-center text-white font-montserrat font-weight: 600">
                 <p className="text-sm uppercase tracking-wider mb-1">
                   {images[selectedImage].category}
                 </p>
@@ -585,18 +575,18 @@ Our research investigates the ability of hydroponically grown basil and mint to 
       </AnimatePresence>
 
       {/* Meet Our Team Section */}
-      <section className="bg-[#07300f] py-24">
+      <section className="bg-[#e8f5e9] py-24">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-16 font-montserrat text-[#0A3622] font-weight: 600"
           >
-            <h2 className="text-5xl font-montserrat text-white mb-4">
+            <h2 className="text-5xl font-montserrat text-[#0A3622] mb-4 font-weight: 600">
               MEET OUR TEAM
             </h2>
-            <p className="text-xl text-white/80">
+            <p className="text-xl text-[#0A3622]/80 font-montserrat font-weight: 600">
               Our Driving Force
             </p>
           </motion.div>
@@ -629,7 +619,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center"
+                className="text-center text-[#0A3622] font-montserrat font-weight: 600"
               >
                 <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/10">
                   <img
@@ -638,8 +628,8 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-white text-xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-white/80">{member.role}</p>
+                <h3 className="text-[#0A3622] text-xl font-semibold mb-2 font-montserrat font-weight: 600">{member.name}</h3>
+                <p className="text-[#0A3622]/80 font-montserrat font-weight: 600">{member.role}</p>
               </motion.div>
             ))}
           </div>
@@ -667,7 +657,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center"
+                className="text-center font-montserrat text-[#0A3622] font-weight: 600"
               >
                 <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/10">
                   <img
@@ -676,8 +666,8 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-white text-xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-white/80">{member.role}</p>
+                <h3 className="text-[#0A3622] text-xl font-semibold mb-2 font-montserrat font-weight: 600">{member.name}</h3>
+                <p className="text-[#0A3622]/80 font-montserrat font-weight: 600">{member.role}</p>
               </motion.div>
             ))}
           </div>
@@ -707,3 +697,5 @@ Our research investigates the ability of hydroponically grown basil and mint to 
     </div>
   )
 }
+
+export default About
