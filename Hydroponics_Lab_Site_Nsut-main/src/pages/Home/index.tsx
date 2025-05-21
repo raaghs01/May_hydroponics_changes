@@ -17,7 +17,7 @@ export const Home: FC = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/hero-bg.avif")',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             filter: 'brightness(0.7)'
@@ -505,7 +505,7 @@ export const Home: FC = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <img 
-                  src="/inauguration.avif"
+                  src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
                   alt="Facility Inauguration"
                   className="w-full h-full object-cover"
                 />
@@ -538,7 +538,7 @@ export const Home: FC = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <img 
-                  src="/students-event.avif"
+                  src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=800&q=80"
                   alt="School Students Event"
                   className="w-full h-full object-cover"
                 />
