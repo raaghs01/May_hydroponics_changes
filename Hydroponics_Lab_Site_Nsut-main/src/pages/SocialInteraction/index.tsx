@@ -71,12 +71,12 @@ const SocialInteraction = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/images/system1.jpg"
+                src="/hydroponics1.jpg"
                 alt="Vision 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="/images/system2.jpg"
+                src="/hydroponics2.jpg"
                 alt="Vision 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -150,12 +150,12 @@ const SocialInteraction = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/images/system1.jpg"
+                src="/farmers-connect.jpg"
                 alt="Farmers 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="/images/system2.jpg"
+                src="/germination.jpg"
                 alt="Farmers 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -220,12 +220,12 @@ const SocialInteraction = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/images/system1.jpg"
+                src="/hero-bg.jpg"
                 alt="Workshop 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="/images/system2.jpg"
+                src="/hydro4.jpg"
                 alt="Workshop 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -252,12 +252,12 @@ const SocialInteraction = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/images/system1.jpg"
+                src="/hydroponics7.jpg"
                 alt="Food Drive 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="/images/system2.jpg"
+                src="/hydroponics8.jpg"
                 alt="Food Drive 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -305,12 +305,12 @@ const SocialInteraction = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/images/system1.jpg"
+                src="/hydroponics9.jpg"
                 alt="School 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="/images/system2.jpg"
+                src="/hydroponics10.jpg"
                 alt="School 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
