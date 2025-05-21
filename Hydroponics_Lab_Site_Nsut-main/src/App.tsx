@@ -16,6 +16,7 @@ import { Projects }  from './pages/Projects';
 import VisionAndMission from './pages/VisionAndMission';
 import  SocialInteraction  from './pages/SocialInteraction';
 import GetInvolved from './pages/GetInvolved';
+import PdfViewer from './pages/PdfViewer';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/vision-and-mission" element={<VisionAndMission />} />
             <Route path="/social-interaction" element={<SocialInteraction />} />
             <Route path="/get-involved" element={<GetInvolved />} />
+            <Route path="/pdf-viewer" element={<PdfViewer />} />
           </Routes>
         </div>
         <Footer />
