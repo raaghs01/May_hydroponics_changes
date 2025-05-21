@@ -10,7 +10,7 @@ const SocialInteraction = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/system5.jpg")',
+            backgroundImage: 'url("/images/system1.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
@@ -71,12 +71,12 @@ const SocialInteraction = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                src="/images/system1.jpg"
                 alt="Vision 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+                src="/images/system2.jpg"
                 alt="Vision 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -150,12 +150,12 @@ const SocialInteraction = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=400&q=80"
+                src="/images/system1.jpg"
                 alt="Farmers 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=400&q=80"
+                src="/images/system2.jpg"
                 alt="Farmers 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -220,12 +220,12 @@ const SocialInteraction = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+                src="/images/system1.jpg"
                 alt="Workshop 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80"
+                src="/images/system2.jpg"
                 alt="Workshop 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -252,12 +252,12 @@ const SocialInteraction = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                src="/images/system1.jpg"
                 alt="Food Drive 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+                src="/images/system2.jpg"
                 alt="Food Drive 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -296,7 +296,7 @@ const SocialInteraction = () => {
                 Education and sustainability go hand in hand and at Centre of Excellence Hydroponics Horticulture Training and Research Facility, we believe that the earlier these values are introduced, the stronger their impact. Through our School Partnerships Program, we collaborate with schools especially those in underserved or rural areas to make environmental education engaging, practical, and empowering.<br/><br/>
                 This initiative is built on the idea that every child should have the opportunity to connect with nature, understand where their food comes from, and learn how to grow it responsibly even in places where land or resources are scarce.
               </p>
-              <h4 className="font-semibold text-[#0A3622]">Our Objectives:</h4>
+              <h4 className="font-semibold text-[#0A3622]">OUR OBJECTIVES:</h4>
               <ul className="list-disc pl-6 text-gray-800 space-y-2 text-left">
                 <li>To integrate basic agricultural science, sustainability, and nutrition into school education through hands-on learning.</li>
                 <li>To equip students and teachers with the skills to build and maintain small-scale gardens using hydroponic or soil-based systems.</li>
@@ -305,12 +305,12 @@ const SocialInteraction = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=400&q=80"
+                src="/images/system1.jpg"
                 alt="School 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=400&q=80"
+                src="/images/system2.jpg"
                 alt="School 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -337,12 +337,12 @@ const SocialInteraction = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+                src="/images/system1.jpg"
                 alt="Students 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80"
+                src="/images/system2.jpg"
                 alt="Students 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -352,7 +352,7 @@ const SocialInteraction = () => {
                 At the heart of Centre of Excellence Hydroponics Horticulture Training and Research Facility, is a vibrant and passionate community of students who are not just learners but leaders, innovators, and changemakers. Our initiatives thrive because of their energy, creativity, and commitment to building a more sustainable and equitable world.<br/><br/>
                 We believe that when students take ownership of social and environmental challenges, they don't just grow plants, they grow purpose.
               </p>
-              <h4 className="font-semibold text-[#0A3622]">Ways Students Get Involved:</h4>
+              <h4 className="font-semibold text-[#0A3622]">WAYS STUDENTS GET INVOLVED:</h4>
               <ul className="list-disc pl-6 text-gray-800 space-y-2 text-left">
                 <li><b>Project Leads & Coordinators:</b> Students head various projects ranging from school partnerships and farmers' training to garden installations and food donation drives. They manage teams, coordinate with external partners, and ensure smooth execution.</li>
                 <li><b>Outreach & Education Teams:</b> Our volunteers design and lead interactive workshops, create teaching materials, and represent the society during school visits, community events, and awareness campaigns.</li>
