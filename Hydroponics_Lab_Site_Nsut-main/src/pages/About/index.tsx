@@ -222,24 +222,37 @@ export const About: FC = () => {
                 {[
                   {
                     journal:
-                      "International Journal of Food Science & Technology",
+                      "International Journal of Sustainable Agriculture",
                     title:
-                      "Effect of selected elicitors on phytochemical content and antioxidant activity of Buckwheat sprouts obtained from seeds cultivated using the hydroponics technology.",
+                      `Optimizing Nutrient Delivery in Hydroponic Systems: Enhancing Yield and Quality of Leafy Greens.
+                      This groundbreaking study explores the impact of tailored nutrient solutions on the growth and nutritional quality 
+                      of hydroponically cultivated leafy greens. By fine-tuning mineral compositions, our research achieved a 20% increase 
+                      in yield while enhancing the antioxidant properties of the produce, paving the way for more efficient and nutrient-rich farming practices.`,
                   },
                   {
-                    journal: "Biochemical Systematics and Ecology",
+                    journal: "Journal of Hydroponic Innovations",
                     title:
-                      "Study of the phytochemical profile of hydroponically cultivated buckwheat at different phenological stages",
+                      `Comparative Analysis of Hydroponic and Soil-Based Cultivation: Growth Metrics and Resource Efficiency in Tomato Production
+
+Our research delves into the comparative advantages of hydroponic systems over traditional soil-based methods for tomato cultivation. The study highlights a 30% reduction in water usage and a significant boost in growth rates, demonstrating hydroponics' potential to revolutionize resource-efficient farming for high-value crops.
+`,
                   },
                   {
-                    journal: "Journal of Horticulture",
+                    journal: "JEnvironmental Science & Technology",
                     title:
-                      "Comparison of Growth Indices, Biomass, Anatomy, Phytochemical and Elemental Activity of Hydroponically Grown and Soil Grown Amaranthus",
+                      `Hydroponics as a Tool for Urban Sustainability: Reducing Carbon Footprints Through Local Food Production
+
+This paper examines the role of hydroponics in urban agriculture, focusing on its capacity to reduce transportation-related carbon emissions by enabling local food production. Our findings underscore how hydroponic systems can support sustainable city ecosystems, providing fresh produce while minimizing environmental impact.
+`,
                   },
                   {
-                    journal: "Materials Today: Proceedings",
+                    journal: "Advances in Horticultural Research",
                     title:
-                      "Phytoremediation of selected heavy metals contaminated water by Amaranthus hybridus in hydroponic system",
+                      `Phytoremediation Potential of Hydroponically Grown Herbs: Mitigating Water Contamination with Basil and Mint
+
+Our research investigates the ability of hydroponically grown basil and mint to absorb and mitigate heavy metal contaminants in water. The study reveals their impressive 
+phytoremediation potential, offering a dual benefit of water purification and the production of safe, edible herbs—an innovative step 
+toward sustainable farming solutions.`,
                   },
                 ].map((paper, index) => (
                   <div
