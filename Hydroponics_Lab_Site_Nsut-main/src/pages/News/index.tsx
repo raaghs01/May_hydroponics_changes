@@ -63,7 +63,7 @@ export default function News() {
     return () => clearInterval(timer);
   }, []);
 
-  // const filteredEvents = selectedCategory === 'All'
+ 
     ? events
     : events.filter(e => e.category === selectedCategory);
 
