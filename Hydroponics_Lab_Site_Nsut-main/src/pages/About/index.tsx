@@ -3,9 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { IoClose } from 'react-icons/io5'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { BsArrowRightCircle } from 'react-icons/bs'
+import { useNavigate } from 'react-router-dom'
 
 export const About: FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
+  const navigate = useNavigate()
 
   const images = [
     {
@@ -272,8 +274,12 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                     </div>
                     <div className="mt-6">
                       <div className="flex items-center justify-center gap-2 text-yellow-400 group-hover:gap-4 transition-all duration-300">
-                        <span className="text-sm font-medium">Read More</span>
-                        <BsArrowRightCircle className="text-xl" />
+                        <button
+                          className="text-sm font-medium flex items-center gap-2 focus:outline-none"
+                          onClick={() => navigate('/pdf-viewer')}
+                        >
+                          Read More <BsArrowRightCircle className="text-xl" />
+                        </button>
                       </div>
                       <div className="absolute bottom-0 left-0 w-full h-1 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                     </div>

@@ -56,11 +56,12 @@ const VisionAndMission = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-800 leading-relaxed">
-                At the Centre of Excellence in Hydroponics, we're not just growing plants—we're cultivating a revolution in agriculture. Our facility stands as a beacon of innovation, where cutting-edge technology meets sustainable farming practices to create a smarter, more efficient future for food production.
+                At the Centre of Excellence in Hydroponics, We are building a future where food is grown smarter — not harder. Through sustainable hydroponic systems, we aim to empower individuals and entire communities to take agriculture into their own hands, regardless of space, soil, or climate.
+
               </p>
-              <p className="text-lg text-gray-800 leading-relaxed">
+              {/* <p className="text-lg text-gray-800 leading-relaxed">
                 Through our state-of-the-art hydroponic systems, we're demonstrating how urban spaces can be transformed into productive agricultural hubs, reducing water usage by up to 90% while increasing crop yields. Our research and development initiatives focus on creating scalable solutions that can be implemented in various environments, from urban rooftops to rural communities.
-              </p>
+              </p> */}
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
@@ -108,11 +109,12 @@ const VisionAndMission = () => {
             </div>
             <div className="space-y-6">
               <p className="text-lg text-gray-800 leading-relaxed">
-                We envision a future where hydroponic farming is not just an alternative, but a mainstream solution for sustainable food production. Our goal is to create a network of urban farms that can provide fresh, nutritious produce to local communities while minimizing environmental impact.
+              We envision a world where agriculture is clean, efficient, and accessible to all. A world where farming no longer depends on vast lands or heavy resources, but instead thrives through innovation, responsibility, and resilience. By making hydroponics a practical and scalable solution, we hope to address food security, environmental challenges, and economic inequality—one community at a time.
+
               </p>
-              <p className="text-lg text-gray-800 leading-relaxed">
+              {/* <p className="text-lg text-gray-800 leading-relaxed">
                 Through education, research, and community engagement, we aim to inspire the next generation of farmers and innovators to embrace sustainable agriculture practices. We believe that by combining traditional farming wisdom with modern technology, we can create a more resilient and food-secure future.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -140,7 +142,8 @@ const VisionAndMission = () => {
             >
               <h3 className="text-2xl font-montserrat text-[#0A3622] mb-4">Advance Research</h3>
               <p className="text-gray-800">
-                Conducting cutting-edge research in hydroponic systems, plant science, and sustainable agriculture to develop innovative solutions for modern farming challenges.
+              We are committed to driving innovation in hydroponics and sustainable agriculture by working with researchers, technologists, and local experts to make soilless farming more efficient, affordable, and scalable.
+
               </p>
             </motion.div>
             <motion.div
@@ -149,7 +152,8 @@ const VisionAndMission = () => {
             >
               <h3 className="text-2xl font-montserrat text-[#0A3622] mb-4">Educate and Train</h3>
               <p className="text-gray-800">
-                Providing comprehensive training programs and workshops to equip farmers, students, and enthusiasts with the knowledge and skills needed for successful hydroponic farming.
+              We empower students, farmers, and entrepreneurs with the knowledge and tools they need to succeed. Through workshops, hands-on training, and long-term learning programs, we’re building a skilled and informed generation of agricultural changemakers.
+
               </p>
             </motion.div>
             <motion.div
@@ -158,7 +162,8 @@ const VisionAndMission = () => {
             >
               <h3 className="text-2xl font-montserrat text-[#0A3622] mb-4">Create Social Impact</h3>
               <p className="text-gray-800">
-                Implementing community-based projects that promote food security, environmental sustainability, and economic development through innovative farming practices.
+              By promoting eco-friendly practices and supporting the setup of hydroponic systems in communities, we’re helping improve livelihoods, boost local food production, and contribute to a more sustainable planet.
+
               </p>
             </motion.div>
           </div>
@@ -183,9 +188,10 @@ const VisionAndMission = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-800 leading-relaxed">
-                Hydroponic farming represents a paradigm shift in agriculture, offering solutions to some of the most pressing challenges facing our food system. By growing plants without soil, we can:
+              Hydroponics isn’t just an alternative—it’s a necessity for the future. It uses significantly less water, allows food to be grown in compact urban spaces, and eliminates the need for harmful chemicals. As climate change and population growth strain traditional farming, hydroponics offers a resilient and scalable solution. We're here to ensure that more people can access and benefit from it.By growing plants without soil, we can:
+
               </p>
-              <ul className="list-disc pl-6 text-gray-800 space-y-2">
+              <ul className="list-disc pl-6 text-gray-800 space-y-2 text-left">
                 <li>Reduce water usage by up to 90% compared to traditional farming</li>
                 <li>Eliminate the need for harmful pesticides and herbicides</li>
                 <li>Grow food in urban areas, reducing transportation costs and carbon emissions</li>
@@ -279,11 +285,12 @@ const VisionAndMission = () => {
               />
             </div>
             <div className="space-y-6">
-              <p className="text-lg text-gray-800 leading-relaxed">
+              {/* <p className="text-lg text-gray-800 leading-relaxed">
                 We're building a community of innovators, educators, and change-makers who are passionate about transforming the future of agriculture. Through our various programs and initiatives, we're creating opportunities for people to learn, grow, and contribute to a more sustainable food system.
-              </p>
+              </p> */}
               <p className="text-lg text-gray-800 leading-relaxed">
-                Whether you're a student looking to learn about hydroponics, a farmer interested in adopting new techniques, or a community member wanting to make a difference, there's a place for you in our movement. Together, we can create a future where sustainable agriculture is the norm, not the exception.
+              We’re not just cultivating crops — we’re cultivating a movement. One that places sustainability, innovation, and people at its core.
+
               </p>
             </div>
           </div>
