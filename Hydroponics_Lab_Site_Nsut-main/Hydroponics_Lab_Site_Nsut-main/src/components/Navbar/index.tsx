@@ -25,16 +25,16 @@ export const Navbar = () => {
   const navigationItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Vision & Mission', path: '/vision-and-mission' },
+    { name: 'Vision & Mission', path: '/visionandmission' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Social Interaction', path: '/social-interaction' },
+    { name: 'Social Interaction', path: '/socialinteraction' },
     { name: 'News', path: '/news' },
     { name: 'Blog', path: '/blog' },
     // { name: 'FAQ', path: '/faq' },
     // { name: 'Achievements', path: '/achievements' },
     // { name: 'Training', path: '/training' },
     { name: 'Contact Us', path: '/contactus' },
-    { name: 'Get Involved', path: '/get-involved' },
+    { name: 'Get Involved', path: '/getinvolved' },
   ];
 
   return (
@@ -64,8 +64,8 @@ export const Navbar = () => {
           <div className="flex items-center justify-between px-4 py-3">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/Group 6.png" alt="Company Logo" className="h-10 w-35" />
-              {/* <span className="text-xl font-semibold text-[#064402]">HHTRF</span> */}
+              <img src="/group6.png" alt="Company Logo" className="h-12 w-12" />
+              <span className="text-xl font-semibold text-[#064402]">HHTRF</span>
             </Link>
 
             {/* Desktop Navigation */}
