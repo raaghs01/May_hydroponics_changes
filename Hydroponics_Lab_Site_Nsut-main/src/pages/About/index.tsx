@@ -11,47 +11,47 @@ const About: FC = () => {
 
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      src: "\system11.png",
       alt: "Plant Growth in Hydroponic System",
       category: "Plant Growth"
     },
     {
-      src: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+      src: "\system12.png",
       alt: "Hydroponic Facility Interior",
       category: "Facility"
     },
     {
-      src: "https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=800&q=80",
+      src: "\system13.png",
       alt: "Seedling Development",
       category: "Plant Growth"
     },
     {
-      src: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80",
+      src: "\system14.png",
       alt: "Hydroponic Setup",
       category: "Facility"
     },
     {
-      src: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      src: "\system15.png",
       alt: "Mature Plants",
       category: "Plant Growth"
     },
     {
-      src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+      src: "\system16.png",
       alt: "Seedling Tray",
       category: "Plant Growth"
     },
     {
-      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      src: "\system17.png",
       alt: "NFT System",
       category: "Facility"
     },
     {
-      src: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
+      src: "\system18.png",
       alt: "Plant Development",
       category: "Plant Growth"
     },
     {
-      src: "https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=800&q=80",
+      src: "\system6.png",
       alt: "Research Area",
       category: "Facility"
     },
@@ -177,7 +177,7 @@ const About: FC = () => {
         {/* Middle Column - Image */}
         <div className="relative h-[400px] md:h-auto">
           <img 
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+            src="\system5.png"
             alt="Our Story"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -303,7 +303,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               className="relative h-[400px] lg:h-[500px]"
             >
               <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                src="\hero-bg.jpg"
                 alt="NFT Horizontal Beds"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
@@ -410,7 +410,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               className="relative h-[400px] lg:h-[500px] order-1 lg:order-2"
             >
               <img
-                src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80"
+                src="\system7.png"
                 alt="A-Frame Systems"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />
@@ -427,7 +427,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               className="relative h-[400px] lg:h-[500px]"
             >
               <img
-                src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80"
+                src="\polyhouse.jpg"
                 alt="Vertical Tower Systems"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
               />

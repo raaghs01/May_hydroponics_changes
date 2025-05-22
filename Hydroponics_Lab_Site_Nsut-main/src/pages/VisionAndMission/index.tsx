@@ -65,12 +65,12 @@ const VisionAndMission = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                src="\classroom.avif"
                 alt="Smart Farming"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+                src="\germination.avif"
                 alt="Innovation"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -97,12 +97,12 @@ const VisionAndMission = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=400&q=80"
+                src="\hero-bg.avif"
                 alt="Vision"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=400&q=80"
+                src="\hydro4.jpg"
                 alt="Future"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -201,12 +201,12 @@ const VisionAndMission = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+                src="\hydroponics2.jpg"
                 alt="Hydroponics"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80"
+                src="\hydroponics3.jpg"
                 alt="Sustainability"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -274,12 +274,12 @@ const VisionAndMission = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=400&q=80"
+                src="\polyhouse.avif"
                 alt="Community"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                src="\system7.png"
                 alt="Growth"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
