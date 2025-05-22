@@ -1,8 +1,21 @@
-import { type FC, useState } from 'react'
+import { type FC, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 export const Contact: FC = () => {
   const [openQuestion, setOpenQuestion] = useState<number | null>(null)
+  const [regarding, setRegarding] = useState('');
+  const [eventDetails, setEventDetails] = useState({ eventName: '', attendees: '' });
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const regardingParam = params.get('regarding');
+    if (regardingParam === 'events-and-workshops') {
+      setRegarding('events-and-workshops');
+    }
+  }, [location.search]);
 
   const faqItems = [
     {
@@ -139,17 +152,45 @@ export const Contact: FC = () => {
                 <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Regarding: *</label>
                 <select 
                   className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white focus:outline-none focus:border-white/30 font-montserrat font-weight: 600"
+                  value={regarding}
+                  onChange={e => setRegarding(e.target.value)}
+                  required
                 >
                   <option value="" className="bg-[#07300f]">Choose an option</option>
                   <option value="collaboration" className="bg-[#07300f]">Collaboration</option>
                   <option value="training" className="bg-[#07300f]">Training Programs</option>
                   <option value="internship" className="bg-[#07300f]">Internship</option>
-                  <option value="events" className="bg-[#07300f]">Events & Workshops</option>
+                  <option value="events-and-workshops" className="bg-[#07300f]">Events & Workshops</option>
                 </select>
               </div>
+              {regarding === 'events-and-workshops' && (
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Event Name</label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600"
+                      value={eventDetails.eventName}
+                      onChange={e => setEventDetails({ ...eventDetails, eventName: e.target.value })}
+                      placeholder="Enter event name"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Number of Attendees</label>
+                    <input
+                      type="number"
+                      className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600"
+                      value={eventDetails.attendees}
+                      onChange={e => setEventDetails({ ...eventDetails, attendees: e.target.value })}
+                      placeholder="Enter number of attendees"
+                    />
+                  </div>
+                </div>
+              )}
               <button 
                 type="submit"
                 className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
+                onClick={() => navigate('/contactus?regarding=events-and-workshops')}
               >
                 Send
               </button>

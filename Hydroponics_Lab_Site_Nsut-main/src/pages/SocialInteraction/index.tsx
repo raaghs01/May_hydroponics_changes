@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
 import { FaHandshake, FaUsers, FaSchool, FaGraduationCap, FaHeart, FaLeaf, FaChartLine, FaHandsHelping, FaBookOpen, FaLightbulb } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const SocialInteraction = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e8f5e9] to-white">
       {/* Hero Section */}
@@ -162,8 +165,8 @@ const SocialInteraction = () => {
             </div>
             <div className="space-y-6">
               <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
-                The Farmers Connect Program is one of the cornerstone initiatives of our CSR mission. It serves as a bridge between academic innovation and grassroots agricultural practice, bringing together student researchers, local farmers, and rural communities in a shared pursuit of sustainable farming.<br/><br/>
-                Our goal is to empower farmers with accessible knowledge, affordable technology, and hands-on support in adopting hydroponic and eco-friendly horticultural methods. At the same time, the program gives students the opportunity to learn from traditional farming wisdom and adapt scientific ideas to real-world conditions.
+              Our goal is to empower farmers with accessible knowledge, affordable technology, and hands-on support in adopting hydroponic and eco-friendly horticultural methods.
+              A core part of our CSR efforts, this program connects students with local farmers to promote sustainable agriculture. We provide hands-on training, low-cost DIY kits, and ongoing support to help farmers adopt hydroponic and eco-friendly methods.
               </p>
               <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622]">WHAT WE DO:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
@@ -201,15 +204,14 @@ const SocialInteraction = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
-                Our Sustainable Farming Workshops are designed to bring the science of modern agriculture to the grassroots, empowering individuals and communities with the skills to grow more with less land, less water, and less environmental impact.<br/><br/>
-                Held in partnership with local NGOs, schools, and rural development centers, these workshops are at the heart of our mission to make sustainable farming techniques accessible, practical, and impactful.
+              Our workshops bring cutting-edge farming to rural communities. Partnering with NGOs and schools, we teach how to grow more with less—less water, less space, less harm to nature.
               </p>
-              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622]">OBJECTIVES OF THE WORKSHOP:</h4>
+              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622]">WORKSHOP FOCUS:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
-                <li>Introduce participants to the fundamentals of hydroponics, aeroponics, organic gardening</li>
-                <li>Promote eco-friendly and resource-efficient farming practices, especially in areas facing water scarcity or soil degradation</li>
-                <li>Equip people with hands-on, low-cost methods to grow healthy food in small spaces</li>
-                <li>Create awareness about the importance of food sovereignty, climate-resilient agriculture, and circular farming systems</li>
+                <li>Hydroponics, aeroponics, organic gardening</li>
+                <li>Eco-friendly techniques for soil/water-stressed areas</li>
+                <li>Growing food in small spaces</li>
+                {/* <li>Create awareness about the importance of food sovereignty, climate-resilient agriculture, and circular farming systems</li> */}
               </ul>
               <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4">WORKSHOP ACTIVITIES:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
@@ -217,6 +219,12 @@ const SocialInteraction = () => {
                 <li>DIY kit assembly/hands on experience</li>
                 <li>Crop planning and nutrient education</li>
               </ul>
+              <button
+                onClick={() => navigate('/contactus?regarding=events')}
+                className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
+              >
+                View Upcoming Workshops
+              </button>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
@@ -264,12 +272,24 @@ const SocialInteraction = () => {
             </div>
             <div className="space-y-6">
               <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
-                At the core of our mission lies a deep understanding that access to fresh, nutritious food is a basic human right, not a privilege. Our food distribution drive is built on this belief to connect our hydroponic harvests with communities in need, especially those facing food insecurity, malnutrition, and lack of dietary awareness.<br/><br/>
-                This initiative transforms our society's research and produce into tangible acts of service, supporting vulnerable groups with consistent, chemical-free, and nutrient-rich vegetables while promoting the values of food justice and social equity.
+              We believe healthy food is a right, not a privilege. Our outreach programs connect our hydroponic produce with communities facing food insecurity and malnutrition.
               </p>
-              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4">WHAT WE DO :</h4>
+              <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
+                <li>Distribute fresh, chemical-free vegetables</li>
+                <li>Educate on nutrition and dietary awareness</li>
+                <li>Promote food equity and justice</li>
+              </ul>
+              {/* <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
                 The vegetation drive, hosted by Centre of Excellence Hydroponics Horticulture Training and Research Facility, proved to be a resounding success. Held on the college campus, the event united students, faculty, and esteemed guests in a shared mission to promote sustainable agriculture and environmental consciousness. Attendees enthusiastically took part in planting activities, knowledge-sharing sessions, and celebrations of eco-friendly initiatives. The drive emphasized the value of modern horticultural techniques and nurtured a strong sense of community committed to building a greener, more sustainable future.
+              </p> */}
+               <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4">DRIVEN BY :</h4>
+               <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+               The Centre of Excellence Hydroponics Training & Research Facility, this initiative brings together students, staff, and local leaders to serve communities sustainably.
+
+
               </p>
+               
             </div>
           </div>
         </div>
@@ -293,14 +313,15 @@ const SocialInteraction = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
-                Education and sustainability go hand in hand and at Centre of Excellence Hydroponics Horticulture Training and Research Facility, we believe that the earlier these values are introduced, the stronger their impact. Through our School Partnerships Program, we collaborate with schools especially those in underserved or rural areas to make environmental education engaging, practical, and empowering.<br/><br/>
-                This initiative is built on the idea that every child should have the opportunity to connect with nature, understand where their food comes from, and learn how to grow it responsibly even in places where land or resources are scarce.
+              Through our School Partnerships Program, we collaborate with schools especially those in underserved or rural areas to make environmental education engaging, practical, and empowering.
+
+This initiative is built on the idea that every child should have the opportunity to connect with nature, understand where their food comes from, and learn how to grow it responsibly even in places where land or resources are scarce.
               </p>
-              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622]">OUR OBJECTIVES:</h4>
+              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622]">OUR GOALS:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
-                <li>To integrate basic agricultural science, sustainability, and nutrition into school education through hands-on learning.</li>
-                <li>To equip students and teachers with the skills to build and maintain small-scale gardens using hydroponic or soil-based systems.</li>
-                <li>To instill environmental responsibility and curiosity through interactive workshops and garden projects.</li>
+                <li>Make agriculture and sustainability part of school life.</li>
+                <li>Set up soil or hydroponic gardens.</li>
+                <li>Foster environmental awareness through hands-on learning.</li>
               </ul>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -349,16 +370,15 @@ const SocialInteraction = () => {
             </div>
             <div className="space-y-6">
               <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
-                At the heart of Centre of Excellence Hydroponics Horticulture Training and Research Facility, is a vibrant and passionate community of students who are not just learners but leaders, innovators, and changemakers. Our initiatives thrive because of their energy, creativity, and commitment to building a more sustainable and equitable world.<br/><br/>
-                We believe that when students take ownership of social and environmental challenges, they don't just grow plants, they grow purpose.
+              We believe that when students take ownership of social and environmental challenges, they don't just grow plants, they grow purpose.Students are the heart of our mission. They lead, innovate, and grow—not just crops, but change.
               </p>
               <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622]">WAYS STUDENTS GET INVOLVED:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
-                <li><b>Project Leads & Coordinators:</b> Students head various projects ranging from school partnerships and farmers' training to garden installations and food donation drives. They manage teams, coordinate with external partners, and ensure smooth execution.</li>
-                <li><b>Outreach & Education Teams:</b> Our volunteers design and lead interactive workshops, create teaching materials, and represent the society during school visits, community events, and awareness campaigns.</li>
-                <li><b>Research & Innovation Groups:</b> Some students focus on R&D, experimenting with new growing mediums, organic nutrient blends, automation tools, or cost-effective hydroponic designs to improve our models.</li>
-                <li><b>Garden Managers & Growers:</b> From planting and harvesting to nutrient monitoring and system maintenance, students run our campus hydroponic units like professionals, learning by doing, every single day.</li>
-                <li><b>Content & Media Creators:</b> Students who are skilled in design, photography, or storytelling help document our work, manage social media, and produce videos and brochures that spread our message.</li>
+                <li><b>Project Leads & Coordinators:</b>  Head training, drives, and school programs</li>
+                <li><b>Outreach & Education Teams:</b> Lead educational sessions and activities</li>
+                <li><b>Research & Innovation Groups:</b>  Innovate new farming techniques</li>
+                <li><b>Garden Managers & Growers:</b> Run our hydroponic systems</li>
+                <li><b>Content & Media Creators:</b> Document, design, and share our story</li>
               </ul>
             </div>
           </div>
