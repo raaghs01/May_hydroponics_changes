@@ -1,6 +1,6 @@
 import { type FC, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 export const Contact: FC = () => {
   const [openQuestion, setOpenQuestion] = useState<number | null>(null)
@@ -21,7 +21,7 @@ export const Contact: FC = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
   const location = useLocation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
