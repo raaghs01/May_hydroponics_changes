@@ -33,7 +33,7 @@ export const Contact: FC = () => {
 
   useEffect(() => {
     let allRequiredFieldsFilled = false;
-    const { email, firstName, message, eventName, attendees, programName, projectName, idea, resumeFile, sopFile } = formData;
+    const { email,  message, eventName, programName, projectName, idea, resumeFile, sopFile } = formData;
 
     if (regarding !== '' && !email) {
       allRequiredFieldsFilled = false;
