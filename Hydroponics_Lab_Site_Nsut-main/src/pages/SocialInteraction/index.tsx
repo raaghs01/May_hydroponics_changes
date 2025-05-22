@@ -260,12 +260,12 @@ const SocialInteraction = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="\vegetation drive.jpg"
+                src="\vegetation-drive.jpg"
                 alt="Food Drive 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="\vegetation drive 2.jpg"
+                src="\vegetation-0drive-2.jpg"
                 alt="Food Drive 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
