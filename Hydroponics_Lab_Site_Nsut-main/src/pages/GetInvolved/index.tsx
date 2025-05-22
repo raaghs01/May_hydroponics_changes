@@ -84,16 +84,16 @@ const GetInvolved = () => {
       </div>
 
       {/* Training Programs Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" id="training-programs">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col items-center mb-8">
-            {sectionIcons[0]}
+            {/* {sectionIcons[0]} */}
             <motion.h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-2 text-center">
               Training Programs
             </motion.h2>
             <span className="text-green-800 text-lg font-semibold font-montserrat font-weight: 600 mb-2">"Grow your knowledge, grow your future."</span>
           </div>
-          <p className="text-lg md:text-xl font-montserrat font-weight: 600 text-gray-800 leading-relaxed text-center mb-12">
+          <p className="text-lg md:text-xl font-montserrat font-weight: 600 text-left text-gray-800 leading-relaxed text-center mb-12">
             At the Centre of Excellence in Hydroponics, we offer diverse training programs to cater to all levels of interest and experience—from newcomers to seasoned practitioners. Each program is tailored to provide a hands-on understanding of hydroponic horticulture, plant management, and sustainable cultivation practices.
           </p>
           <div className="grid md:grid-cols-3 gap-8">
@@ -108,16 +108,16 @@ const GetInvolved = () => {
                   alt={program.title}
                   className="w-full h-48 object-cover object-center"
                 />
-                <div className="p-6 flex flex-col flex-1">
+                <div className="p-6 flex flex-col flex-1 text-left">
                   <h3 className="text-2xl font-montserrat font-weight: 600 tracking-wide mb-1 text-white">
                     {program.title}
                   </h3>
                   <p className="text-base font-montserrat font-weight: 600 text-white/90 mb-1">
                     {program.instructor} | {program.details}
                   </p>
-                  <div className="flex gap-1 mb-2">
+                  <div className="flex gap-1 mb-2 text-center">
                     {[...Array(5)].map((_, i) => (
-                      <BsStarFill key={i} className="text-yellow-400" size={14} />
+                      <BsStarFill key={i} className="text-yellow-400 " size={14} />
                     ))}
                   </div>
                   <div className="space-y-4">
@@ -133,15 +133,15 @@ const GetInvolved = () => {
                       <p className="font-montserrat font-weight: 600 text-white/90 leading-snug">{program.overview}</p>
                     </div>
                   </div>
-                  <div className="mt-auto pt-4">
+                  <div className="mt-auto pt-4 text-center">
                     <Link
-                      to="/apply"
-                      className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
+                      to="/contactus?regarding=training"
+                      className="inline-block px-8 py-3 bg-yellow-400 text-[#0A3622] rounded-md font-weight: 600 hover:bg-yellow-500 transition-colors duration-300"
                     >
                       Apply Now ›
                     </Link>
                   </div>
-                  <div className="text-2xl font-montserrat font-weight: 600 text-white mt-4">{program.price}</div>
+                  <div className="text-2xl font-montserrat font-weight: 600 text-white mt-4 text-center">{program.price}</div>
                 </div>
               </motion.div>
             ))}
@@ -157,19 +157,20 @@ const GetInvolved = () => {
             <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=400&q=80" alt="Workshop 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
           </div>
           <div className="w-full md:w-1/2">
-            <div className="flex items-center gap-2 mb-2">{sectionIcons[1]}<span className="text-green-800 font-semibold font-montserrat font-weight: 600">"Hands-on learning for a sustainable tomorrow."</span></div>
+            
             <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Workshops</h2>
-            <p className="text-lg font-montserrat font-weight: 600 text-gray-800 mb-4">
+            {/* <div className="flex items-center gap-2 mb-2">{sectionIcons[1]}<span className="text-green-800 font-semibold font-montserrat font-weight: 600">"Hands-on learning for a sustainable tomorrow."</span></div> */}
+            <p className="text-lg font-montserrat text-left font-weight: 600 text-gray-800 mb-4">
               Our Sustainable Farming Workshops are designed to bring the science of modern agriculture to the grassroots, empowering individuals and communities with the skills to grow more with less land, less water, and less environmental impact. Held in partnership with local NGOs, schools, and rural development centers, these workshops are at the heart of our mission to make sustainable farming techniques accessible, practical, and impactful.
             </p>
-            <ul className="list-disc pl-6 text-gray-700 font-montserrat font-weight: 600 mb-4">
+            <ul className="list-disc pl-6 text-gray-700 text-left font-montserrat font-weight: 600 mb-4">
               <li>Introduce participants to the fundamentals of hydroponics, aeroponics, and organic gardening</li>
               <li>Promote eco-friendly and resource-efficient farming practices</li>
               <li>Equip people with hands-on, low-cost methods to grow healthy food in small spaces</li>
               <li>Create awareness about food sovereignty, climate-resilient agriculture, and circular farming systems</li>
             </ul>
             <Link
-              to="/training#workshops"
+              to="/news"
               className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
             >
               View Upcoming Workshops
@@ -186,22 +187,22 @@ const GetInvolved = () => {
             <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Internship 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
           </div>
           <div className="w-full md:w-1/2">
-            <div className="flex items-center gap-2 mb-2">{sectionIcons[2]}<span className="text-green-800 font-semibold font-montserrat font-weight: 600">"Grow with us, give back to the community."</span></div>
-            <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Internship & Volunteering</h2>
-            <p className="text-lg font-montserrat font-weight: 600 text-gray-800 mb-4">
+            
+            <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Internships</h2>
+            <p className="text-lg text-left font-montserrat font-weight: 600 text-gray-800 mb-4">
               Interns and volunteers at our facility work closely with research teams, help manage hydroponic systems, participate in community outreach, and contribute to educational content and events. These opportunities are ideal for students, recent graduates, and anyone passionate about sustainable agriculture and hands-on learning.
             </p>
-            <ul className="list-disc pl-6 text-gray-700 font-montserrat font-weight: 600 mb-4">
+            <ul className="list-disc pl-6 text-left text-gray-700 font-montserrat font-weight: 600 mb-4">
               <li>Project-based roles in research, operations, and outreach</li>
               <li>Hands-on experience in hydroponic system management</li>
               <li>Event organization and educational program support</li>
               <li>Opportunities to contribute to media, documentation, and social impact projects</li>
             </ul>
             <Link
-              to="/apply#internship"
+              to="/contactus?regarding=internship"
               className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
             >
-              Apply for Internship/Volunteering
+              Apply for Internship
             </Link>
           </div>
         </div>
@@ -215,19 +216,19 @@ const GetInvolved = () => {
             <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Research 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
           </div>
           <div className="w-full md:w-1/2">
-            <div className="flex items-center gap-2 mb-2">{sectionIcons[3]}<span className="text-green-800 font-semibold font-montserrat font-weight: 600">"Innovate together for a greener future."</span></div>
+            
             <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Research Collaborations</h2>
-            <p className="text-lg font-montserrat font-weight: 600 text-gray-800 mb-4">
+            <p className="text-lg text-left font-montserrat font-weight: 600 text-gray-800 mb-4">
               We partner with leading institutions and companies to advance hydroponic science, from plant-microbe interactions to climate-resilient agriculture and smart farming technologies. Our collaborative research projects focus on innovation, technology development, and knowledge sharing to push the boundaries of sustainable agriculture.
             </p>
-            <ul className="list-disc pl-6 text-gray-700 font-montserrat font-weight: 600 mb-4">
+            <ul className="list-disc pl-6 text-left text-gray-700 font-montserrat font-weight: 600 mb-4">
               <li>Joint research projects with academic and industry partners</li>
               <li>Technology development and data sharing</li>
               <li>Publication and dissemination of research findings</li>
               <li>Opportunities for student and faculty involvement</li>
             </ul>
             <Link
-              to="/about#research"
+              to="/projects#research"
               className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
             >
               Explore Research Partnerships

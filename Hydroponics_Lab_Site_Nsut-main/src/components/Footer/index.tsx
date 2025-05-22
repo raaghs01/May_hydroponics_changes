@@ -21,12 +21,12 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-montserrat mb-6">About Us</h3>
             <ul className="space-y-2">
-              <li><Link to="/mission" className="hover:underline">Mission & Vision</Link></li>
-              <li><Link to="/team" className="hover:underline">Our Team</Link></li>
-              <li><Link to="/facility" className="hover:underline">Facility Overview</Link></li>
-              <li><Link to="/training" className="hover:underline">Training Programs</Link></li>
-              <li><Link to="/research" className="hover:underline">Research</Link></li>
-              <li><Link to="/community" className="hover:underline">Community Outreach</Link></li>
+              <li><Link to="/VisionAndMission" className="hover:underline">Mission & Vision</Link></li>
+              <li><Link to="/About#team" className="hover:underline">Our Team</Link></li>
+              <li><Link to="/About#facilities" className="hover:underline">Facility Overview</Link></li>
+              <li><Link to="/GetInvolved#training-programs" className="hover:underline">Training Programs</Link></li>
+              <li><Link to="/Projects" className="hover:underline">Research</Link></li>
+              <li><Link to="/SocialInteraction" className="hover:underline">Community Outreach</Link></li>
             </ul>
           </div>
 
@@ -34,10 +34,10 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-montserrat mb-6">Helpful Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/achievements" className="hover:underline">Achievements</Link></li>
-              <li><Link to="/faq" className="hover:underline">FAQ</Link></li>
+              {/* <li><Link to="/achievements" className="hover:underline">Achievements</Link></li> */}
+              <li><Link to="/Contact#faq" className="hover:underline">FAQ</Link></li>
               <li><Link to="/blog" className="hover:underline">Blog</Link></li>
-              <li><Link to="/news" className="hover:underline">News and Updates</Link></li>
+              <li><Link to="/News" className="hover:underline">News and Updates</Link></li>
             </ul>
           </div>
 
@@ -45,9 +45,9 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-montserrat mb-6">Get Involved</h3>
             <ul className="space-y-2">
-              <li><Link to="/partnerships" className="hover:underline">Partnerships</Link></li>
-              <li><Link to="/volunteer" className="hover:underline">Volunteer Opportunities</Link></li>
-              <li><Link to="/careers" className="hover:underline">Career Opportunities</Link></li>
+              <li><Link to="/GetInvolved" className="hover:underline">Partnerships</Link></li>
+              <li><Link to="/GetInvolved" className="hover:underline">Volunteer Opportunities</Link></li>
+              <li><Link to="/GetInvolved" className="hover:underline">Career Opportunities</Link></li>
             </ul>
           </div>
 
