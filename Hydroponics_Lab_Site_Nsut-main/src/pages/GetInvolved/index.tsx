@@ -6,7 +6,7 @@ import { FaChalkboardTeacher, FaHandsHelping, FaSeedling, FaFlask } from 'react-
 const trainingPrograms = [
   {
     image:
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
+      '/system20.png',
     title: '2-Day Introductory Workshop',
     instructor: 'Dr. Akhilesh Dubey',
     details: '10 lectures | 2 hours Hands on sessions',
@@ -19,7 +19,7 @@ const trainingPrograms = [
   },
   {
     image:
-      'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80',
+      '/system21.png',
     title: '1-Week Intensive Program',
     instructor: 'Dr. Akhilesh Dubey',
     details: '10 lectures | 2 hours daily Hands on sessions',
@@ -32,7 +32,7 @@ const trainingPrograms = [
   },
   {
     image:
-      'https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=600&q=80',
+      '/system22.png',
     title: '8-Week Advanced Training Program',
     instructor: 'Dr. Akhilesh Dubey',
     details: '10 lectures | 2 hours Hands on sessions',
@@ -153,8 +153,8 @@ const GetInvolved = () => {
       <section className="py-20 bg-[#f5f9f5]">
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex flex-col gap-4">
-            <img src="/workshop-hydroponics.jpg" alt="Workshops" className="rounded-lg shadow-lg w-full h-80 object-cover" />
-            <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=400&q=80" alt="Workshop 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
+            <img src="/vegetation-drive-2.jpg" alt="Workshops" className="rounded-lg shadow-lg w-full h-80 object-cover" />
+            <img src="/hydroponics3.jpg" alt="Workshop 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
           </div>
           <div className="w-full md:w-1/2">
             
@@ -183,8 +183,8 @@ const GetInvolved = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row-reverse items-center gap-12">
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex flex-col gap-4">
-            <img src="/internship-hydroponics.jpg" alt="Internship & Volunteering" className="rounded-lg shadow-lg w-full h-80 object-cover" />
-            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Internship 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
+            <img src="/students-event.avif" alt="Internship & Volunteering" className="rounded-lg shadow-lg w-full h-80 object-cover" />
+            <img src="/classroom.avif" alt="Internship 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
           </div>
           <div className="w-full md:w-1/2">
             
@@ -212,8 +212,8 @@ const GetInvolved = () => {
       <section className="py-20 bg-[#f5f9f5]">
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex flex-col gap-4">
-            <img src="/research-collaboration-hydroponics.jpg" alt="Research Collaborations" className="rounded-lg shadow-lg w-full h-80 object-cover" />
-            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Research 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
+            <img src="/vegetation-drive.jpg" alt="Research Collaborations" className="rounded-lg shadow-lg w-full h-80 object-cover" />
+            <img src="/area.avif" alt="Research 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
           </div>
           <div className="w-full md:w-1/2">
             
