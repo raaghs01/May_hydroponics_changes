@@ -496,7 +496,7 @@ export const Home: FC = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <img 
-                  src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
+                  src="\inauguration.avif"
                   alt="Facility Inauguration"
                   className="w-full h-full object-cover"
                 />
@@ -529,7 +529,7 @@ export const Home: FC = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <img 
-                  src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?auto=format&fit=crop&w=800&q=80"
+                  src="\students-event.avif"
                   alt="School Students Event"
                   className="w-full h-full object-cover"
                 />

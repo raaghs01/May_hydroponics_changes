@@ -260,12 +260,12 @@ const SocialInteraction = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/hydroponics7.jpg"
+                src="\vegetation drive.jpg"
                 alt="Food Drive 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="/hydroponics8.jpg"
+                src="\vegetation drive 2.jpg"
                 alt="Food Drive 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -326,12 +326,12 @@ This initiative is built on the idea that every child should have the opportunit
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/hydroponics9.jpg"
+                src="https://static.wixstatic.com/media/769cbd_3f753daf065c4b159395a1633d8b560f~mv2.jpeg"
                 alt="School 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="/hydroponics10.jpg"
+                src="https://static.wixstatic.com/media/769cbd_3f753daf065c4b159395a1633d8b560f~mv2.jpeg"
                 alt="School 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -358,12 +358,12 @@ This initiative is built on the idea that every child should have the opportunit
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="/images/system1.jpg"
+                src="/system1.jpg"
                 alt="Students 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="/images/system2.jpg"
+                src="/system2.jpg"
                 alt="Students 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
