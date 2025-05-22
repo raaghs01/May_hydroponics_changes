@@ -575,8 +575,8 @@ Our research investigates the ability of hydroponically grown basil and mint to 
       </AnimatePresence>
 
       {/* Meet Our Team Section */}
-      <section className="bg-[#e8f5e9] py-24">
-        <div className="container mx-auto px-4">
+      <section className="bg-[#e8f5e9] py-24 " id="team">
+        <div className="container mx-auto px-4 ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

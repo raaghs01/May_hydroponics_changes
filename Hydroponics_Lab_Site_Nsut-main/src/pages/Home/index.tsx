@@ -463,7 +463,7 @@ export const Home: FC = () => {
             </h2>
             <Link
               to="/news"
-              className="inline-block px-8 py-3 bg-[#e8f5e9] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
+              className="inline-block px-8 py-3 bg-yellow-400 text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
             >
               View More
             </Link>
@@ -522,7 +522,7 @@ export const Home: FC = () => {
                 </p>
                 <Link
                   to="/news/school-students-event"
-                  className="mt-auto pt-4 inline-flex font-montserrat font-weight: 600 items-center gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:underline"
+                  className="mt-auto pt-4 inline-flex font-montserrat font-weight: 600 items-center  gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:underline"
                 >
                   Read More <BsArrowRight />
                 </Link>

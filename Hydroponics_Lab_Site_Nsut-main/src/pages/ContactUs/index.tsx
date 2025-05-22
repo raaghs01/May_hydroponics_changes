@@ -6,6 +6,10 @@ export const Contact: FC = () => {
   const [openQuestion, setOpenQuestion] = useState<number | null>(null)
   const [regarding, setRegarding] = useState('');
   const [eventDetails, setEventDetails] = useState({ eventName: '', attendees: '' });
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [programName, setProgramName] = useState('');
+  const [collaborationDetails, setCollaborationDetails] = useState({ projectName: '', idea: '' });
+  const [internshipDetails, setInternshipDetails] = useState({ resumeFileName: '', sopFileName: '' });
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -14,6 +18,12 @@ export const Contact: FC = () => {
     const regardingParam = params.get('regarding');
     if (regardingParam === 'events-and-workshops') {
       setRegarding('events-and-workshops');
+    } else if (regardingParam === 'training') {
+      setRegarding('training');
+    } else if (regardingParam === 'collaboration') {
+      setRegarding('collaboration');
+    } else if (regardingParam === 'internship') {
+      setRegarding('internship');
     }
   }, [location.search]);
 
@@ -69,7 +79,7 @@ export const Contact: FC = () => {
         />
         {/* Content Overlay */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-montserrat font-weight: 600 mb-4 text-white">Getting in touch with COE HYDROPONICS:</h1>
+          <h1 className="text-4xl md:text-5xl font-montserrat font-weight: 600 mb-4 text-white">Getting in touch with COE HYDROPONICS</h1>
           <p className="text-lg md:text-xl font-montserrat font-weight: 600 max-w-2xl mx-auto text-white/90">
             Have questions about our programs, training, or research? Use the form below or reach out directly.
           </p>
@@ -78,7 +88,7 @@ export const Contact: FC = () => {
       
 
       {/* Contact Form Section */}
-      <section className="py-24">
+      <section className="">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* Contact Info - Left Side */}
           <div className="bg-[#e8f5e9] p-12 lg:p-24 space-y-8 text-left">
@@ -115,13 +125,14 @@ export const Contact: FC = () => {
           </div>
 
           {/* Contact Form - Right Side */}
-          <div className="bg-[#07300f] p-12 lg:p-24">
+          <div className="bg-[#0A3622] p-12 lg:p-24">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">First Name</label>
+                  <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">First Name *</label>
                   <input 
-                    type="text" 
+                    type="text"
+                    required  
                     className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600" 
                   />
                 </div>
@@ -129,6 +140,7 @@ export const Contact: FC = () => {
                   <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Last Name</label>
                   <input 
                     type="text" 
+
                     className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600" 
                   />
                 </div>
@@ -142,9 +154,10 @@ export const Contact: FC = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Message</label>
+                <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Message(A brief intro) *</label>
                 <textarea 
                   rows={4} 
+                  required 
                   className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600" 
                 />
               </div>
@@ -166,9 +179,10 @@ export const Contact: FC = () => {
               {regarding === 'events-and-workshops' && (
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Event Name</label>
+                    <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Event Name *</label>
                     <input
                       type="text"
+                      required
                       className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600"
                       value={eventDetails.eventName}
                       onChange={e => setEventDetails({ ...eventDetails, eventName: e.target.value })}
@@ -183,31 +197,103 @@ export const Contact: FC = () => {
                       value={eventDetails.attendees}
                       onChange={e => setEventDetails({ ...eventDetails, attendees: e.target.value })}
                       placeholder="Enter number of attendees"
+                      min="0"
+                    />
+                  </div>
+                </div>
+              )}
+              {regarding === 'training' && (
+                <div>
+                  <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Program Name *</label>
+                  <input
+                    type="text"
+                    required
+                    className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600"
+                    value={programName}
+                    onChange={e => setProgramName(e.target.value)}
+                    placeholder="Enter program name"
+                  />
+                </div>
+              )}
+              {regarding === 'collaboration' && (
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">R&D Project Name *</label>
+                    <input
+                      type="text"
+                      required
+                      className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600"
+                      value={collaborationDetails.projectName}
+                      onChange={e => setCollaborationDetails({ ...collaborationDetails, projectName: e.target.value })}
+                      placeholder="Enter project name"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Idea *</label>
+                    <textarea
+                      rows={4}
+                      required
+                      className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600"
+                      value={collaborationDetails.idea}
+                      onChange={e => setCollaborationDetails({ ...collaborationDetails, idea: e.target.value })}
+                      placeholder="Describe your idea"
+                    />
+                  </div>
+                </div>
+              )}
+              {regarding === 'internship' && (
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">RESUME *</label>
+                    <input
+                      type="file"
+                      required
+                      accept=".pdf"
+                      className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-yellow-50 file:text-[#0A3622] hover:file:bg-yellow-100"
+                      onChange={e => setInternshipDetails({ ...internshipDetails, resumeFileName: e.target.files ? e.target.files[0].name : '' })}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">SOP *</label>
+                    <input
+                      type="file"
+                      required
+                      accept=".pdf"
+                      className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-yellow-50 file:text-[#0A3622] hover:file:bg-yellow-100"
+                      onChange={e => setInternshipDetails({ ...internshipDetails, sopFileName: e.target.files ? e.target.files[0].name : '' })}
                     />
                   </div>
                 </div>
               )}
               <button 
                 type="submit"
-                className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
-                onClick={() => navigate('/contactus?regarding=events-and-workshops')}
+                className="inline-block px-8 py-3 bg-yellow-400 text-[#0A3622] rounded-md font-weight: 600 hover:bg-yellow-200 transition-colors duration-300"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setShowSuccessMessage(true);
+                }}
               >
                 Send
               </button>
             </form>
+            {showSuccessMessage && (
+              <div className="mt-6 text-center text-white font-montserrat font-weight: 600">
+                Thank you for reaching out! Your query is taking root
+              </div>
+            )}
           </div>
           
           
         </div>
       </section>
           {/* FAQ Section */}
-          <section className="bg-[#07300f] py-16">
+          <section className="bg-[#e8f5e9] py-16" id="faq">
         <div className="container mx-auto px-4 max-w-3xl">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl font-montserrat font-weight: 600 text-white mb-4 text-center"
+            className="text-5xl text-[#0A3622] font-montserrat font-weight: 600  mb-4 text-center"
           >
             Growing Clarity:
           </motion.h2>
@@ -215,7 +301,7 @@ export const Contact: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl font-montserrat font-weight: 600 text-gray-200 mb-8 text-center"
+            className="text-2xl font-montserrat text-[#0A3622] font-weight: 600 mb-8 text-center"
           >
             Your Questions, Our Answers
           </motion.p>
@@ -226,7 +312,7 @@ export const Contact: FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden"
+                className="bg-[#0A3622] backdrop-blur-sm rounded-lg overflow-hidden"
               >
                 <button
                   onClick={() => setOpenQuestion(openQuestion === index ? null : index)}
