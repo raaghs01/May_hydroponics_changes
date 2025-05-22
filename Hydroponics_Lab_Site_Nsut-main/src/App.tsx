@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Home } from './pages/Home';
 import  About  from './pages/About';
 import { Contact } from './pages/ContactUs';
@@ -17,10 +17,20 @@ import VisionAndMission from './pages/VisionAndMission';
 import  SocialInteraction  from './pages/SocialInteraction';
 import GetInvolved from './pages/GetInvolved';
 import PdfViewer from './pages/PdfViewer';
+import { useEffect } from 'react';
+
+function ScrollToTop() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  return null;
+}
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-grow">
