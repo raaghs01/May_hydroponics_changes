@@ -45,7 +45,7 @@ const SocialInteraction = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col items-center mb-12">
-            <FaLightbulb className="text-[#0A3622] text-5xl mb-4" />
+            <FaLightbulb className="text-green-700 text-5xl mb-4" />
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -58,11 +58,11 @@ const SocialInteraction = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg text-left font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
                 We envision a future where science, sustainability, and social responsibility grow hand in hand. We believe that the role of students and researchers extends far beyond the walls of a laboratory or classroom, it reaches into the heart of our communities and the roots of our environment.
 
               </p>
-              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg text-left font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
               Our vision is to become a catalyst of change, one that connects youth, science, and society in a meaningful journey toward a greener, healthier, and more equitable future. Every drop of water we save, every plant we grow, and every life we touch brings us closer to this goal.
               </p>
               {/* <ul className="list-disc pl-6 text-gray-800 space-y-2">
@@ -108,17 +108,17 @@ const SocialInteraction = () => {
               {
                 title: "Community Outreach",
                 description: "Engaging with local communities to promote sustainable farming practices",
-                icon: <FaUsers className="text-4xl text-green-700 mb-4" />
+                icon: <FaUsers className="text-4xl text-centre text-green-700 mb-4" />
               },
               {
                 title: "Educational Programs",
                 description: "Providing hands-on learning experiences in hydroponic farming",
-                icon: <FaBookOpen className="text-4xl text-green-700 mb-4" />
+                icon: <FaBookOpen className="text-4xl text-centre text-green-700 mb-4" />
               },
               {
                 title: "Environmental Impact",
                 description: "Reducing carbon footprint through sustainable agriculture",
-                icon: <FaLeaf className="text-4xl text-green-700 mb-4" />
+                icon: <FaLeaf className="text-4xl text-centre text-green-700 mb-4" />
               }
             ].map((item, index) => (
               <motion.div
@@ -219,12 +219,12 @@ const SocialInteraction = () => {
                 <li>DIY kit assembly/hands on experience</li>
                 <li>Crop planning and nutrient education</li>
               </ul>
-              <button
+              {/* <button
                 onClick={() => navigate('/contactus?regarding=events')}
                 className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
               >
                 View Upcoming Workshops
-              </button>
+              </button> */}
             </div>
             <div className="grid grid-cols-2 gap-4">
               <img
