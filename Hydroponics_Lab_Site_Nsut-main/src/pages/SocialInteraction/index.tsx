@@ -164,7 +164,7 @@ const SocialInteraction = () => {
               />
             </div>
             <div className="space-y-6">
-              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed text-left">
               Our goal is to empower farmers with accessible knowledge, affordable technology, and hands-on support in adopting hydroponic and eco-friendly horticultural methods.
               A core part of our CSR efforts, this program connects students with local farmers to promote sustainable agriculture. We provide hands-on training, low-cost DIY kits, and ongoing support to help farmers adopt hydroponic and eco-friendly methods.
               </p>
@@ -175,7 +175,7 @@ const SocialInteraction = () => {
                 <li>Consultation and support</li>
                 <li>Post training follow ups</li>
               </ul>
-              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4">IMPACT:</h4>
+              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4 text-left">IMPACT:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
                 <li>Over 200 farmers trained</li>
                 <li>15+ villages connected through programs and follow ups</li>
@@ -203,17 +203,17 @@ const SocialInteraction = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed text-left">
               Our workshops bring cutting-edge farming to rural communities. Partnering with NGOs and schools, we teach how to grow more with less—less water, less space, less harm to nature.
               </p>
-              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622]">WORKSHOP FOCUS:</h4>
+              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] text-left">WORKSHOP FOCUS:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
                 <li>Hydroponics, aeroponics, organic gardening</li>
                 <li>Eco-friendly techniques for soil/water-stressed areas</li>
                 <li>Growing food in small spaces</li>
                 {/* <li>Create awareness about the importance of food sovereignty, climate-resilient agriculture, and circular farming systems</li> */}
               </ul>
-              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4">WORKSHOP ACTIVITIES:</h4>
+              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4 text-left">WORKSHOP ACTIVITIES:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
                 <li>Live demonstrations</li>
                 <li>DIY kit assembly/hands on experience</li>
@@ -271,10 +271,10 @@ const SocialInteraction = () => {
               />
             </div>
             <div className="space-y-6">
-              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed text-left">
               We believe healthy food is a right, not a privilege. Our outreach programs connect our hydroponic produce with communities facing food insecurity and malnutrition.
               </p>
-              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4">WHAT WE DO :</h4>
+              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4 text-left">WHAT WE DO :</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
                 <li>Distribute fresh, chemical-free vegetables</li>
                 <li>Educate on nutrition and dietary awareness</li>
@@ -283,8 +283,8 @@ const SocialInteraction = () => {
               {/* <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
                 The vegetation drive, hosted by Centre of Excellence Hydroponics Horticulture Training and Research Facility, proved to be a resounding success. Held on the college campus, the event united students, faculty, and esteemed guests in a shared mission to promote sustainable agriculture and environmental consciousness. Attendees enthusiastically took part in planting activities, knowledge-sharing sessions, and celebrations of eco-friendly initiatives. The drive emphasized the value of modern horticultural techniques and nurtured a strong sense of community committed to building a greener, more sustainable future.
               </p> */}
-               <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4">DRIVEN BY :</h4>
-               <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+               <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] mt-4 text-left">DRIVEN BY :</h4>
+               <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed text-left">
                The Centre of Excellence Hydroponics Training & Research Facility, this initiative brings together students, staff, and local leaders to serve communities sustainably.
 
 
@@ -312,12 +312,12 @@ const SocialInteraction = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed text-left">
               Through our School Partnerships Program, we collaborate with schools especially those in underserved or rural areas to make environmental education engaging, practical, and empowering.
 
 This initiative is built on the idea that every child should have the opportunity to connect with nature, understand where their food comes from, and learn how to grow it responsibly even in places where land or resources are scarce.
               </p>
-              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622]">OUR GOALS:</h4>
+              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] text-left">OUR GOALS:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
                 <li>Make agriculture and sustainability part of school life.</li>
                 <li>Set up soil or hydroponic gardens.</li>
@@ -369,10 +369,10 @@ This initiative is built on the idea that every child should have the opportunit
               />
             </div>
             <div className="space-y-6">
-              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg font-montserrat font-weight: 600 text-gray-800 leading-relaxed text-left">
               We believe that when students take ownership of social and environmental challenges, they don't just grow plants, they grow purpose.Students are the heart of our mission. They lead, innovate, and grow—not just crops, but change.
               </p>
-              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622]">WAYS STUDENTS GET INVOLVED:</h4>
+              <h4 className="font-semibold font-montserrat font-weight: 600 text-[#0A3622] text-left ">WAYS STUDENTS GET INVOLVED:</h4>
               <ul className="list-disc pl-6 text-gray-800 font-montserrat font-weight: 600 space-y-2 text-left">
                 <li><b>Project Leads & Coordinators:</b>  Head training, drives, and school programs</li>
                 <li><b>Outreach & Education Teams:</b> Lead educational sessions and activities</li>
