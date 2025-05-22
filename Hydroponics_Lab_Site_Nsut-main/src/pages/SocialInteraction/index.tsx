@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { FaHandshake, FaUsers, FaSchool, FaGraduationCap, FaHeart, FaLeaf, FaChartLine, FaHandsHelping, FaBookOpen, FaLightbulb } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const SocialInteraction = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e8f5e9] to-white">
