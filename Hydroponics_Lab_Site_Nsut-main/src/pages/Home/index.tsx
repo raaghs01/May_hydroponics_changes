@@ -263,7 +263,7 @@ export const Home: FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="text-center"
+                  className="text-center bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg"
                 >
                   <div className="aspect-square rounded-full overflow-hidden mb-4 mx-auto max-w-[200px] border-4 border-white shadow-lg">
                     <img
@@ -423,7 +423,7 @@ export const Home: FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-lg shadow-lg font-montserrat font-weight: 600 overflow-hidden p-6 text-center flex flex-col"
+                className="bg-white/10 backdrop-blur-md rounded-lg shadow-lg font-montserrat font-weight: 600 overflow-hidden p-6 text-center flex flex-col"
               >
                 <div className="flex-shrink-0 mb-4">
                  {item.icon}
@@ -472,11 +472,11 @@ export const Home: FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Event 1 - Facility Inauguration */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col md:flex-row bg-[#8B9B76] overflow-hidden group relative"
+              className="flex flex-col md:flex-row bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg overflow-hidden group relative"
             >
               <div className="p-8 flex-1 flex flex-col items-start">
                 {/* <span className="text-white/90 font-montserrat font-weight: 600 text-sm">Event</span> */}
@@ -505,11 +505,11 @@ export const Home: FC = () => {
             </motion.div>
 
             {/* Event 2 - School Students Event */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col md:flex-row bg-black overflow-hidden group relative"
+              className="flex flex-col md:flex-row bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg overflow-hidden group relative"
             >
               <div className="p-8 flex-1 flex flex-col items-start">
                 {/* <span className="text-white/90 text-sm">Event</span> */}
@@ -523,7 +523,7 @@ export const Home: FC = () => {
                 </p>
                 <Link
                   to="/news/school-students-event"
-                  className="mt-auto pt-4 inline-flex font-montserrat font-weight: 600 items-center  gap-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:underline"
+                  className="mt-auto pt-4 inline-flex font-montserrat font-weight: 600 items-center  gap-2 text-white opacity-0 group-hover:opacity-100 transition-colors duration-300 hover:underline"
                 >
                   Read More <BsArrowRight />
                 </Link>

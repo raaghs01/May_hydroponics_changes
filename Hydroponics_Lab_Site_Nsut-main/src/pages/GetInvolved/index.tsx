@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { BsStarFill } from 'react-icons/bs';
-import { FaChalkboardTeacher, FaHandsHelping, FaSeedling, FaFlask } from 'react-icons/fa';
+// import { FaChalkboardTeacher, FaHandsHelping, FaSeedling, FaFlask } from 'react-icons/fa';
 
 const trainingPrograms = [
   {
