@@ -14,7 +14,7 @@ const carouselItems = [
     desc: 'Our latest research shows a 90% reduction in water usage with new systems.'
   },
   {
-    image: '/vegetation drive.jpg',
+    image: '/vegetation-drive.jpg',
     title: 'Community Outreach: Food Distribution Drive',
     desc: 'Delivering fresh, chemical-free produce to local communities.'
   }
@@ -204,22 +204,22 @@ export default function News() {
                 desc: 'The new research wing was inaugurated last month, expanding our capacity for advanced hydroponics research and student projects.'
               },
               {
-                image: '/system6.jpg',
+                image: '/system6.png',
                 title: 'Innovation: Automated Nutrient Delivery System',
                 desc: 'Our team has developed an automated system for precise nutrient delivery, improving crop yields and reducing resource use.'
               },
               {
-                image: '/system7.jpg',
+                image: '/system7.png',
                 title: 'Recruitment: Join Our Research Team',
                 desc: 'We are recruiting passionate students and researchers for upcoming projects in climate-resilient agriculture and smart farming.'
               },
               {
-                image: '/system8.jpg',
+                image: '/system8.png',
                 title: 'Community Outreach: Food Distribution Drive',
                 desc: 'Our latest food distribution drive provided fresh, chemical-free produce to over 300 families in need.'
               },
               {
-                image: '/system9.jpg',
+                image: '/system9.png',
                 title: 'Upcoming Workshop: Hydroponics for Beginners',
                 desc: 'Sign up for our next workshop to learn the basics of hydroponic farming and sustainable food production.'
               }
