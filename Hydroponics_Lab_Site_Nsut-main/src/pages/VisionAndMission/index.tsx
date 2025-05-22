@@ -55,7 +55,7 @@ const VisionAndMission = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg font-montserrat text-[#0A3622] font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg font-montserrat text-[#0A3622] text-left font-weight: 600 text-gray-800 leading-relaxed">
                 At the Centre of Excellence in Hydroponics, We are building a future where food is grown smarter — not harder. Through sustainable hydroponic systems, we aim to empower individuals and entire communities to take agriculture into their own hands, regardless of space, soil, or climate.
 
               </p>
@@ -108,7 +108,7 @@ const VisionAndMission = () => {
               />
             </div>
             <div className="space-y-6">
-              <p className="text-lg font-montserrat text-[#0A3622] font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg font-montserrat text-[#0A3622] text-left font-weight: 600 text-gray-800 leading-relaxed">
               We envision a world where agriculture is clean, efficient, and accessible to all. A world where farming no longer depends on vast lands or heavy resources, but instead thrives through innovation, responsibility, and resilience. By making hydroponics a practical and scalable solution, we hope to address food security, environmental challenges, and economic inequality—one community at a time.
 
               </p>
@@ -141,7 +141,7 @@ const VisionAndMission = () => {
               className="bg-[#f5f9f5] p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-2xl font-montserrat font-weight: 600 text-[#0A3622] mb-4">Advance Research</h3>
-              <p className="text-gray-800 font-montserrat font-weight: 600">
+              <p className="text-gray-800 font-montserrat text-left font-weight: 600">
               We are committed to driving innovation in hydroponics and sustainable agriculture by working with researchers, technologists, and local experts to make soilless farming more efficient, affordable, and scalable.
 
               </p>
@@ -151,7 +151,7 @@ const VisionAndMission = () => {
               className="bg-[#f5f9f5] p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-2xl font-montserrat font-weight: 600 text-[#0A3622] mb-4">Educate and Train</h3>
-              <p className="text-gray-800 font-montserrat font-weight: 600">
+              <p className="text-gray-800 font-montserrat text-left font-weight: 600">
               We empower students, farmers, and entrepreneurs with the knowledge and tools they need to succeed. Through workshops, hands-on training, and long-term learning programs, we're building a skilled and informed generation of agricultural changemakers.
 
               </p>
@@ -161,7 +161,7 @@ const VisionAndMission = () => {
               className="bg-[#f5f9f5] p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-2xl font-montserrat font-weight: 600 text-[#0A3622] mb-4">Create Social Impact</h3>
-              <p className="text-gray-800 font-montserrat font-weight: 600">
+              <p className="text-gray-800 font-montserrat text-left font-weight: 600">
               By promoting eco-friendly practices and supporting the setup of hydroponic systems in communities, we're helping improve livelihoods, boost local food production, and contribute to a more sustainable planet.
 
               </p>
@@ -187,7 +187,7 @@ const VisionAndMission = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-lg font-montserrat text-[#0A3622] font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg font-montserrat text-[#0A3622] text-left font-weight: 600 text-gray-800 leading-relaxed">
               Hydroponics isn't just an alternative—it's a necessity for the future. It uses significantly less water, allows food to be grown in compact urban spaces, and eliminates the need for harmful chemicals. As climate change and population growth strain traditional farming, hydroponics offers a resilient and scalable solution. We're here to ensure that more people can access and benefit from it.By growing plants without soil, we can:
 
               </p>
@@ -288,7 +288,7 @@ const VisionAndMission = () => {
               {/* <p className="text-lg text-gray-800 leading-relaxed">
                 We're building a community of innovators, educators, and change-makers who are passionate about transforming the future of agriculture. Through our various programs and initiatives, we're creating opportunities for people to learn, grow, and contribute to a more sustainable food system.
               </p> */}
-              <p className="text-lg font-montserrat text-[#0A3622] font-weight: 600 text-gray-800 leading-relaxed">
+              <p className="text-lg font-montserrat text-[#0A3622] font-weight: 600 text-gray-800 leading-relaxed text-left">
               We're not just cultivating crops — we're cultivating a movement. One that places sustainability, innovation, and people at its core.
 
               </p>

@@ -23,7 +23,7 @@ const carouselItems = [
 const eventCategories = [
   'All',
   'Announcements',
-  'Events',
+  'Events & Workshops',
   'Research'
 ];
 
