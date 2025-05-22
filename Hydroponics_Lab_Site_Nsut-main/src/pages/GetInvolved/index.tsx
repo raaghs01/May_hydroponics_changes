@@ -87,7 +87,7 @@ const GetInvolved = () => {
       <section className="py-20 bg-white" id="training-programs">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col items-center mb-8">
-            {/* {sectionIcons[0]} */}
+            
             <motion.h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-2 text-center">
               Training Programs
             </motion.h2>
@@ -159,7 +159,7 @@ const GetInvolved = () => {
           <div className="w-full md:w-1/2">
             
             <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Workshops</h2>
-            {/* <div className="flex items-center gap-2 mb-2">{sectionIcons[1]}<span className="text-green-800 font-semibold font-montserrat font-weight: 600">"Hands-on learning for a sustainable tomorrow."</span></div> */}
+          
             <p className="text-lg font-montserrat text-left font-weight: 600 text-gray-800 mb-4">
               Our Sustainable Farming Workshops are designed to bring the science of modern agriculture to the grassroots, empowering individuals and communities with the skills to grow more with less land, less water, and less environmental impact. Held in partnership with local NGOs, schools, and rural development centers, these workshops are at the heart of our mission to make sustainable farming techniques accessible, practical, and impactful.
             </p>
