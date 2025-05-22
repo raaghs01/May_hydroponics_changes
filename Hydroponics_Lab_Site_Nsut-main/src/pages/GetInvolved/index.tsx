@@ -45,12 +45,12 @@ const trainingPrograms = [
   },
 ];
 
-const sectionIcons = [
-  <FaChalkboardTeacher className="text-green-700 text-4xl mb-2" />, // Training
-  <FaSeedling className="text-green-700 text-4xl mb-2" />, // Workshops
-  <FaHandsHelping className="text-green-700 text-4xl mb-2" />, // Internship
-  <FaFlask className="text-green-700 text-4xl mb-2" />, // Research
-];
+// const sectionIcons = [
+//   <FaChalkboardTeacher className="text-green-700 text-4xl mb-2" />, // Training
+//   <FaSeedling className="text-green-700 text-4xl mb-2" />, // Workshops
+//   <FaHandsHelping className="text-green-700 text-4xl mb-2" />, // Internship
+//   <FaFlask className="text-green-700 text-4xl mb-2" />, // Research
+// ];
 
 const GetInvolved = () => {
   return (
@@ -136,7 +136,7 @@ const GetInvolved = () => {
                   <div className="mt-auto pt-4 text-center">
                     <Link
                       to="/contactus?regarding=training"
-                      className="inline-block px-8 py-3 bg-yellow-400 text-[#0A3622] rounded-md font-weight: 600 hover:bg-yellow-500 transition-colors duration-300"
+                      className="inline-block px-8 py-3 bg-green-700 text-[#0A3622] rounded-md font-weight: 600 hover:bg-green-200 transition-colors duration-300"
                     >
                       Apply Now ›
                     </Link>
