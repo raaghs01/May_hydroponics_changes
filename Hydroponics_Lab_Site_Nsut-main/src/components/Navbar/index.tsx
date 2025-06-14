@@ -27,7 +27,7 @@ export const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Vision & Mission', path: '/vision-and-mission' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Social Interaction', path: '/social-interaction' },
+    { name: 'Social Responsibility', path: '/social-responsibility' },
     { name: 'News', path: '/news' },
     { name: 'Blog', path: '/blog' },
     // { name: 'FAQ', path: '/faq' },
@@ -35,6 +35,7 @@ export const Navbar = () => {
     // { name: 'Training', path: '/training' },
     { name: 'Get Involved', path: '/get-involved' },
     { name: 'Contact Us', path: '/contactus' },
+    // { name: 'Our Startup', path: '/our-startup' },
     
   ];
 
