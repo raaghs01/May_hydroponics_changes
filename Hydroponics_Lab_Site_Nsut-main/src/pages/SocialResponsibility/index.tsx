@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { FaHandshake, FaUsers, FaSchool, FaGraduationCap, FaHeart, FaLeaf, FaChartLine, FaHandsHelping, FaBookOpen, FaLightbulb, FaTruck } from 'react-icons/fa';
+import { FaHandshake, FaUsers, FaSchool, FaGraduationCap, FaHeart, FaLeaf, FaChartLine, FaHandsHelping, FaBookOpen, FaLightbulb } from 'react-icons/fa';
 import LazyImage from '../../components/LazyImage';
-import { useState, useEffect } from 'react';
-import { PiStudentFill } from 'react-icons/pi';
+import { useState } from 'react';
+// import { PiStudentFill } from 'react-icons/pi';
 
 const SocialResponsibility = () => {
 
@@ -300,7 +300,7 @@ const SocialResponsibility = () => {
                         </div>
                         {programs[modalIdx].images.length > 1 && (
                           <div className="flex gap-2 justify-center mb-4">
-                            {programs[modalIdx].images.map((img, i) => (
+                            {programs[modalIdx].images.map((_, i) => (
                               <button key={i} onClick={() => setModalImgIdx(i)} aria-label={`Show image ${i+1}`}
                                 className={`w-3 h-3 rounded-full ${modalImgIdx === i ? 'bg-[#0A3622]' : 'bg-[#e8f5e9] border border-[#0A3622]'}`}
                               />
