@@ -1,6 +1,6 @@
 import { type FC, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 export const Contact: FC = () => {
   const [openQuestion, setOpenQuestion] = useState<number | null>(null)
@@ -21,6 +21,7 @@ export const Contact: FC = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
   const location = useLocation();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -32,7 +33,7 @@ export const Contact: FC = () => {
 
   useEffect(() => {
     let allRequiredFieldsFilled = false;
-    const { email, message, eventName, programName, projectName, idea, resumeFile, sopFile } = formData;
+    const { email,  message, eventName, programName, projectName, idea, resumeFile, sopFile } = formData;
 
     if (regarding !== '' && !email) {
       allRequiredFieldsFilled = false;
@@ -375,7 +376,6 @@ export const Contact: FC = () => {
                 </div>
               )}
               {regarding === 'volunteer opportunities' && (
-                
                 <div>
                   <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Department *</label>
                   <input
