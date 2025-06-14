@@ -159,13 +159,15 @@ export const Contact: FC = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/system5.jpg")',
+            backgroundImage: 'url("/bg2.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
-            filter: 'brightness(0.7)'
           }}
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
+        {/* Dark Overlay */}
+        {/* <div className="absolute inset-0 z-0 bg-black opacity-50" /> */}
         {/* Content Overlay */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-montserrat font-weight: 600 mb-4 text-white">Getting in touch with COE HYDROPONICS</h1>
