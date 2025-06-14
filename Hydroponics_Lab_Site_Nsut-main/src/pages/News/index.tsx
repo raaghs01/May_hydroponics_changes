@@ -96,7 +96,7 @@ export default function News() {
       </section>
         
       {/* Carousel Section */}
-      <section className="w-full bg-[#E8F3E8] py-10 flex flex-col items-center justify-center">
+      <section className="w-full bg-[#e8f5e9] py-10 flex flex-col items-center justify-center">
         <div className="relative w-full max-w-4xl h-72 md:h-96 mx-auto overflow-hidden rounded-xl shadow-lg">
           <AnimatePresence initial={false}>
             <motion.img

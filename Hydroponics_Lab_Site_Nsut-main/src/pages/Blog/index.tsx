@@ -40,7 +40,7 @@ export const Blog: FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation Bar */}
-      <div className="bg-[#E8F3E8]">
+      <div className="bg-[#e8f5e9]">
         <div className="container mx-auto px-4">
           <div className="py-3 flex justify-start">
             <Link 
@@ -63,7 +63,7 @@ export const Blog: FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-[#E8F3E8] rounded-md overflow-hidden flex flex-col md:flex-row"
+                className="bg-[#e8f5e9] rounded-md overflow-hidden flex flex-col md:flex-row"
               >
                 {/* Left Side - Image */}
                 <div className="relative w-full md:w-1/2">
@@ -127,6 +127,11 @@ export const Blog: FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Divider Section */}
+      <div className="w-full h-16 bg-[#e8f5e9]"></div>
+
+      {/* Footer will be rendered here */}
     </div>
   )
 } 

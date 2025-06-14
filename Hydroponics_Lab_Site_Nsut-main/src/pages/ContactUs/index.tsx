@@ -1,6 +1,6 @@
 import { type FC, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 export const Contact: FC = () => {
   const [openQuestion, setOpenQuestion] = useState<number | null>(null)
@@ -21,7 +21,6 @@ export const Contact: FC = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
   const location = useLocation();
-  const navigate = useNavigate();
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -33,7 +32,7 @@ export const Contact: FC = () => {
 
   useEffect(() => {
     let allRequiredFieldsFilled = false;
-    const { email, firstName, message, eventName, attendees, programName, projectName, idea, resumeFile, sopFile } = formData;
+    const { email, message, eventName, programName, projectName, idea, resumeFile, sopFile } = formData;
 
     if (regarding !== '' && !email) {
       allRequiredFieldsFilled = false;
@@ -126,6 +125,10 @@ export const Contact: FC = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Form Data Submitted:', formData);
+
+    // This is where you would typically send the formData to your backend API.
+    // The backend would then handle sending the email with the collected data and attachments.
+    // Example: fetch('/api/send-email', { method: 'POST', body: JSON.stringify(formData) });
 
     setShowSuccessMessage(true);
 
@@ -272,6 +275,7 @@ export const Contact: FC = () => {
                   <option value="training" className="bg-[#07300f]">Training Programs</option>
                   <option value="internship" className="bg-[#07300f]">Internship</option>
                   <option value="events-and-workshops" className="bg-[#07300f]">Events & Workshops</option>
+                  <option value="volunteer opportunities" className="bg-[#07300f]">Volunteer Opportunities</option>
                 </select>
               </div>
               {regarding === 'events-and-workshops' && (
@@ -369,6 +373,24 @@ export const Contact: FC = () => {
                     />
                   </div>
                 </div>
+              )}
+              {regarding === 'volunteer opportunities' && (
+                
+                <div>
+                  <label className="block text-sm text-white mb-2 text-left font-montserrat font-weight: 600">Department *</label>
+                  <input
+                    type="text"
+                    name="departmentName"
+                    required
+                    className="w-full px-4 py-3 bg-black/60 border border-white/10 rounded-md text-white placeholder-white/50 focus:outline-none focus:border-white/30 font-montserrat font-weight: 600"
+                    value={formData.programName}
+                    onChange={handleInputChange}
+                    placeholder="Enter department name"
+                  />
+                </div>
+                
+                
+                
               )}
               <button 
                 type="submit"

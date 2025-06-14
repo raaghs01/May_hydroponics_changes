@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion';
 import { FaHandshake, FaUsers, FaSchool, FaGraduationCap, FaHeart, FaLeaf, FaChartLine, FaHandsHelping, FaBookOpen, FaLightbulb } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
+import LazyImage from '../../components/LazyImage';
 
 const SocialInteraction = () => {
-  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e8f5e9] to-white">
@@ -73,12 +72,12 @@ const SocialInteraction = () => {
               </ul> */}
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="/hydroponics1.jpg"
                 alt="Vision 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="/hydroponics2.jpg"
                 alt="Vision 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
@@ -152,12 +151,12 @@ const SocialInteraction = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="/farmers-connect.jpg"
                 alt="Farmers 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="/germination.jpg"
                 alt="Farmers 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
@@ -227,12 +226,12 @@ const SocialInteraction = () => {
               </button> */}
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="/hero-bg.jpg"
                 alt="Workshop 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="/hydro4.jpg"
                 alt="Workshop 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
@@ -259,12 +258,12 @@ const SocialInteraction = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="\vegetation-drive.jpg"
                 alt="Food Drive 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="\vegetation-0drive-2.jpg"
                 alt="Food Drive 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
@@ -325,12 +324,12 @@ This initiative is built on the idea that every child should have the opportunit
               </ul>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="https://static.wixstatic.com/media/769cbd_3f753daf065c4b159395a1633d8b560f~mv2.jpeg"
                 alt="School 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="https://static.wixstatic.com/media/769cbd_3f753daf065c4b159395a1633d8b560f~mv2.jpeg"
                 alt="School 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
@@ -357,12 +356,12 @@ This initiative is built on the idea that every child should have the opportunit
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="/system1.jpg"
                 alt="Students 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="/system2.jpg"
                 alt="Students 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { BsArrowRight } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import { BsHourglassSplit } from 'react-icons/bs'
+import LazyImage from '../../components/LazyImage'
 
 
 export const Home: FC = () => {
@@ -219,7 +220,7 @@ export const Home: FC = () => {
               <div className="mt-8 flex justify-start">
                 <Link
                   to="/vision-and-mission"
-                  className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
+                  className="inline-block px-8 py-3 bg-[#0A3622] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
                 >
                   Read More
                 </Link>
@@ -496,7 +497,7 @@ export const Home: FC = () => {
                 </Link>
               </div>
               <div className="w-full md:w-1/2">
-                <img 
+                <LazyImage 
                   src="\inauguration.avif"
                   alt="Facility Inauguration"
                   className="w-full h-full object-cover"
@@ -621,3 +622,5 @@ export const Home: FC = () => {
     </div>
   )
 }
+
+export default Home

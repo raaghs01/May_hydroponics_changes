@@ -87,7 +87,6 @@ const GetInvolved = () => {
       <section className="py-20 bg-white" id="training-programs">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col items-center mb-8">
-            {/* {sectionIcons[0]} */}
             <motion.h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-2 text-center">
               Training Programs
             </motion.h2>
@@ -150,7 +149,7 @@ const GetInvolved = () => {
       </section>
 
       {/* Workshops Section */}
-      <section className="py-20 bg-[#f5f9f5]">
+      <section className="py-20 bg-[#e8f5e9]">
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex flex-col gap-4">
             <img src="/vegetation-drive-2.jpg" alt="Workshops" className="rounded-lg shadow-lg w-full h-80 object-cover" />
@@ -159,7 +158,6 @@ const GetInvolved = () => {
           <div className="w-full md:w-1/2">
             
             <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Workshops</h2>
-            {/* <div className="flex items-center gap-2 mb-2">{sectionIcons[1]}<span className="text-green-800 font-semibold font-montserrat font-weight: 600">"Hands-on learning for a sustainable tomorrow."</span></div> */}
             <p className="text-lg font-montserrat text-left font-weight: 600 text-gray-800 mb-4">
               Our Sustainable Farming Workshops are designed to bring the science of modern agriculture to the grassroots, empowering individuals and communities with the skills to grow more with less land, less water, and less environmental impact. Held in partnership with local NGOs, schools, and rural development centers, these workshops are at the heart of our mission to make sustainable farming techniques accessible, practical, and impactful.
             </p>
@@ -209,7 +207,7 @@ const GetInvolved = () => {
       </section>
 
       {/* Research Collaborations Section */}
-      <section className="py-20 bg-[#f5f9f5]">
+      <section className="py-20 bg-[#e8f5e9]">
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex flex-col gap-4">
             <img src="/vegetation-drive.jpg" alt="Research Collaborations" className="rounded-lg shadow-lg w-full h-80 object-cover" />
@@ -237,8 +235,40 @@ const GetInvolved = () => {
         </div>
       </section>
 
+      {/* volunteer section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row-reverse items-center gap-12">
+          <div className="w-full md:w-1/2 mb-8 md:mb-0 flex flex-col gap-4">
+            <img src="/students-event.avif" alt="Internship & Volunteering" className="rounded-lg shadow-lg w-full h-80 object-cover" />
+            <img src="/classroom.avif" alt="Internship 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
+          </div>
+          <div className="w-full md:w-1/2">
+            
+            <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Volunteer Opportunities</h2>
+            <p className="text-lg text-left font-montserrat font-weight: 600 text-gray-800 mb-4">
+            
+
+Volunteers work alongside experts, participate in real-world projects, and help advance the foundation’s mission of promoting hydroponics, sustainability, and technological innovation. Whether you're a tech enthusiast, a creative communicator, an organizer, or a budding researcher—there’s a place for you at HHTRF.
+            </p>
+            <ul className="list-disc pl-6 text-left text-gray-700 font-montserrat font-weight: 600 mb-4">
+              <li>Tech Department: Engage in IoT system development, data logging, sensor integration, and automation of hydroponic systems.</li>
+              <li>Social Media Team: Create content, manage outreach campaigns, and drive awareness through strategic digital storytelling.</li>
+              <li>General Department: Assist in event coordination, on-site logistics, community outreach, and volunteer management.</li>
+              <li>Research Division: Contribute to experimental setups, data collection, and analysis related to sustainable agriculture and hydroponics.</li>
+            </ul>
+            <Link
+              to="/contactus?regarding=volunteer opportunities"
+              className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
+            >
+              Become a Volunteer
+            </Link>
+          </div>
+        </div>
+      </section>
+
+
       {/* Start Today Section */}
-      <div className="bg-[#e6ffe6] text-[#003300] py-10 md:py-20">
+      {/* <div className="bg-[#e6ffe6] text-[#003300] py-10 md:py-20">
         <div className="container mx-auto px-4 md:px-16 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -261,7 +291,7 @@ const GetInvolved = () => {
             leader in sustainable farming!
           </motion.p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
