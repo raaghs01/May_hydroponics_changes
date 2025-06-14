@@ -56,7 +56,7 @@ export const Home: FC = () => {
             filter: 'brightness(0.7)'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

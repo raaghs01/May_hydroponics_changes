@@ -18,7 +18,7 @@ export const Projects: FC = () => {
             filter: 'brightness(0.7)'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -391,17 +391,24 @@ export const Projects: FC = () => {
               Visual highlights from our farms, labs, and installations.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((item) => (
+              {[
+                "system9.png",
+                "classroom.avif",
+                "hero-bg.jpg",
+                "system6.png",
+                "system11.png",
+                "germination.jpg"
+              ].map((img, idx) => (
                 <motion.div
-                  key={item}
+                  key={img}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: item * 0.1 }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
                   className="aspect-square bg-white rounded-lg shadow-lg overflow-hidden"
                 >
                   <img
-                    src={`/system${item + 10}.png`}
-                    alt={`Project ${item}`}
+                    src={`/${img}`}
+                    alt={`Project ${idx + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </motion.div>

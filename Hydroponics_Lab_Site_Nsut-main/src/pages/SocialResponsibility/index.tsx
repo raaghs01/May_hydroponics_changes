@@ -21,7 +21,7 @@ const SocialResponsibility = () => {
             filter: 'brightness(0.7)'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -146,7 +146,7 @@ const SocialResponsibility = () => {
             const programs = [
               {
                 title: 'Farmers Connect',
-                images: ['/farmers-connect.jpg', '/system4.jpg', '/germination.jpg'],
+                images: ['/farmersconnect2.jpg', '/farmersconnect.jpg'],
                 description: 'Empowering farmers with knowledge, technology, and support for sustainable hydroponic methods.',
                 points: [
                   'On field training sessions',
@@ -170,7 +170,7 @@ const SocialResponsibility = () => {
               },
               {
                 title: 'Sustainable Farming Workshops',
-                images: ['/hero-bg.jpg', '/hydro4.jpg'],
+                images: ['farmingworkshop.jpg', 'farmingworkshop2.jpg'],
                 description: 'Bringing cutting-edge farming to rural communities through hands-on workshops.',
                 points: [
                   'Hydroponics, aeroponics, organic gardening',
@@ -193,7 +193,7 @@ const SocialResponsibility = () => {
               },
               {
                 title: 'Food Distribution Drive & Nutritional Outreach',
-                images: ['/vegetation-drive.jpg', '/vegetation-0drive-2.jpg'],
+                images: ['/vegetation-drive.jpg', '/vegetation-drive-2.jpg'],
                 description: 'Connecting hydroponic produce with communities facing food insecurity and malnutrition.',
                 points: [
                   'Distribute fresh, chemical-free vegetables',
@@ -216,7 +216,7 @@ const SocialResponsibility = () => {
               },
               {
                 title: 'School Partnerships Program',
-                images: ['/system4.jpg', '/hydroponics2.jpg'],
+                images: ['/schoolpartnership.jpg', '/schoolpartnership2.jpg'],
                 description: 'Collaborating with schools to make environmental education practical and empowering.',
                 points: [
                   'Set up hydroponic gardens',
@@ -265,79 +265,82 @@ const SocialResponsibility = () => {
               {modalIdx !== null && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 animate-fadeIn" onClick={() => setModalIdx(null)}>
                   <div
-                    className="relative bg-white rounded-2xl shadow-2xl flex flex-col items-stretch text-left animate-scaleIn"
-                    style={{ width: '90%', maxWidth: 1100, minWidth: 320, minHeight: 420 }}
+                    className="relative bg-white rounded-2xl shadow-2xl flex flex-col items-stretch text-left animate-scaleIn w-[98vw] max-w-[1200px] min-w-[320px]"
+                    style={{ maxHeight: '96vh' }}
                     onClick={e => e.stopPropagation()}
                   >
                     <button
-                      className="absolute top-4 right-4 text-2xl text-[#0A3622] hover:text-[#07300f] focus:outline-none z-20"
+                      className="fixed md:absolute top-4 right-4 text-2xl text-[#0A3622] hover:text-[#07300f] focus:outline-none z-20 bg-white/80 rounded-full p-2 shadow"
+                      style={{ right: '1.5rem', top: '1.5rem' }}
                       onClick={() => setModalIdx(null)}
                       aria-label="Close"
                     >
                       &times;
                     </button>
-                    {/* Modal Header for all programs - always at the top, centered */}
-                    <div className="flex flex-col items-center justify-center pt-8 pb-4 w-full">
-                      {programs[modalIdx].icon}
-                      <h3 className="text-3xl md:text-4xl font-montserrat font-semibold text-[#0A3622] mb-2 text-center">{programs[modalIdx].title}</h3>
-                      <div className="text-2xl font-semibold text-[#0A3622] mt-2 text-center">{programs[modalIdx].quote}</div>
-                    </div>
-                    <div className="flex flex-col md:flex-row w-full">
-                      {/* Left: Main image and optional stat/image */}
-                      <div className="flex-1 flex flex-col justify-center items-center p-8 min-w-[340px] max-w-[480px]">
-                        <div className="relative w-full">
-                          <LazyImage src={programs[modalIdx].images[modalImgIdx]} alt={programs[modalIdx].title} className="rounded-xl w-full h-64 object-cover mb-6" />
+                    <div className="flex-1 overflow-y-auto px-2" style={{ maxHeight: '88vh' }}>
+                      {/* Modal Header for all programs - always at the top, centered */}
+                      <div className="flex flex-col items-center justify-center pt-8 pb-4 w-full">
+                        {programs[modalIdx].icon}
+                        <h3 className="text-3xl md:text-4xl font-montserrat font-semibold text-[#0A3622] mb-2 text-center">{programs[modalIdx].title}</h3>
+                        <div className="text-2xl font-semibold text-[#0A3622] mt-2 text-center">{programs[modalIdx].quote}</div>
+                      </div>
+                      <div className="flex flex-col md:flex-row w-full">
+                        {/* Left: Main image and optional stat/image */}
+                        <div className="flex-1 flex flex-col justify-center items-center p-8 min-w-[340px] max-w-[480px]">
+                          <div className="relative w-full">
+                            <LazyImage src={programs[modalIdx].images[modalImgIdx]} alt={programs[modalIdx].title} className="rounded-xl w-full h-64 object-cover mb-6" />
+                            {programs[modalIdx].images.length > 1 && (
+                              <>
+                                <button onClick={handlePrevImg} className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-1 shadow hover:bg-[#e8f5e9]" aria-label="Previous image">
+                                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="#0A3622" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                                </button>
+                                <button onClick={handleNextImg} className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-1 shadow hover:bg-[#e8f5e9]" aria-label="Next image">
+                                  <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="#0A3622" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                                </button>
+                              </>
+                            )}
+                          </div>
                           {programs[modalIdx].images.length > 1 && (
-                            <>
-                              <button onClick={handlePrevImg} className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-1 shadow hover:bg-[#e8f5e9]" aria-label="Previous image">
-                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="#0A3622" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                              </button>
-                              <button onClick={handleNextImg} className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-1 shadow hover:bg-[#e8f5e9]" aria-label="Next image">
-                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="#0A3622" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                              </button>
-                            </>
+                            <div className="flex gap-2 justify-center mb-4">
+                              {programs[modalIdx].images.map((_, i) => (
+                                <button key={i} onClick={() => setModalImgIdx(i)} aria-label={`Show image ${i+1}`}
+                                  className={`w-3 h-3 rounded-full ${modalImgIdx === i ? 'bg-[#0A3622]' : 'bg-[#e8f5e9] border border-[#0A3622]'}`}
+                                />
+                              ))}
+                            </div>
+                          )}
+                          {programs[modalIdx].stats && (
+                            <div className="mt-4 bg-[#e8f5e9] rounded-lg p-4 w-full text-center text-[#0A3622] font-bold text-lg">
+                              {programs[modalIdx].stats}
+                            </div>
                           )}
                         </div>
-                        {programs[modalIdx].images.length > 1 && (
-                          <div className="flex gap-2 justify-center mb-4">
-                            {programs[modalIdx].images.map((_, i) => (
-                              <button key={i} onClick={() => setModalImgIdx(i)} aria-label={`Show image ${i+1}`}
-                                className={`w-3 h-3 rounded-full ${modalImgIdx === i ? 'bg-[#0A3622]' : 'bg-[#e8f5e9] border border-[#0A3622]'}`}
-                              />
-                            ))}
+                        {/* Right: Content */}
+                        <div className="flex-1 flex flex-col justify-center p-8">
+                          <p className="text-[#0A3622]/90 mb-6 font-montserrat text-lg">{programs[modalIdx].details}</p>
+                          <div className="mb-6">
+                            <h5 className="font-bold font-montserrat text-[#0A3622] mb-2">WHAT WE DO :</h5>
+                            <ul className="list-disc pl-6 space-y-2 text-[#0A3622] font-montserrat text-base">
+                              {programs[modalIdx].points.map((pt, i) => <li key={i}>{pt}</li>)}
+                            </ul>
                           </div>
-                        )}
-                        {programs[modalIdx].stats && (
-                          <div className="mt-4 bg-[#e8f5e9] rounded-lg p-4 w-full text-center text-[#0A3622] font-bold text-lg">
-                            {programs[modalIdx].stats}
-                          </div>
-                        )}
-                      </div>
-                      {/* Right: Content */}
-                      <div className="flex-1 flex flex-col justify-center p-8">
-                        <p className="text-[#0A3622]/90 mb-6 font-montserrat text-lg">{programs[modalIdx].details}</p>
-                        <div className="mb-6">
-                          <h5 className="font-bold font-montserrat text-[#0A3622] mb-2">WHAT WE DO :</h5>
-                          <ul className="list-disc pl-6 space-y-2 text-[#0A3622] font-montserrat text-base">
-                            {programs[modalIdx].points.map((pt, i) => <li key={i}>{pt}</li>)}
-                          </ul>
+                          {programs[modalIdx].drivenBy && (
+                            <div className="mb-2">
+                              <h5 className="font-bold font-montserrat text-[#0A3622] mb-2">DRIVEN BY :</h5>
+                              <p className="text-[#0A3622]/90 font-montserrat text-base">{programs[modalIdx].drivenBy}</p>
+                            </div>
+                          )}
+                          {programs[modalIdx].statistics && (
+                            <div className="mt-4 grid grid-cols-2 gap-4">
+                              {programs[modalIdx].statistics.map((stat, i) => (
+                                <div key={i} className="bg-[#e8f5e9] rounded-lg p-4 text-center">
+                                  <div className="text-2xl font-bold text-[#0A3622]">{stat.value}</div>
+                                  <div className="text-[#0A3622] text-sm">{stat.label}</div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
                         </div>
-                        {programs[modalIdx].drivenBy && (
-                          <div className="mb-2">
-                            <h5 className="font-bold font-montserrat text-[#0A3622] mb-2">DRIVEN BY :</h5>
-                            <p className="text-[#0A3622]/90 font-montserrat text-base">{programs[modalIdx].drivenBy}</p>
-                          </div>
-                        )}
-                        {programs[modalIdx].statistics && (
-                          <div className="mt-4 grid grid-cols-2 gap-4">
-                            {programs[modalIdx].statistics.map((stat, i) => (
-                              <div key={i} className="bg-[#e8f5e9] rounded-lg p-4 text-center">
-                                <div className="text-2xl font-bold text-[#0A3622]">{stat.value}</div>
-                                <div className="text-[#0A3622] text-sm">{stat.label}</div>
-                              </div>
-                            ))}
-                          </div>
-                        )}
                       </div>
                     </div>
                   </div>
