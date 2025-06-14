@@ -1,7 +1,7 @@
 import { type FC, useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
-import { IoClose } from 'react-icons/io5'
+// import { IoClose } from 'react-icons/io5'
 import { BsArrowRightCircle } from 'react-icons/bs'
 
 import LazyImage from '../../components/LazyImage'
