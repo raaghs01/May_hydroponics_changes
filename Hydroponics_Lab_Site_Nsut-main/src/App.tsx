@@ -14,10 +14,11 @@ import { Achievements } from './pages/Achievements';
 import { Training } from './pages/Training';
 import { Projects }  from './pages/Projects';
 import VisionAndMission from './pages/VisionAndMission';
-import  SocialInteraction  from './pages/SocialInteraction';
+import  SocialResponsibility  from './pages/SocialResponsibility';
 import GetInvolved from './pages/GetInvolved';
 import PdfViewer from './pages/PdfViewer';
 import { useEffect } from 'react';
+import OurStartup from './pages/OurStartup';
 
 function ScrollToTop() {
   const location = useLocation();
@@ -47,7 +48,8 @@ function App() {
             <Route path="/training" element={<Training />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/vision-and-mission" element={<VisionAndMission />} />
-            <Route path="/social-interaction" element={<SocialInteraction />} />
+            <Route path="/social-responsibility" element={<SocialResponsibility />} />
+            <Route path="/our-startup" element={<OurStartup />} />
             <Route path="/get-involved" element={<GetInvolved />} />
             <Route path="/pdf-viewer" element={<PdfViewer />} />
           </Routes>
