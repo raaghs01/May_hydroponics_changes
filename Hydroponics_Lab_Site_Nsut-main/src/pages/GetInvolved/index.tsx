@@ -6,7 +6,7 @@ import { BsStarFill } from 'react-icons/bs';
 const trainingPrograms = [
   {
     image:
-      '/system20.png',
+      '/system10.png',
     title: '2-Day Introductory Workshop',
     instructor: 'Dr. Akhilesh Dubey',
     details: '10 lectures | 2 hours Hands on sessions',
@@ -57,10 +57,15 @@ const GetInvolved = () => {
     <div className="min-h-screen bg-gradient-to-b from-[#e8f5e9] to-white">
       {/* Hero Section */}
       <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-        <img
-          src="/system5.jpg"
-          alt="Get Involved Hero"
-          className="absolute inset-0 w-full h-full object-cover object-center z-0 opacity-70 scale-110"
+      <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url("/bg2.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+            filter: 'brightness(0.7)'
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
         <div className="relative z-10 container mx-auto px-4 text-center">
@@ -250,7 +255,7 @@ const GetInvolved = () => {
             <p className="text-lg text-left font-montserrat font-weight: 600 text-gray-800 mb-4">
             
 
-Volunteers work alongside experts, participate in real-world projects, and help advance the foundation’s mission of promoting hydroponics, sustainability, and technological innovation. Whether you're a tech enthusiast, a creative communicator, an organizer, or a budding researcher—there’s a place for you at HHTRF.
+Volunteers work alongside experts, participate in real-world projects, and help advance the foundation's mission of promoting hydroponics, sustainability, and technological innovation. Whether you're a tech enthusiast, a creative communicator, an organizer, or a budding researcher—there's a place for you at HHTRF.
             </p>
             <ul className="list-disc pl-6 text-left text-gray-700 font-montserrat font-weight: 600 mb-4">
               <li>Tech Department: Engage in IoT system development, data logging, sensor integration, and automation of hydroponic systems.</li>

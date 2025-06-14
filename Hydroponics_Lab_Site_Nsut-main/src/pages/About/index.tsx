@@ -519,9 +519,9 @@ const About: FC = () => {
               {/* Close button */}
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute top-4 right-4 z-10 text-white hover:text-gray-300 transition-colors"
+                className="absolute top-4 right-4 z-20 text-white bg-black/60 rounded-full p-2"
               >
-                <IoClose size={32} />
+                X
               </button>
 
               {/* Navigation buttons */}
@@ -545,7 +545,7 @@ const About: FC = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className="relative aspect-w-16 aspect-h-9"
+                className="relative max-w-3xl max-h-[80vh] mx-auto mt-8 flex items-center justify-center"
               >
                 <LazyImage
                   src={images[selectedImage].src}

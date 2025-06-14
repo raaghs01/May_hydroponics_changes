@@ -12,7 +12,7 @@ const SocialInteraction = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/system5.jpg")',
+            backgroundImage: 'url("/bg2.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
@@ -264,7 +264,7 @@ const SocialInteraction = () => {
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <LazyImage
-                src="\vegetation-0drive-2.jpg"
+                src="\vegetation-drive-2.jpg"
                 alt="Food Drive 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -325,7 +325,7 @@ This initiative is built on the idea that every child should have the opportunit
             </div>
             <div className="grid grid-cols-2 gap-4">
               <LazyImage
-                src="https://static.wixstatic.com/media/769cbd_3f753daf065c4b159395a1633d8b560f~mv2.jpeg"
+                src="\vegetation-drive-2.jpg"
                 alt="School 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
