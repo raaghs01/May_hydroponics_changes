@@ -3,12 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { IoClose } from 'react-icons/io5'
 import { BsArrowRightCircle } from 'react-icons/bs'
-import { useNavigate } from 'react-router-dom'
+
 import LazyImage from '../../components/LazyImage'
 
 const About: FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
-  const navigate = useNavigate()
+  
 
   const images = [
     {
