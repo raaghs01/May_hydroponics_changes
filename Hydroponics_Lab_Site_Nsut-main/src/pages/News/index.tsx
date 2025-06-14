@@ -85,7 +85,7 @@ export default function News() {
             filter: 'brightness(0.7)'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
         {/* Content Overlay */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <h1 className="text-5xl font-montserrat font-weight: 600 mb-4 text-white">News & Updates</h1>
@@ -194,7 +194,7 @@ export default function News() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image: '/system4.jpg',
+                image: '/system8.png',
                 title: 'Hydroponics at NSUT: A Hub for Innovation',
                 desc: 'Our facility continues to lead the way in sustainable agriculture, offering hands-on training and research opportunities for students and professionals.'
               },
@@ -214,7 +214,7 @@ export default function News() {
                 desc: 'We are recruiting passionate students and researchers for upcoming projects in climate-resilient agriculture and smart farming.'
               },
               {
-                image: '/system8.png',
+                image: '/fooddistributions2.jpg',
                 title: 'Community Outreach: Food Distribution Drive',
                 desc: 'Our latest food distribution drive provided fresh, chemical-free produce to over 300 families in need.'
               },

@@ -163,9 +163,10 @@ export const Contact: FC = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
+            filter: 'brightness(0.7)'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
         {/* Dark Overlay */}
         {/* <div className="absolute inset-0 z-0 bg-black opacity-50" /> */}
         {/* Content Overlay */}

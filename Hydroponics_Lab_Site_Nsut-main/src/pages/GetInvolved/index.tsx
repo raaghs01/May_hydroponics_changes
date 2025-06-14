@@ -67,7 +67,7 @@ const GetInvolved = () => {
             filter: 'brightness(0.7)'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
         <div className="relative z-10 container mx-auto px-4 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -246,8 +246,8 @@ const GetInvolved = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row-reverse items-center gap-12">
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex flex-col gap-4">
-            <img src="/students-event.avif" alt="Internship & Volunteering" className="rounded-lg shadow-lg w-full h-80 object-cover" />
-            <img src="/classroom.avif" alt="Internship 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
+            <img src="/schoolpartnership2.jpg" alt="Internship & Volunteering" className="rounded-lg shadow-lg w-full h-80 object-cover" />
+            <img src="/system9.png" alt="Internship 2" className="rounded-lg shadow w-2/3 mx-auto h-40 object-cover object-center" />
           </div>
           <div className="w-full md:w-1/2">
             
