@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaLightbulb, FaBullseye, FaLeaf, FaChartLine, FaHandshake, FaUsers } from 'react-icons/fa';
+import LazyImage from '../../components/LazyImage';
 
 const VisionAndMission = () => {
   return (
@@ -64,12 +65,12 @@ const VisionAndMission = () => {
               </p> */}
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="\classroom.avif"
                 alt="Smart Farming"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="\germination.avif"
                 alt="Innovation"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
@@ -80,7 +81,7 @@ const VisionAndMission = () => {
       </section>
 
       {/* Vision Section */}
-      <section className="py-20 bg-[#f5f9f5]">
+      <section className="py-20 bg-[#e8f5e9]">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col items-center mb-12">
             <FaBullseye className="text-green-700 text-[#0A3622] text-5xl mb-4" />
@@ -96,12 +97,12 @@ const VisionAndMission = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="\hero-bg.avif"
                 alt="Vision"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="\hydro4.jpg"
                 alt="Future"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
@@ -138,7 +139,7 @@ const VisionAndMission = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-[#f5f9f5] p-8 rounded-xl shadow-lg"
+              className="bg-[#e8f5e9] p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-2xl font-montserrat font-weight: 600 text-[#0A3622] mb-4">Advance Research</h3>
               <p className="text-gray-800 font-montserrat text-left font-weight: 600">
@@ -148,7 +149,7 @@ const VisionAndMission = () => {
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-[#f5f9f5] p-8 rounded-xl shadow-lg"
+              className="bg-[#e8f5e9] p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-2xl font-montserrat font-weight: 600 text-[#0A3622] mb-4">Educate and Train</h3>
               <p className="text-gray-800 font-montserrat text-left font-weight: 600">
@@ -158,7 +159,7 @@ const VisionAndMission = () => {
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-[#f5f9f5] p-8 rounded-xl shadow-lg"
+              className="bg-[#e8f5e9] p-8 rounded-xl shadow-lg"
             >
               <h3 className="text-2xl font-montserrat font-weight: 600 text-[#0A3622] mb-4">Create Social Impact</h3>
               <p className="text-gray-800 font-montserrat text-left font-weight: 600">
@@ -171,7 +172,7 @@ const VisionAndMission = () => {
       </section>
 
       {/* Why Hydroponics Matters Section */}
-      <section className="py-20 bg-[#f5f9f5]">
+      <section className="py-20 bg-[#e8f5e9]">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col items-center mb-12">
             <FaChartLine className="text-green-700 text-[#0A3622] text-5xl mb-4" />
@@ -200,12 +201,12 @@ const VisionAndMission = () => {
               </ul>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="\hydroponics2.jpg"
                 alt="Hydroponics"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="\hydroponics3.jpg"
                 alt="Sustainability"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
@@ -233,21 +234,21 @@ const VisionAndMission = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-[#f5f9f5] p-8 rounded-xl shadow-lg text-center"
+              className="bg-[#e8f5e9] p-8 rounded-xl shadow-lg text-center"
             >
               <h3 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-2">90%</h3>
               <p className="text-gray-800 text-[#0A3622] font-montserrat font-weight: 600">Water Usage Reduction</p>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-[#f5f9f5] p-8 rounded-xl shadow-lg text-center"
+              className="bg-[#e8f5e9] p-8 rounded-xl shadow-lg text-center"
             >
               <h3 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-2">3x</h3>
               <p className="text-gray-800 text-[#0A3622] font-montserrat font-weight: 600">Higher Crop Yields</p>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-[#f5f9f5] p-8 rounded-xl shadow-lg text-center"
+              className="bg-[#e8f5e9] p-8 rounded-xl shadow-lg text-center"
             >
               <h3 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-2">300+</h3>
               <p className="text-gray-800 font-montserrat text-[#0A3622] font-weight: 600">Farmers Trained</p>
@@ -257,7 +258,7 @@ const VisionAndMission = () => {
       </section>
 
       {/* The Movement We're Growing Section */}
-      <section className="py-20 bg-[#f5f9f5]">
+      <section className="py-20 bg-[#e8f5e9]">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col items-center mb-12">
             <FaUsers className="text-green-700 text-[#0A3622] text-5xl mb-4" />
@@ -273,12 +274,12 @@ const VisionAndMission = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <img
+              <LazyImage
                 src="\polyhouse.avif"
                 alt="Community"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
-              <img
+              <LazyImage
                 src="\system7.png"
                 alt="Growth"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"

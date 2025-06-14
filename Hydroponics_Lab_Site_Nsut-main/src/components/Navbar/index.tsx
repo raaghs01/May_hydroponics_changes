@@ -33,8 +33,9 @@ export const Navbar = () => {
     // { name: 'FAQ', path: '/faq' },
     // { name: 'Achievements', path: '/achievements' },
     // { name: 'Training', path: '/training' },
-    { name: 'Contact Us', path: '/contactus' },
     { name: 'Get Involved', path: '/get-involved' },
+    { name: 'Contact Us', path: '/contactus' },
+    
   ];
 
   return (

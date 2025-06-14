@@ -111,7 +111,7 @@ export const Projects: FC = () => {
       </div>
 
       {/* Completed Projects Section */}
-      <section className="py-20 bg-[#0A3622]">
+      {/* <section className="py-20 bg-[#0A3622]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -122,9 +122,7 @@ export const Projects: FC = () => {
             <h2 className="text-4xl font-montserrat text-[#FFFFFF] mb-8 text-center font-weight: 600">
                Completed Projects
             </h2>
-            {/* <p className="text-lg text-gray-700 text-center mb-12">
-              A showcase of our successful hydroponic installations and milestones.
-            </p> */}
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
                 {
@@ -158,7 +156,7 @@ export const Projects: FC = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Project Locations Section */}
       {/* <section className="py-20 bg-white">
@@ -197,7 +195,7 @@ export const Projects: FC = () => {
       </section> */}
 
       {/* Innovations & Technologies Section */}
-      <section className="py-20 bg-[#FFFFFF]">
+      <section className="py-20 bg-[#e8f5e9]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

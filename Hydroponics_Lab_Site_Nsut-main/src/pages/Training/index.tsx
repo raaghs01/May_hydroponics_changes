@@ -1,8 +1,10 @@
-import { motion } from "framer-motion";
+import { FC } from 'react'
+import { motion } from 'framer-motion'
 import { BsStarFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import LazyImage from '../../components/LazyImage'
 
-export const Training = () => {
+export const Training: FC = () => {
   const trainingPrograms = [
     {
       image:
@@ -49,7 +51,7 @@ export const Training = () => {
     <div className="min-h-screen w-full relative">
       {/* Full Page Background */}
       <div className="fixed inset-0 -z-20">
-        <img
+        <LazyImage
           src="https://static.wixstatic.com/media/827f22493d8f45b7831fa81f0706d5d4.jpg"
           alt="Page Background"
           className="w-full h-screen object-cover"
@@ -191,3 +193,5 @@ export const Training = () => {
     </div>
   );
 };
+
+export default Training;

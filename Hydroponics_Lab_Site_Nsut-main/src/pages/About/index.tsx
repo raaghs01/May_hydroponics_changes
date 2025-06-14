@@ -1,9 +1,10 @@
 import { type FC, useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { IoClose } from 'react-icons/io5'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+import { IoClose } from 'react-icons/io5'
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { useNavigate } from 'react-router-dom'
+import LazyImage from '../../components/LazyImage'
 
 const About: FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
@@ -151,7 +152,7 @@ const About: FC = () => {
       {/* Our Story Section */}
       <section className="min-h-screen grid grid-cols-1 md:grid-cols-3">
         {/* Left Column - Title and Subtitle */}
-        <div className="bg-[#E8F3E8] p-12 md:p-16 flex flex-col justify-center items-center">
+        <div className="bg-[#e8f5e9] p-12 md:p-16 flex flex-col justify-center items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -176,7 +177,7 @@ const About: FC = () => {
 
         {/* Middle Column - Image */}
         <div className="relative h-[400px] md:h-auto">
-          <img 
+          <LazyImage
             src="\system5.png"
             alt="Our Story"
             className="absolute inset-0 w-full h-full object-cover"
@@ -202,7 +203,7 @@ const About: FC = () => {
 
       
       {/* Research Papers Section */}
-      <div className="py-24 bg-[#f5f9f5]">
+      <div className="py-24 bg-[#e8f5e9]">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col md:flex-row gap-16">
             {/* Title Section */}
@@ -217,37 +218,28 @@ const About: FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
                   {
-                    journal:
-                      "International Journal of Sustainable Agriculture",
-                    title:
-                      `Optimizing Nutrient Delivery in Hydroponic Systems: Enhancing Yield and Quality of Leafy Greens.
-                      This groundbreaking study explores the impact of tailored nutrient solutions on the growth and nutritional quality 
-                      of hydroponically cultivated leafy greens. By fine-tuning mineral compositions, our research achieved a 20% increase 
-                      in yield while enhancing the antioxidant properties of the produce, paving the way for more efficient and nutrient-rich farming practices.`,
+                    id: "paper1",
+                    journal: "Journal of Functional Foods",
+                    title: `This study investigates the use of tellurium-doped ZnO nanoparticles to boost phenolics, flavonoids, and antioxidants in buckwheat microgreens and sprouts. Optimal concentrations led to a 20–30% increase in key nutraceuticals, with FRAP activity reaching 203 mg Fe(II)/g FW. Results suggest nanoparticle elicitation as a novel method to enhance nutritional quality in hydroponic greens.`,
+                    sourceUrl: "https://link.springer.com/article/10.1007/s11694-025-03163-3"
                   },
                   {
-                    journal: "Journal of Hydroponic Innovations",
-                    title:
-                      `Comparative Analysis of Hydroponic and Soil-Based Cultivation: Growth Metrics and Resource Efficiency in Tomato Production
-
-Our research delves into the comparative advantages of hydroponic systems over traditional soil-based methods for tomato cultivation. The study highlights a 30% reduction in water usage and a significant boost in growth rates, demonstrating hydroponics' potential to revolutionize resource-efficient farming for high-value crops.
-`,
+                    id: "paper2",
+                    journal: "International Journal of Food Science",
+                    title: `This study evaluates the effect of elicitors like citric acid, ascorbic acid, and NaCl on hydroponically grown buckwheat sprouts. Citric acid (10 mM) and NaCl (150 mM) significantly enhanced phenolics, flavonoids, rutin, and antioxidant activity—demonstrating up to 30% improvement. A strong correlation was observed between antioxidant potential and elevated levels of bioactives. These findings support the targeted use of natural elicitors to enhance nutritional profiles in hydroponic systems.`,
+                    sourceUrl: "https://ifst.onlinelibrary.wiley.com/doi/abs/10.1111/ijfs.16119"
                   },
                   {
-                    journal: "JEnvironmental Science & Technology",
-                    title:
-                      `Hydroponics as a Tool for Urban Sustainability: Reducing Carbon Footprints Through Local Food Production
-
-This paper examines the role of hydroponics in urban agriculture, focusing on its capacity to reduce transportation-related carbon emissions by enabling local food production. Our findings underscore how hydroponic systems can support sustainable city ecosystems, providing fresh produce while minimizing environmental impact.
-`,
+                    id: "paper3",
+                    journal: "Journal of Applied Plant Physiology",
+                    title: `This study analyzes the dynamic phytochemical profile of hydroponically grown buckwheat. Phenolic and flavonoid levels peaked at harvest, while antioxidant activity (DPPH) was highest during flowering. UPLC-DAD analysis showed that hydroponically cultivated seeds contained more rutin, quercetin, and ferulic acid than commercial seeds. These findings validate hydroponic methods as superior for enhancing nutritional content throughout buckwheat's growth cycle.`,
+                    sourceUrl: "https://www.sciencedirect.com/science/article/abs/pii/S0305197823000303"
                   },
                   {
-                    journal: "Advances in Horticultural Research",
-                    title:
-                      `Phytoremediation Potential of Hydroponically Grown Herbs: Mitigating Water Contamination with Basil and Mint
-
-Our research investigates the ability of hydroponically grown basil and mint to absorb and mitigate heavy metal contaminants in water. The study reveals their impressive phytoremediation potential, offering a dual benefit of water purification and the production of safe, edible herbs—an innovative step toward sustainable farming solutions.
-`,
+                    id: "paper4",
+                    journal: "Journal of Sustainable Energy Systems",
+                    title: `This study optimized a Canna indica-driven Plant Microbial Fuel Cell (PMFC) using wastewater as nutrient input and carbon cloth electrodes. After 30 days, the setup achieved a peak power density of 81 mW/m². Key influencing factors—wastewater pH, electrode surface area, and electrode spacing—were identified via Plackett-Burman and modeled using Response Surface Methodology. The strong synergy between pH and electrode area highlights potential for eco-friendly, wastewater-powered energy generation.`,
+                    sourceUrl: "https://www.sciencedirect.com/science/article/abs/pii/S2214785323011574"
                   },
                 ].map((paper, index) => (
                   <div
@@ -264,12 +256,14 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                     </div>
                     <div className="mt-6">
                       <div className="flex items-center justify-center gap-2 text-yellow-400 group-hover:gap-4 transition-all duration-300">
-                        <button
-                          className="text-sm font-medium flex items-center gap-2 focus:outline-none"
-                          onClick={() => navigate('/pdf-viewer')}
+                        <a
+                          href={paper.sourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-medium flex items-center gap-2 focus:outline-none hover:text-yellow-300"
                         >
                           Read More <BsArrowRightCircle className="text-xl" />
-                        </button>
+                        </a>
                       </div>
                       <div className="absolute bottom-0 left-0 w-full h-1 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                     </div>
@@ -302,7 +296,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               transition={{ duration: 0.8 }}
               className="relative h-[400px] lg:h-[500px]"
             >
-              <img
+              <LazyImage
                 src="\hero-bg.jpg"
                 alt="NFT Horizontal Beds"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
@@ -354,7 +348,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
           </div>
 
           {/* A-Frame Systems Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 bg-[#E8F3E8] p-12 rounded-lg">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 bg-[#e8f5e9] p-12 rounded-lg">
             {/* Content Column */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -409,7 +403,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               transition={{ duration: 0.8 }}
               className="relative h-[400px] lg:h-[500px] order-1 lg:order-2"
             >
-              <img
+              <LazyImage
                 src="\system7.png"
                 alt="A-Frame Systems"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
@@ -426,7 +420,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
               transition={{ duration: 0.8 }}
               className="relative h-[400px] lg:h-[500px]"
             >
-              <img
+              <LazyImage
                 src="\polyhouse.jpg"
                 alt="Vertical Tower Systems"
                 className="w-full h-full object-cover rounded-lg shadow-xl"
@@ -494,7 +488,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                   className="aspect-[16/9] group relative overflow-hidden rounded-lg shadow-lg"
                   onClick={() => setSelectedImage(index)}
                 >
-                  <img
+                  <LazyImage
                     src={image.src}
                     alt={image.alt}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -553,7 +547,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                 transition={{ duration: 0.3 }}
                 className="relative aspect-w-16 aspect-h-9"
               >
-                <img
+                <LazyImage
                   src={images[selectedImage].src}
                   alt={images[selectedImage].alt}
                   className="w-full h-full object-contain"
@@ -622,7 +616,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                 className="text-center text-[#0A3622] font-montserrat font-weight: 600"
               >
                 <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/10">
-                  <img
+                  <LazyImage
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"
@@ -660,7 +654,7 @@ Our research investigates the ability of hydroponically grown basil and mint to 
                 className="text-center font-montserrat text-[#0A3622] font-weight: 600"
               >
                 <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white/10">
-                  <img
+                  <LazyImage
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"
