@@ -6,7 +6,7 @@ export const Projects: FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative min-h-[60vh] flex items-center justify-center">
+      <div className="relative min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         {/* Background Image */}
         <div 
           className="absolute inset-0 z-0"
@@ -19,12 +19,12 @@ export const Projects: FC = () => {
           }}
         />
         {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
-        <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-montserrat font-weight: 600 text-white text-center mb-6 drop-shadow-lg"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-montserrat font-weight: 600 text-white text-center mb-4 sm:mb-6 drop-shadow-lg"
           >
             Our Projects
           </motion.h1>
@@ -32,7 +32,7 @@ export const Projects: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl font-montserrat font-weight: 600 text-white/90 text-center max-w-3xl mx-auto drop-shadow"
+            className="text-base sm:text-lg md:text-xl font-montserrat font-weight: 600 text-white/90 text-center max-w-3xl mx-auto drop-shadow"
           >
             Pioneering Sustainable Agriculture Through Innovation
           </motion.p>
@@ -40,21 +40,21 @@ export const Projects: FC = () => {
       </div>
 
       {/* Ongoing Projects Section */}
-      <div className="py-24 bg-white">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col md:flex-row gap-16">
+      <div className="py-12 sm:py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-16">
             {/* Title Section */}
             <div className="w-full md:w-1/3 flex flex-col justify-center items-center">
               <h2
-                className="text-[#0A3622] text-6xl font-['Marcellus'] leading-tight sticky top-24 self-center font-montserrat font-weight: 600"
+                className="text-4xl sm:text-5xl md:text-6xl font-['Marcellus'] leading-tight sticky top-24 self-center font-montserrat font-weight: 600"
               >
                 Ongoing R&D Projects
               </h2>
             </div>
 
-            {/* Projects Grid - Changed to 3 columns */}
+            {/* Projects Grid */}
             <div className="w-full md:w-2/3">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
                 {[
                   {
                     title: "Focus on Medicinal Plants",
@@ -92,10 +92,10 @@ export const Projects: FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="bg-[#0A3622] p-6 flex flex-col min-h-[200px] group cursor-pointer hover:shadow-xl transition-all duration-300 font-montserrat font-weight: 600"
+                    className="bg-[#0A3622] p-4 sm:p-6 flex flex-col min-h-[180px] sm:min-h-[200px] group cursor-pointer hover:shadow-xl transition-all duration-300 font-montserrat font-weight: 600"
                   >
                     <div>
-                      <h3 className="text-white text-xl font-medium mb-4 font-['Marcellus'] font-montserrat font-weight: 600">
+                      <h3 className="text-white text-lg sm:text-xl font-medium mb-3 sm:mb-4 font-['Marcellus'] font-montserrat font-weight: 600">
                         {project.title}
                       </h3>
                       <p className="text-white text-sm font-['Questrial'] font-montserrat font-weight: 600">
@@ -195,21 +195,21 @@ export const Projects: FC = () => {
       </section> */}
 
       {/* Innovations & Technologies Section */}
-      <section className="py-20 bg-[#e8f5e9]">
-        <div className="container mx-auto px-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#e8f5e9]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center font-weight: 600">
+            <h2 className="text-3xl sm:text-4xl font-montserrat text-[#0A3622] mb-6 sm:mb-8 text-center font-weight: 600">
              Innovations & Technologies Used
             </h2>
             {/* <p className="text-lg text-gray-700 text-center mb-12">
               Learn about the tools and systems powering our green revolution.
             </p> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
               {[
                 {
                   title: "Smart Monitoring Systems",
@@ -233,10 +233,10 @@ export const Projects: FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-[#003300] p-6 rounded-lg shadow-lg font-montserrat font-weight: 600"
+                  className="bg-[#003300] p-4 sm:p-6 rounded-lg shadow-lg font-montserrat font-weight: 600"
                 >
-                  <h3 className="text-xl font-semibold text-[#FFFFFF] mb-4 font-montserrat font-weight: 600">{tech.title}</h3>
-                  <p className="text-white font-montserrat font-weight: 600">{tech.description}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#FFFFFF] mb-3 sm:mb-4 font-montserrat font-weight: 600">{tech.title}</h3>
+                  <p className="text-sm sm:text-base text-white font-montserrat font-weight: 600">{tech.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -376,21 +376,21 @@ export const Projects: FC = () => {
       </section> */}
 
       {/* Project Gallery Section */}
-      <section className="py-20 bg-[#FFFFFF]">
-        <div className="container mx-auto px-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#FFFFFF]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center font-weight: 600">
+            <h2 className="text-3xl sm:text-4xl font-montserrat text-[#0A3622] mb-6 sm:mb-8 text-center font-weight: 600">
              Project Gallery
             </h2>
-            <p className="text-lg text-gray-700 text-center mb-12 font-montserrat font-weight: 600">
+            <p className="text-base sm:text-lg text-gray-700 text-center mb-8 sm:mb-12 font-montserrat font-weight: 600">
               Visual highlights from our farms, labs, and installations.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               {[
                 "system9.png",
                 "classroom.avif",
@@ -457,21 +457,21 @@ export const Projects: FC = () => {
       </section> */}
 
       {/* Pilot Programs Section */}
-      <section className="py-20 bg-[#e8f5e9]">
-        <div className="container mx-auto px-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#e8f5e9]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center font-weight: 600">
+            <h2 className="text-3xl sm:text-4xl font-montserrat text-[#0A3622] mb-6 sm:mb-8 text-center font-weight: 600">
                Pilot Programs
             </h2>
-            <p className="text-lg text-[#0A3622] text-center mb-12 font-montserrat font-weight: 600">
+            <p className="text-base sm:text-lg text-[#0A3622] text-center mb-8 sm:mb-12 font-montserrat font-weight: 600">
               Testing new systems and techniques before large-scale rollouts.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
               {[
                 {
                   title: "Vertical Farming System",
@@ -495,10 +495,10 @@ export const Projects: FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-lg shadow-lg font-montserrat font-weight: 600"
+                  className="bg-white p-4 sm:p-6 rounded-lg shadow-lg font-montserrat font-weight: 600"
                 >
-                  <h3 className="text-xl font-semibold text-[#0A3622] mb-4 font-montserrat font-weight: 600">{program.title}</h3>
-                  <p className="text-gray-700 font-montserrat font-weight: 600">{program.description}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#0A3622] mb-3 sm:mb-4 font-montserrat font-weight: 600">{program.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-700 font-montserrat font-weight: 600">{program.description}</p>
                 </motion.div>
               ))}
             </div>

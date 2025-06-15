@@ -44,7 +44,7 @@ export const Home: FC = () => {
 
     
       {/* Hero Section */}
-      <div className="relative min-h-[60vh] flex items-center justify-center">
+      <div className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] flex items-center justify-center">
         {/* Background Image */}
         <div 
           className="absolute inset-0 z-0"
@@ -57,12 +57,12 @@ export const Home: FC = () => {
           }}
         />
         {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
-        <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl font-montserrat text-white text-center mb-6 drop-shadow-lg"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-montserrat text-white text-center mb-4 sm:mb-6 drop-shadow-lg"
           >
             Hydroponics Horticulture
             Training and Research Facility
@@ -71,7 +71,7 @@ export const Home: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl text-white/90 text-center max-w-3xl mx-auto drop-shadow"
+            className="text-base sm:text-lg md:text-xl text-white/90 text-center max-w-3xl mx-auto drop-shadow"
           >
             Cultivating Knowledge, Growing Green Solutions
           </motion.p>
@@ -80,14 +80,14 @@ export const Home: FC = () => {
 
 
       {/* 2. About Us Section */}
-      <section className="py-20 bg-[#e8f5e9]">
-        <div className="container mx-auto px-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#e8f5e9]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl font-weight: 600 font-montserrat text-[#0A3622] text-left mb-12"
+              className="text-3xl sm:text-4xl md:text-5xl font-weight: 600 font-montserrat text-[#0A3622] text-left mb-8 sm:mb-12"
             >
               About Us
             </motion.h2>
@@ -96,9 +96,9 @@ export const Home: FC = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-6"
+              className="space-y-4 sm:space-y-6"
             >
-              <p className="text-left text-gray-700 leading-relaxed text-lg">
+              <p className="text-left text-gray-700 leading-relaxed text-base sm:text-lg">
                 The Centre of Excellence in Hydroponics at NSUT is a pioneering initiative designed to drive innovation, research, and 
                 education in hydroponic farming practices. Established with support from DKDF, our center aims to be a hub for 
                 sustainable agriculture, advanced horticultural training, and community outreach. With a state-of-the-art polyhouse, 
@@ -107,9 +107,9 @@ export const Home: FC = () => {
               </p>
 
               {/* Social Media Links */}
-              <div className="flex justify-start space-x-6 my-8">
+              <div className="flex justify-start space-x-4 sm:space-x-6 my-6 sm:my-8">
                 <a href="#" className="text-[#0A3622] hover:text-[#07370f] transition-colors">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
                   </svg>
                 </a>
@@ -131,10 +131,10 @@ export const Home: FC = () => {
               </div>
 
               {/* Read More Button */}
-              <div className="mt-8  flex justify-start">
+              <div className="mt-6 sm:mt-8 flex justify-start">
                 <Link
                   to="/about"
-                  className="inline-block px-8 py-3 bg-[#0A3622] text-white font-medium hover:bg-[#07370f] transition-colors font-weight: 600 duration-300 rounded-md padding:'12px 40px'"
+                  className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-[#0A3622] text-white font-medium hover:bg-[#07370f] transition-colors font-weight: 600 duration-300 rounded-md"
                 >
                   Read More
                 </Link>
@@ -146,15 +146,15 @@ export const Home: FC = () => {
 
       
       {/* Vision and Mission Section */}
-      <section className="flex flex-col md:flex-row min-h-[70vh]">
+      <section className="flex flex-col md:flex-row min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh]">
         {/* Left Side - Dark Green Background with Title */}
-        <div className="w-full md:w-[30%] bg-[#0A3622] text-white flex items-center justify-center p-8 md:p-12">
+        <div className="w-full md:w-[30%] bg-[#0A3622] text-white flex items-center justify-center p-6 sm:p-8 md:p-12">
           <div className="max-w-[400px] text-center">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-4xl md:text-5xl font-montserrat leading-tight"
+              className="text-3xl sm:text-4xl md:text-5xl font-montserrat leading-tight"
             >
               OUR VISION
               <br />
@@ -166,7 +166,7 @@ export const Home: FC = () => {
         </div>
 
         {/* Right Side - Video Background with Content */}
-        <div className="w-full md:w-[70%] relative min-h-[50vh] md:min-h-[70vh] overflow-hidden">
+        <div className="w-full md:w-[70%] relative min-h-[40vh] sm:min-h-[50vh] md:min-h-[70vh] overflow-hidden">
           {/* Video Background */}
           <div className="absolute inset-0 w-full h-full">
             <iframe
@@ -186,41 +186,41 @@ export const Home: FC = () => {
           <div className="absolute inset-0 bg-black/40" />
 
           {/* Content Over Video */}
-          <div className="relative z-10 h-full flex items-center justify-center p-8 md:p-12">
+          <div className="relative z-10 h-full flex items-center justify-center p-6 sm:p-8 md:p-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="max-w-[600px] text-left"
             >
-              <p className="text-lg leading-relaxed font-montserrat text-white mb-8">
+              <p className="text-base sm:text-lg leading-relaxed font-montserrat text-white mb-6 sm:mb-8">
                 To transform the future of agriculture by empowering individuals and communities through 
                 sustainable and innovative hydroponic practices.
               </p>
 
               <div>
-                <p className="text-base mb-4 font-montserrat text-white">Our mission is to:</p>
-                <ul className="space-y-4">
+                <p className="text-sm sm:text-base mb-4 font-montserrat text-white">Our mission is to:</p>
+                <ul className="space-y-3 sm:space-y-4">
                   <li className="flex items-start gap-2 font-montserrat text-white">
                     <span className="mt-1.5">•</span>
-                    <span>Advance research in hydroponics and sustainable agriculture.</span>
+                    <span className="text-sm sm:text-base">Advance research in hydroponics and sustainable agriculture.</span>
                   </li>
                   <li className="flex items-start gap-2 font-montserrat text-white">
                     <span className="mt-1.5">•</span>
-                    <span>Educate and train the next generation of hydroponics experts, from students to local farmers 
+                    <span className="text-sm sm:text-base">Educate and train the next generation of hydroponics experts, from students to local farmers 
                     and entrepreneurs.</span>
                   </li>
                   <li className="flex items-start gap-2 font-montserrat text-white">
                     <span className="mt-1.5">•</span>
-                    <span>Create a positive social impact by promoting sustainable agricultural practices.</span>
+                    <span className="text-sm sm:text-base">Create a positive social impact by promoting sustainable agricultural practices.</span>
                   </li>
                 </ul>
               </div>
-              {/* Know More Button aligned like About Us section */}
-              <div className="mt-8 flex justify-start">
+              {/* Know More Button */}
+              <div className="mt-6 sm:mt-8 flex justify-start">
                 <Link
                   to="/vision-and-mission"
-                  className="inline-block px-8 py-3 bg-[#0A3622] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
+                  className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-[#0A3622] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
                 >
                   Read More
                 </Link>
@@ -232,11 +232,11 @@ export const Home: FC = () => {
 
 
       {/* 4. Facility Highlights Section */}
-      <section className="bg-[#e8f5e9] py-20 overflow-hidden">
-        <div className="container mx-auto px-4">
+      <section className="bg-[#e8f5e9] py-12 sm:py-16 md:py-20 overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* Highlights Grid */}
-            <div className="flex-1 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
               {[
                 {
                   image: "/hero-bg.jpg",
@@ -264,19 +264,19 @@ export const Home: FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="text-center bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg"
+                  className="text-center bg-white/10 backdrop-blur-md rounded-lg p-4 sm:p-6 shadow-lg"
                 >
-                  <div className="aspect-square rounded-full overflow-hidden mb-4 mx-auto max-w-[200px] border-4 border-white shadow-lg">
+                  <div className="aspect-square rounded-full overflow-hidden mb-4 mx-auto max-w-[150px] sm:max-w-[200px] border-4 border-white shadow-lg">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <h3 className="text-[#0A3622] font-medium font-montserrat mb-1">
+                  <h3 className="text-[#0A3622] font-medium font-montserrat mb-1 text-sm sm:text-base">
                     {item.title}
                   </h3>
-                  <p className="text-[#0A3622]/80">
+                  <p className="text-[#0A3622]/80 text-sm sm:text-base">
                     {item.subtitle}
                   </p>
                 </motion.div>
@@ -284,12 +284,12 @@ export const Home: FC = () => {
             </div>
 
             {/* Title and Button */}
-            <div className="md:w-1/4 text-middle mt-12 md:mt-0">
+            <div className="md:w-1/4 text-middle mt-8 sm:mt-12 md:mt-0">
               <motion.h2
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
-                className="text-5xl font-montserrat font-weight: 600 text-[#0A3622] mb-8"
+                className="text-3xl sm:text-4xl md:text-5xl font-montserrat font-weight: 600 text-[#0A3622] mb-6 sm:mb-8"
               >
                 Facility
                 <br />
@@ -303,7 +303,7 @@ export const Home: FC = () => {
               >
                 <Link
                   to="/about#facilities"
-                  className="inline-block bg-[#0A3622] text-white px-8 py-3 rounded-md font-weight: 600 hover:bg-[#0A3622]/90 transition-colors duration-300"
+                  className="inline-block bg-[#0A3622] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-md font-weight: 600 hover:bg-[#0A3622]/90 transition-colors duration-300"
                 >
                   Know More
                 </Link>
@@ -314,18 +314,18 @@ export const Home: FC = () => {
       </section>
 
        {/* What do we offer? Section */}
-      <section className="py-20 bg-[#0A3622] text-white">
-        <div className="container mx-auto px-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#0A3622] text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl font-montserrat font-weight: 600 text-center mb-12"
+            className="text-3xl sm:text-4xl md:text-5xl font-montserrat font-weight: 600 text-center mb-8 sm:mb-12"
           >
             What do we offer?
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
             {[
               {
                 icon: (
@@ -396,13 +396,13 @@ export const Home: FC = () => {
       </section>
 
       {/* Training Programs Section */}
-      <section className="bg-[#e8f5e9] py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-[#e8f5e9] py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl font-montserrat font-weight: 600 text-[#0A3622] text-center mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl font-montserrat font-weight: 600 text-[#0A3622] text-center mb-4 sm:mb-6"
           >
             Our Training Programs
           </motion.h2>
@@ -411,13 +411,13 @@ export const Home: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center font-montserrat font-weight: 600 text-gray-700 max-w-3xl mx-auto mb-16"
+            className="text-center font-montserrat font-weight: 600 text-gray-700 max-w-3xl mx-auto mb-12 sm:mb-16 text-sm sm:text-base"
           >
             Gain practical skills and scientific insight into sustainable hydroponics. Our training programs empower you to 
             lead in innovative, soil-free agriculture.
           </motion.p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto mb-8 sm:mb-12">
             {courseItems.map((item, index) => (
               <motion.div
                 key={index}
@@ -442,10 +442,10 @@ export const Home: FC = () => {
           </div>
 
           {/* Know More Button */}
-          <div className="text-center  mt-8">
+          <div className="text-center mt-6 sm:mt-8">
             <Link
               to="/training"
-              className="inline-block px-8 py-3 bg-[#0A3622] text-white font-medium font-montserrat font-weight: 600 hover:bg-[#0A3622]/90 transition-colors duration-300 rounded"
+              className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-[#0A3622] text-white font-medium font-montserrat font-weight: 600 hover:bg-[#0A3622]/90 transition-colors duration-300 rounded"
             >
               Know More
             </Link>
@@ -454,24 +454,23 @@ export const Home: FC = () => {
       </section>
 
       {/* 8. Events and News Section */}
-      <section className="bg-[#0A3622] py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col items-start mb-12">
-            <h2 className="text-5xl font-montserrat  font-weight: 600 text-[#FFFFFF] text-left">
+      <section className="bg-[#0A3622] py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-start mb-8 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-montserrat font-weight: 600 text-[#FFFFFF] text-left">
               Events and
-              
               News
             </h2>
             <br />
             <Link
               to="/news"
-              className="inline-block px-8 py-3 bg-green-700 text-white rounded-md font-weight: 600 hover:bg-green-200 transition-colors duration-300"
+              className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-green-700 text-white rounded-md font-weight: 600 hover:bg-green-200 transition-colors duration-300"
             >
               View More
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Event 1 - Facility Inauguration */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -542,18 +541,18 @@ export const Home: FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-[#e8f5e9] py-16">
-        <div className="container mx-auto px-4">
+      <section className="bg-[#e8f5e9] py-12 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-3xl font-montserrat  font-weight: 600 text-[#0A3622] mb-8 text-center"
+              className="text-2xl sm:text-3xl font-montserrat font-weight: 600 text-[#0A3622] mb-6 sm:mb-8 text-center"
             >
               Frequently Asked Questions
             </motion.h2>
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {[
                 {
                   question: "What is hydroponics?",
@@ -608,10 +607,10 @@ export const Home: FC = () => {
             </div>
 
             {/* More Button */}
-            <div className="text-center  mt-8">
+            <div className="text-center mt-6 sm:mt-8">
               <Link
                 to="/faq"
-                className="inline-block px-8 py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
+                className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
               >
                 More Questions
               </Link>

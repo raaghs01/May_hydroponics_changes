@@ -122,33 +122,55 @@ export const Contact: FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log('Form Data Submitted:', formData);
 
-    // This is where you would typically send the formData to your backend API.
-    // The backend would then handle sending the email with the collected data and attachments.
-    // Example: fetch('/api/send-email', { method: 'POST', body: JSON.stringify(formData) });
-
-    setShowSuccessMessage(true);
-
-    setTimeout(() => {
-      setShowSuccessMessage(false);
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        message: '',
-        eventName: '',
-        attendees: '',
-        programName: '',
-        projectName: '',
-        idea: '',
-        resumeFile: null,
-        sopFile: null,
+    try {
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          regarding,
+          // Convert File objects to null since they can't be JSON stringified
+          resumeFile: null,
+          sopFile: null
+        }),
       });
-      setRegarding('');
-    }, 5000);
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+
+      const data = await response.json();
+      console.log('Success:', data);
+      setShowSuccessMessage(true);
+
+      // Reset form after successful submission
+      setTimeout(() => {
+        setShowSuccessMessage(false);
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          message: '',
+          eventName: '',
+          attendees: '',
+          programName: '',
+          projectName: '',
+          idea: '',
+          resumeFile: null,
+          sopFile: null,
+        });
+        setRegarding('');
+      }, 5000);
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Failed to submit form. Please try again.');
+    }
   };
 
   return (
