@@ -383,7 +383,7 @@ const SocialResponsibility = () => {
       </section>
 
       {/* Impact Metrics Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#f5f9f5]">
+      {/* <section className="py-12 sm:py-16 md:py-20 bg-[#f5f9f5]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="flex flex-col items-center mb-8 sm:mb-12">
             <FaChartLine className="text-green-700 text-4xl sm:text-5xl mb-4" />
@@ -415,7 +415,7 @@ const SocialResponsibility = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
