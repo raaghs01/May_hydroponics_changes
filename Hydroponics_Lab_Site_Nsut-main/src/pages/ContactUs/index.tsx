@@ -1,3 +1,430 @@
+// import { type FC, useState, useEffect } from 'react'
+// import { motion } from 'framer-motion'
+// import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+
+
+// export const Contact: FC = () => {
+//   const [openQuestion, setOpenQuestion] = useState<number | null>(null)
+//   const [regarding, setRegarding] = useState('');
+//   const [formData, setFormData] = useState({
+//     firstName: '',
+//     lastName: '',
+//     email: '',
+//     message: '',
+//     eventName: '',
+//     attendees: '',
+//     programName: '',
+//     projectName: '',
+//     idea: '',
+//     resumeFile: null as File | null,
+//     sopFile: null as File | null,
+//   });
+//   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+//   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+  
+
+//   useEffect(() => {
+//     const params = new URLSearchParams(location.search);
+//     const regardingParam = params.get('regarding');
+//     if (regardingParam) {
+//       setRegarding(regardingParam);
+//     }
+//   }, [location.search]);
+
+//   useEffect(() => {
+//     let allRequiredFieldsFilled = false;
+//     const { email,  message, eventName, programName, projectName, idea, resumeFile, sopFile } = formData;
+
+//     if (regarding !== '' && !email) {
+//       allRequiredFieldsFilled = false;
+//     } else if (regarding === 'events-and-workshops') {
+//       if (email && eventName && message) {
+//         allRequiredFieldsFilled = true;
+//       } else {
+//         allRequiredFieldsFilled = false;
+//       }
+//     } else if (regarding === 'training') {
+//       if (email && programName && message) {
+//         allRequiredFieldsFilled = true;
+//       } else {
+//         allRequiredFieldsFilled = false;
+//       }
+//     } else if (regarding === 'collaboration') {
+//       if (email && projectName && idea && message) {
+//         allRequiredFieldsFilled = true;
+//       } else {
+//         allRequiredFieldsFilled = false;
+//       }
+//     } else if (regarding === 'internship') {
+//       if (email && resumeFile && sopFile && message) {
+//         allRequiredFieldsFilled = true;
+//       } else {
+//         allRequiredFieldsFilled = false;
+//       }
+//     } else if (regarding === '') {
+//       allRequiredFieldsFilled = false;
+//     } else {
+//       if (email && message) {
+//         allRequiredFieldsFilled = true;
+//       } else {
+//         allRequiredFieldsFilled = false;
+//       }
+//     }
+
+//     setIsButtonDisabled(!allRequiredFieldsFilled);
+//   }, [formData, regarding]);
+
+//   const faqItems = [
+//     {
+//       question: "What is hydroponics?",
+//       answer: "Hydroponic gardening is the process of growing plants and vegetables via a mineral-rich water solution, whereby the plants continuously draw on nutrients dissolved in water."
+//     },
+//     {
+//       question: "Is hydroponics a newer technology?",
+//       answer: "While modern hydroponics has evolved significantly, the basic concept dates back to ancient civilizations. The Hanging Gardens of Babylon, one of the Seven Wonders of the Ancient World, is believed to have used hydroponic principles."
+//     },
+//     {
+//       question: "What are the applications of hydroponics?",
+//       answer: "Hydroponics has wide-ranging applications including urban farming, commercial agriculture, research facilities, educational purposes, and even space farming experiments by NASA."
+//     },
+//     {
+//       question: "Can hydroponics produce all types of plants?",
+//       answer: "While many plants can be grown hydroponically, some are more suitable than others. Leafy greens, herbs, tomatoes, and strawberries are particularly well-suited for hydroponic systems."
+//     },
+//     {
+//       question: "Who can benefit from training at the Centre of Excellence in Hydroponics?",
+//       answer: "Our training programs are designed for students, farmers, entrepreneurs, researchers, and anyone interested in sustainable agriculture and modern farming techniques."
+//     },
+//     {
+//       question: "What type of plants are grown in the Centre's hydroponic systems?",
+//       answer: "The Centre grows a variety of plants including leafy greens, herbs, vegetables, and some fruits, demonstrating different hydroponic techniques and systems."
+//     },
+//     {
+//       question: "How does hydroponics contribute to sustainability?",
+//       answer: "Hydroponics uses up to 90% less water than traditional farming, requires less space, eliminates the need for soil, reduces transportation costs, and can provide fresh produce year-round."
+//     },
+//     {
+//       question: "What are the career opportunities after completing the training?",
+//       answer: "Graduates can pursue careers in commercial hydroponic farming, consulting, research, teaching, or start their own hydroponic business ventures."
+//     }
+//   ]
+
+//   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+//     const { name, value } = e.target;
+//     setFormData(prev => ({ ...prev, [name]: value }));
+//   };
+
+//   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+//     const { name, files } = e.target;
+//     if (files && files.length > 0) {
+//       setFormData(prev => ({ ...prev, [name]: files[0] }));
+//     } else {
+//       setFormData(prev => ({ ...prev, [name]: null }));
+//     }
+//   };
+
+//   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+//     e.preventDefault();
+//     console.log('Form Data Submitted:', formData);
+
+//     // This is where you would typically send the formData to your backend API.
+//     // The backend would then handle sending the email with the collected data and attachments.
+//     // Example: fetch('/api/send-email', { method: 'POST', body: JSON.stringify(formData) });
+
+//     setShowSuccessMessage(true);
+
+//     setTimeout(() => {
+//       setShowSuccessMessage(false);
+//       setFormData({
+//         firstName: '',
+//         lastName: '',
+//         email: '',
+//         message: '',
+//         eventName: '',
+//         attendees: '',
+//         programName: '',
+//         projectName: '',
+//         idea: '',
+//         resumeFile: null,
+//         sopFile: null,
+//       });
+//       setRegarding('');
+//     }, 5000);
+//   };
+
+//   return (
+//     <div className="min-h-screen">
+//       {/* Hero Section */}
+//       <div className="relative min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
+//         {/* Background Image */}
+//         <div 
+//           className="absolute inset-0 z-0"
+//           style={{
+//             backgroundImage: 'url("/bg2.jpg")',
+//             backgroundSize: 'cover',
+//             backgroundPosition: 'center',
+//             backgroundAttachment: 'fixed',
+//             filter: 'brightness(0.7)'
+//           }}
+//         />
+//         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+//           <motion.h1
+//             initial={{ opacity: 0, y: 20 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 0.8 }}
+//             className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-montserrat text-white text-center mb-4 sm:mb-6 drop-shadow-lg"
+//           >
+//             Contact Us
+//           </motion.h1>
+//           <motion.p
+//             initial={{ opacity: 0, y: 20 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 0.8, delay: 0.2 }}
+//             className="text-base sm:text-lg md:text-xl text-white/90 text-center max-w-3xl mx-auto drop-shadow"
+//           >
+//             Get in touch with our team
+//           </motion.p>
+//         </div>
+//       </div>
+
+//       {/* Contact Form Section */}
+//       <section className="py-12 sm:py-16 md:py-20 bg-white">
+//         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+//           <div className="max-w-6xl mx-auto">
+//             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
+//               {/* Contact Information */}
+//               <div className="bg-[#e8f5e9] p-6 sm:p-8 md:p-12 rounded-lg">
+//                 <h2 className="text-2xl sm:text-3xl font-montserrat text-[#0A3622] mb-6 sm:mb-8 font-weight: 600">
+//                   Contact Information
+//                 </h2>
+//                 <div className="space-y-4 sm:space-y-6">
+//                   <div className="flex items-start space-x-3 sm:space-x-4">
+//                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A3622] flex items-center justify-center text-white">
+//                       <FaMapMarkerAlt className="w-4 h-4 sm:w-5 sm:h-5" />
+//                     </div>
+//                     <div>
+//                       <h3 className="text-base sm:text-lg font-medium text-[#0A3622] mb-1 sm:mb-2">Address</h3>
+//                       <p className="text-sm sm:text-base text-gray-700">
+//                         Netaji Subhas University of Technology
+//                         <br />
+//                         Sector 3, Dwarka
+//                         <br />
+//                         New Delhi - 110078
+//                       </p>
+//                     </div>
+//                   </div>
+
+//                   <div className="flex items-start space-x-3 sm:space-x-4">
+//                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A3622] flex items-center justify-center text-white">
+//                       <FaPhone className="w-4 h-4 sm:w-5 sm:h-5" />
+//                     </div>
+//                     <div>
+//                       <h3 className="text-base sm:text-lg font-medium text-[#0A3622] mb-1 sm:mb-2">Phone</h3>
+//                       <p className="text-sm sm:text-base text-gray-700">+91 1234567890</p>
+//                     </div>
+//                   </div>
+
+//                   <div className="flex items-start space-x-3 sm:space-x-4">
+//                     <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A3622] flex items-center justify-center text-white">
+//                       <FaEnvelope className="w-4 h-4 sm:w-5 sm:h-5" />
+//                     </div>
+//                     <div>
+//                       <h3 className="text-base sm:text-lg font-medium text-[#0A3622] mb-1 sm:mb-2">Email</h3>
+//                       <p className="text-sm sm:text-base text-gray-700">info@hydroponicslab.com</p>
+//                     </div>
+//                   </div>
+//                 </div>
+
+//                 {/* Social Media Links */}
+//                 <div className="mt-8 sm:mt-12">
+//                   <h3 className="text-base sm:text-lg font-medium text-[#0A3622] mb-4 sm:mb-6">Follow Us</h3>
+//                   <div className="flex space-x-4 sm:space-x-6">
+//                     <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A3622] flex items-center justify-center text-white hover:bg-[#0A3622]/90 transition-colors">
+//                       <FaFacebookF className="w-4 h-4 sm:w-5 sm:h-5" />
+//                     </a>
+//                     <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A3622] flex items-center justify-center text-white hover:bg-[#0A3622]/90 transition-colors">
+//                       <FaTwitter className="w-4 h-4 sm:w-5 sm:h-5" />
+//                     </a>
+//                     <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A3622] flex items-center justify-center text-white hover:bg-[#0A3622]/90 transition-colors">
+//                       <FaInstagram className="w-4 h-4 sm:w-5 sm:h-5" />
+//                     </a>
+//                     <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0A3622] flex items-center justify-center text-white hover:bg-[#0A3622]/90 transition-colors">
+//                       <FaLinkedinIn className="w-4 h-4 sm:w-5 sm:h-5" />
+//                     </a>
+//                   </div>
+//                 </div>
+//               </div>
+
+//               {/* Contact Form */}
+//               <div className="bg-white p-6 sm:p-8 md:p-12 rounded-lg shadow-lg">
+//                 <h2 className="text-2xl sm:text-3xl font-montserrat text-[#0A3622] mb-6 sm:mb-8 font-weight: 600">
+//                   Send us a Message
+//                 </h2>
+//                 <form className="space-y-4 sm:space-y-6">
+//                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+//                     <div>
+//                       <label htmlFor="firstName" className="block text-sm sm:text-base font-medium text-gray-700 mb-1 sm:mb-2">
+//                         First Name
+//                       </label>
+//                       <input
+//                         type="text"
+//                         id="firstName"
+//                         name="firstName"
+//                         className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0A3622] focus:border-transparent"
+//                         required
+//                       />
+//                     </div>
+//                     <div>
+//                       <label htmlFor="lastName" className="block text-sm sm:text-base font-medium text-gray-700 mb-1 sm:mb-2">
+//                         Last Name
+//                       </label>
+//                       <input
+//                         type="text"
+//                         id="lastName"
+//                         name="lastName"
+//                         className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0A3622] focus:border-transparent"
+//                         required
+//                       />
+//                     </div>
+//                   </div>
+
+//                   <div>
+//                     <label htmlFor="email" className="block text-sm sm:text-base font-medium text-gray-700 mb-1 sm:mb-2">
+//                       Email
+//                     </label>
+//                     <input
+//                       type="email"
+//                       id="email"
+//                       name="email"
+//                       className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0A3622] focus:border-transparent"
+//                       required
+//                     />
+//                   </div>
+
+//                   <div>
+//                     <label htmlFor="subject" className="block text-sm sm:text-base font-medium text-gray-700 mb-1 sm:mb-2">
+//                       Subject
+//                     </label>
+//                     <input
+//                       type="text"
+//                       id="subject"
+//                       name="subject"
+//                       className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0A3622] focus:border-transparent"
+//                       required
+//                     />
+//                   </div>
+
+//                   <div>
+//                     <label htmlFor="message" className="block text-sm sm:text-base font-medium text-gray-700 mb-1 sm:mb-2">
+//                       Message
+//                     </label>
+//                     <textarea
+//                       id="message"
+//                       name="message"
+//                       rows={4}
+//                       className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0A3622] focus:border-transparent"
+//                       required
+//                     ></textarea>
+//                   </div>
+
+//                   <button
+//                     type="submit"
+//                     className="w-full bg-[#0A3622] text-white py-2 sm:py-3 px-4 sm:px-6 rounded-md hover:bg-[#0A3622]/90 transition-colors text-sm sm:text-base font-medium"
+//                   >
+//                     Send Message
+//                   </button>
+//                 </form>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Map Section */}
+//       <section className="py-12 sm:py-16 md:py-20 bg-[#e8f5e9]">
+//         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+//           <div className="max-w-6xl mx-auto">
+//             <h2 className="text-2xl sm:text-3xl font-montserrat text-[#0A3622] mb-6 sm:mb-8 text-center font-weight: 600">
+//               Find Us
+//             </h2>
+//             <div className="aspect-[16/9] w-full rounded-lg overflow-hidden shadow-lg">
+//               <iframe
+//                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.9024424305387!2d77.0302!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzUwLjAiTiA3N8KwMDEnNTAuNyJF!5e0!3m2!1sen!2sin!4v1234567890"
+//                 width="100%"
+//                 height="100%"
+//                 style={{ border: 0 }}
+//                 allowFullScreen
+//                 loading="lazy"
+//                 referrerPolicy="no-referrer-when-downgrade"
+//               ></iframe>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* FAQ Section */}
+//       <section className="bg-[#e8f5e9] py-16" id="faq">
+//         <div className="container mx-auto px-4 max-w-3xl">
+//           <motion.h2
+//             initial={{ opacity: 0, y: 20 }}
+//             whileInView={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 0.8 }}
+//             className="text-5xl text-[#0A3622] font-montserrat font-weight: 600  mb-4 text-center"
+//           >
+//             Growing Clarity:
+//           </motion.h2>
+//           <motion.p
+//             initial={{ opacity: 0, y: 20 }}
+//             whileInView={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 0.8, delay: 0.2 }}
+//             className="text-2xl font-montserrat text-[#0A3622] font-weight: 600 mb-8 text-center"
+//           >
+//             Your Questions, Our Answers
+//           </motion.p>
+//           <div className="space-y-4">
+//             {faqItems.map((item, index) => (
+//               <motion.div
+//                 key={index}
+//                 initial={{ opacity: 0, y: 20 }}
+//                 whileInView={{ opacity: 1, y: 0 }}
+//                 transition={{ delay: index * 0.1 }}
+//                 className="bg-[#0A3622] backdrop-blur-sm rounded-lg overflow-hidden"
+//               >
+//                 <button
+//                   onClick={() => setOpenQuestion(openQuestion === index ? null : index)}
+//                   className="w-full px-6 py-4 text-left flex justify-between items-center text-white hover:bg-white/5 transition-colors font-montserrat font-weight: 600"
+//                 >
+//                   <span className="font-medium font-montserrat font-weight: 600">{item.question}</span>
+//                   <svg
+//                     className={`w-5 h-5 transform transition-transform ${
+//                       openQuestion === index ? 'rotate-180' : ''
+//                     }`}
+//                     fill="none"
+//                     viewBox="0 0 24 24"
+//                     stroke="currentColor"
+//                   >
+//                     <path
+//                       strokeLinecap="round"
+//                       strokeLinejoin="round"
+//                       strokeWidth={2}
+//                       d="M19 9l-7 7-7-7"
+//                     />
+//                   </svg>
+//                 </button>
+//                 {openQuestion === index && (
+//                   <div className="px-6 py-4 text-gray-200 font-montserrat font-weight: 600">
+//                     {item.answer}
+//                   </div>
+//                 )}
+//               </motion.div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//     </div>
+//   )
+// }
+
 import { type FC, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 

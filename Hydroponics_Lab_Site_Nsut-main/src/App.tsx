@@ -11,7 +11,7 @@ import { Navbar } from './components/Navbar';
 import { Blog } from './pages/Blog';
 import { FAQ } from './pages/FAQ';
 import { Achievements } from './pages/Achievements';
-import { Training } from './pages/Training';
+// import { Training } from './pages/Training';
 import { Projects }  from './pages/Projects';
 import VisionAndMission from './pages/VisionAndMission';
 import  SocialResponsibility  from './pages/SocialResponsibility';
@@ -45,7 +45,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/achievements" element={<Achievements />} />
-            <Route path="/training" element={<Training />} />
+            {/* <Route path="/training" element={<Training />} /> */}
             <Route path="/projects" element={<Projects />} />
             <Route path="/vision-and-mission" element={<VisionAndMission />} />
             <Route path="/social-responsibility" element={<SocialResponsibility />} />
