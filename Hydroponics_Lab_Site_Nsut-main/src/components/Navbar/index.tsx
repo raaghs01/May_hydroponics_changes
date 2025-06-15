@@ -25,16 +25,29 @@ export const Navbar = () => {
   const navigationItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
+<<<<<<< HEAD
     { name: 'Vision & Mission', path: '/visionandmission' },
     { name: 'Projects', path: '/projects' },
     { name: 'Social Interaction', path: '/socialinteraction' },
+=======
+    { name: 'Vision & Mission', path: '/vision-and-mission' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Social Responsibility', path: '/social-responsibility' },
+>>>>>>> 33fb613631c20c6c6b21628d1813d2e5569a0334
     { name: 'News', path: '/news' },
     { name: 'Blog', path: '/blog' },
     // { name: 'FAQ', path: '/faq' },
     // { name: 'Achievements', path: '/achievements' },
     // { name: 'Training', path: '/training' },
+<<<<<<< HEAD
     { name: 'Contact Us', path: '/contactus' },
     { name: 'Get Involved', path: '/getinvolved' },
+=======
+    { name: 'Get Involved', path: '/get-involved' },
+    { name: 'Contact Us', path: '/contactus' },
+    // { name: 'Our Startup', path: '/our-startup' },
+    
+>>>>>>> 33fb613631c20c6c6b21628d1813d2e5569a0334
   ];
 
   return (
@@ -64,8 +77,13 @@ export const Navbar = () => {
           <div className="flex items-center justify-between px-4 py-3">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
+<<<<<<< HEAD
               <img src="/group6.png" alt="Company Logo" className="h-12 w-12" />
               <span className="text-xl font-semibold text-[#064402]">HHTRF</span>
+=======
+              <img src="/Group 6.png" alt="Company Logo" className="h-10 w-35" />
+              {/* <span className="text-xl font-semibold text-[#064402]">HHTRF</span> */}
+>>>>>>> 33fb613631c20c6c6b21628d1813d2e5569a0334
             </Link>
 
             {/* Desktop Navigation */}
@@ -131,4 +149,8 @@ export const Navbar = () => {
       </motion.nav>
     </>
   );
+<<<<<<< HEAD
 }; 
+=======
+}; 
+>>>>>>> 33fb613631c20c6c6b21628d1813d2e5569a0334
