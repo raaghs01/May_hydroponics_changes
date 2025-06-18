@@ -178,8 +178,6 @@ export const Contact: FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="min-h-screen bg-gradient-to-b from-[#e8f5e9] to-white">
-      {/* Hero Section */}
       <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
       <div 
           className="absolute inset-0 z-0"
@@ -199,7 +197,7 @@ export const Contact: FC = () => {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-montserrat font-weight: 600 text-white text-center mb-6 drop-shadow-lg"
           >
-            Getting in Touch with COE HYDROPONICS
+            Getting in touch With COE HYDROPONICS
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
