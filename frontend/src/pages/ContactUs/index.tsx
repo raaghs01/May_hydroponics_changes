@@ -178,9 +178,10 @@ export const Contact: FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center">
-        {/* Background Image */}
-        <div 
+      <div className="min-h-screen bg-gradient-to-b from-[#e8f5e9] to-white">
+      {/* Hero Section */}
+      <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+      <div 
           className="absolute inset-0 z-0"
           style={{
             backgroundImage: 'url("/bg2.jpg")',
@@ -191,16 +192,25 @@ export const Contact: FC = () => {
           }}
         />
         {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
-        {/* Dark Overlay */}
-        {/* <div className="absolute inset-0 z-0 bg-black opacity-50" /> */}
-        {/* Content Overlay */}
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-montserrat font-weight: 600 mb-4 text-white">Getting in touch with COE HYDROPONICS</h1>
-          <p className="text-lg md:text-xl font-montserrat font-weight: 600 max-w-2xl mx-auto text-white/90">
-            Have questions about our programs, training, or research? Use the form below or reach out directly.
-          </p>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-5xl md:text-7xl font-montserrat font-weight: 600 text-white text-center mb-6 drop-shadow-lg"
+          >
+            Getting in Touch with COE HYDROPONICS
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-xl font-montserrat font-weight: 600 text-white/90 text-center max-w-3xl mx-auto drop-shadow"
+          >
+            Have questions about our programs, training, or research? Use the form below or reach out directly
+          </motion.p>
         </div>
-      </section>
+      </div>
       
 
       {/* Contact Form Section */}
