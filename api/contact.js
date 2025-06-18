@@ -4,7 +4,7 @@ import cors from 'cors';
 
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:5173', // your frontend's URL
+  origin: 'may-hydroponics-changes.vercel.app', // your frontend's URL
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
   credentials: true
