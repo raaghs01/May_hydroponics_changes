@@ -197,7 +197,7 @@ export const Contact: FC = () => {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-montserrat font-weight: 600 text-white text-center mb-6 drop-shadow-lg"
           >
-            Get in touch with our <b>COE HYDROPONICS</b>
+            Get in touch with our COE HYDROPONICS
           </motion.h1>
           <motion.p
            initial={{ opacity: 0, y: 20 }}
