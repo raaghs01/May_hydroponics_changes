@@ -36,7 +36,7 @@ const SocialResponsibility = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg sm:text-xl font-montserrat font-weight: 600 text-white/90 text-center max-w-3xl mx-auto drop-shadow px-4"
           >
-            Building a Sustainable Future Through Community Engagement
+             Our commitment to the society Building a <b>Sustainable future</b> through community engagement
           </motion.p>
         </div>
       </div>
@@ -69,12 +69,12 @@ const SocialResponsibility = () => {
               <LazyImage
                 src="/hydroponics1.jpg"
                 alt="Vision 1"
-                className="rounded-lg shadow-lg w-full h-48 sm:h-56 md:h-64 object-cover"
+                className="rounded-lg shadow-lg w-full h-60 sm:h-60 md:h-74 object-cover"
               />
               <LazyImage
                 src="/hydroponics2.jpg"
                 alt="Vision 2"
-                className="rounded-lg shadow-lg w-full h-48 sm:h-56 md:h-64 object-cover mt-8"
+                className="rounded-lg shadow-lg w-full h-60 sm:h-60 md:h-74 object-cover mt-8"
               />
             </div>
           </div>

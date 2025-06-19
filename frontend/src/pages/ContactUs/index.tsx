@@ -190,20 +190,20 @@ export const Contact: FC = () => {
           }}
         />
         {/* <div className="absolute inset-0 bg-gradient-to-b from-[#0A3622]/80 to-transparent z-0" /> */}
-        <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="relative z-10 container mx-auto px-4 text-center ">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-montserrat font-weight: 600 text-white text-center mb-6 drop-shadow-lg"
           >
-            Getting in touch With COE HYDROPONICS
+            Get in touch with our <b>COE HYDROPONICS</b>
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+           initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl font-montserrat font-weight: 600 text-white/90 text-center max-w-3xl mx-auto drop-shadow"
+            className="text-2xl font-montserrat font-weight: 800 text-white/90 text-center max-w-3xl mx-auto drop-shadow text-bold"
           >
             Have questions about our programs, training, or research? Use the form below or reach out directly
           </motion.p>
@@ -218,9 +218,13 @@ export const Contact: FC = () => {
           <div className="bg-[#e8f5e9] p-12 lg:p-24 space-y-8 text-left">
             <h2 className="text-4xl font-playfair font-montserrat font-weight: 600 text-[#07300f]">Get in Touch</h2>
             <div className="space-y-4 text-gray-700 font-montserrat font-weight: 600">
-              <p className="text-lg">Centre of Excellence</p>
-              <p>Hydroponic Project</p>
-              <p>NSUT, Dwarka</p>
+              <p className="text-lg">Centre of Excellence -Hydroponics Lab</p>
+              {/* <p>Hydroponic Project</p> */}
+              <p>Netaji Subhas University of Technology
+              </p>
+              <p>Dwarka, New Delhi, 110078
+              </p>
+
               <p>123-456-7890</p>
               <p>Coe.hydroponics@nsut.ac.in</p>
             </div>
