@@ -199,12 +199,12 @@ const SocialResponsibility = () => {
                 subtitle: undefined,
                 drivenBy: 'The Centre of Excellence Hydroponics Training & Research Facility, this initiative brings together students, staff, and local leaders to serve communities sustainably.',
                 stats: undefined,
-                statistics: [
-                  { value: '20+', label: 'packets Distributed' },
-                  { value: '20+', label: 'Families Benefited' },
-                  // { value: '', label: 'Distribution Drives' },
-                  { value: '15+', label: 'Volunteers' },
-                ],
+                // statistics: [
+                //   { value: '20+', label: 'packets Distributed' },
+                //   { value: '20+', label: 'Families Benefited' },
+                //   // { value: '', label: 'Distribution Drives' },
+                //   { value: '15+', label: 'Volunteers' },
+                // ],
               },
               {
                 title: 'School Partnerships Program',
