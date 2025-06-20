@@ -147,11 +147,11 @@ export const Home: FC = () => {
               transition={{ duration: 0.8 }}
               className="text-3xl sm:text-4xl md:text-5xl font-montserrat leading-tight"
             >
-              OUR VISION
+              Our Vision
               <br />
-              AND
+              And
               <br />
-              MISSION
+              Mission
             </motion.h2>
           </div>
         </div>

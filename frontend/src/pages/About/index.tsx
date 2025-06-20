@@ -100,7 +100,7 @@ const About: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-montserrat text-white text-center mb-4 sm:mb-6 drop-shadow-lg"
+            className="text-5xl sm:text-7xl md:text-7xl lg:text-7xl font-montserrat text-white text-center mb-4 sm:mb-6 drop-shadow-lg"
           >
             About Us
           </motion.h1>

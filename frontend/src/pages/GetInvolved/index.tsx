@@ -81,7 +81,7 @@ const GetInvolved = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl font-montserrat font-weight: 600 text-white/90 text-center max-w-3xl mx-auto drop-shadow"
+            className="text-2xl font-montserrat font-weight: 600 text-white/90 text-center max-w-3xl mx-auto drop-shadow"
           >
             Join our vibrant learning and research community at the Hydroponics - Horticulture Training and Research Facility.
           </motion.p>
