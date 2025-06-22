@@ -125,7 +125,7 @@ const About: FC = () => {
             className="max-w-5xl mx-auto"
           >
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-montserrat text-[#0A3622] mb-8 sm:mb-12 text-center font-weight: 600">
-              Who are we?
+              Who we are
             </h2>
             <div className="bg-white/90 backdrop-blur-sm p-6 sm:p-8 md:p-12 rounded-lg space-y-4 sm:space-y-6 text-gray-800 font-montserrat text-left font-weight: 600">
               <p className="text-base sm:text-lg md:text-xl leading-relaxed">
