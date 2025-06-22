@@ -147,11 +147,11 @@ export const Home: FC = () => {
               transition={{ duration: 0.8 }}
               className="text-3xl sm:text-4xl md:text-5xl font-montserrat leading-tight"
             >
-              Our Vision
+              Our 
               <br />
-              And
+              Ambition
               <br />
-              Mission
+              
             </motion.h2>
           </div>
         </div>
@@ -210,7 +210,7 @@ export const Home: FC = () => {
               {/* Know More Button */}
               <div className="mt-6 sm:mt-8 flex justify-start">
                 <Link
-                  to="/vision-and-mission"
+                  to="/Ambition"
                   className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-[#0A3622] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
                 >
                   Read More
@@ -316,27 +316,27 @@ export const Home: FC = () => {
             What do we offer?
           </motion.h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
             {[
+              // {
+              //   icon: (
+              //     <svg viewBox="0 0 24 24" className="w-16 h-16 mx-auto mb-6 fill-[#0A3622]">
+              //       <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              //     </svg>
+              //   ),
+              //   title: "Comprehensive Training Programs",
+              //   description: "From beginners to advanced practitioners, we offer tailored training programs that provide theoretical knowledge and practical experience in hydroponics",
+              //   link: "/training"
+              // },
               {
                 icon: (
                   <svg viewBox="0 0 24 24" className="w-16 h-16 mx-auto mb-6 fill-[#0A3622]">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                  </svg>
-                ),
-                title: "Comprehensive Training Programs",
-                description: "From beginners to advanced practitioners, we offer tailored training programs that provide theoretical knowledge and practical experience in hydroponics",
-                link: "/training"
-              },
-              {
-                icon: (
-                  <svg viewBox="0 0 24 24" className="w-16 h-16 mx-auto mb-6 fill-[#0A3622]">
-                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-15v5l4.33 2.5" />
+                    <circle cx="12" cy="12" r="10" />
                   </svg>
                 ),
                 title: "Cutting-Edge Research",
                 description: "Our facility is equipped with modern technology for conducting in-depth research on plant growth, nutrient optimization, and abiotic stress management.",
-                link: "/about#research"
+                link: "/projects#researchpapers"
               },
               {
                 icon: (
@@ -535,14 +535,22 @@ export const Home: FC = () => {
       <section className="bg-[#e8f5e9] py-12 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-2xl sm:text-3xl font-montserrat font-weight: 600 text-[#0A3622] mb-6 sm:mb-8 text-center"
-            >
-              Frequently Asked Questions
-            </motion.h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-5xl text-[#0A3622] font-montserrat font-weight: 600  mb-4 text-center"
+          >
+            Growing Clarity:
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-2xl font-montserrat text-[#0A3622] font-weight: 600 mb-8 text-center"
+          >
+            Your Questions, Our Answers
+          </motion.p>
             <div className="space-y-3 sm:space-y-4">
               {[
                 {

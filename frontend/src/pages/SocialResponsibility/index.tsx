@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import {  FaUsers, FaSchool, FaGraduationCap, FaHeart, FaLeaf,  FaHandsHelping, FaBookOpen, FaLightbulb } from 'react-icons/fa';
+import {  FaUsers, FaLeaf,  FaHandsHelping, FaBookOpen, FaLightbulb } from 'react-icons/fa';
 import LazyImage from '../../components/LazyImage';
 import { useState } from 'react';
 // import { PiStudentFill } from 'react-icons/pi';
@@ -136,49 +136,51 @@ const SocialResponsibility = () => {
             const [modalIdx, setModalIdx] = useState(null as null | number);
             const programs = [
               {
-                name: 'Veggies Distribution Drive & Nutritional Outreach',
-                dateTime: 'Date & Time to be provided',
-                location: 'Location to be provided',
-                briefDescription: 'A concise summary of the event\'s purpose and what it aimed to achieve.',
-                targetAudience: 'Target audience to be provided',
+                name: 'Veggies Distribution and Awareness Drive',
+                dateTime: '11 March 2025',
+                location: 'COE-Hydroponics Facility, NSUT Campus',
+                briefDescription: 'On 11 March 2025, the Centre of Excellence in Hydroponics Training and Research Facility (COE HHTRF) at NSUT organized a community outreach initiative to distribute fresh, chemical-free produce and raise awareness about nutrition and food equity. The event engaged students, faculty, and local residents to promote clean eating and the benefits of hydroponic farming.',
+                // targetAudience: 'Target audience to be provided',
                 keyObjectives: [
-                  'Objective 1 (to be provided)',
-                  'Objective 2 (to be provided)'
+                  'Promote awareness about hydroponic farming and its benefits.',
+                  'Distribute clean, chemical free produce to promote food equity.'
                 ],
                 agenda: [
-                  'Agenda item 1 (to be provided)',
-                  'Agenda item 2 (to be provided)'
+                  'Briefing session and lab tour',
+                  'Distribution of hydroponically grown vegetables',
+                  'Talk on food security, clean eating, and urban farming'
                 ],
-                notableSpeakers: [
-                  { name: 'Speaker Name', topic: 'Topic/Presentation' }
-                ],
+                // notableSpeakers: [
+                //   { name: 'Speaker Name', topic: 'Topic/Presentation' }
+                // ],
                 keyMoments: [
-                  'Key moment 1 (to be provided)',
-                  'Key moment 2 (to be provided)'
+                  'Excitement among community members receiving fresh, pesticide free produce',
+                  // 'Key moment 2 (to be provided)'
                 ],
                 achievements: [
-                  'Achievement 1 (to be provided)',
-                  'Achievement 2 (to be provided)'
+                  'Distribution of dozens of fresh vegetable kits to local community families',
+                  'First time exposure of many participants to hydroponic systems and clean farming techniques'
                 ],
                 funFacts: [
-                  'Fun fact 1 (to be provided)'
+                  'The community was fascinated to see how water and LED lights could grow leafy greens so efficiently'
                 ],
-                totalAttendance: 'Number to be provided',
-                demographics: 'Demographics breakdown to be provided',
-                feedback: 'Feedback summary to be provided',
+                totalAttendance: '70+',
+                demographics: 'Students, Faculty, Community members',
+                feedback: 'Community members expressed gratitude for the fresh vegetables and interest in learning more about home-scale hydroponics',
                 successMetrics: [
-                  'Metric 1 (to be provided)',
-                  'Metric 2 (to be provided)'
+                  'Students Engaged: 15',
+                  'Community members participated: 50+',
+                  'Vegetable kits distributed: 60+'
                 ],
-                sponsorshipImpact: 'Sponsorship impact to be provided',
-                financialSummary: 'Financial summary to be provided',
+                // sponsorshipImpact: 'Sponsorship impact to be provided',
+                // financialSummary: 'Financial summary to be provided',
                 lessonsLearned: [
-                  'Lesson 1 (to be provided)',
-                  'Lesson 2 (to be provided)'
+                  'Community engagements events benefit from pairing education with tangible takeaways like veggie kits',
+                  // 'Lesson 2 (to be provided)'
                 ],
                 recommendations: [
-                  'Recommendation 1 (to be provided)',
-                  'Recommendation 2 (to be provided)'
+                  'Simple DIY hydroponic kits for students can be created to try at home',
+                  'Potential partnerships with NGOs can be explored for broader urban food awareness campaigns'
                 ],
                 visuals: [
                   { type: 'photo', src: '/vegetation-drive.jpg', alt: 'Event photo 1' },
@@ -197,7 +199,7 @@ const SocialResponsibility = () => {
                   'Promote food equity',
                 ],
                 details: 'Our veggies distribution drives ensure that fresh, chemical-free produce reaches those who need it most. We partner with local organizations to educate communities on nutrition and promote food equity, making a tangible impact on public health and well-being.',
-                icon: <FaHeart className="text-5xl text-[#0A3622] mb-4" />, 
+                icon: <FaLightbulb className="text-5xl text-[#0A3622] mb-4" />, 
                 quote: '"Nourishing our community"',
                 accent: 'bg-gradient-to-b from-[#0A3622] to-[#ffe082]',
                 subtitle: undefined,
@@ -211,48 +213,48 @@ const SocialResponsibility = () => {
               },
               {
                 name: 'School Partnerships Program',
-                dateTime: 'Date & Time to be provided',
-                location: 'Location to be provided',
-                briefDescription: 'A concise summary of the event\'s purpose and what it aimed to achieve.',
-                targetAudience: 'Target audience to be provided',
+                dateTime: '6 May 2025',
+                location: 'Co-ed Sarvodaya Vidyalaya, Sector 13, Dwarka ',
+                briefDescription: 'As part of its outreach and education mission, COE HHTRF conducted a one day hydroponics based demonstration and awareness session at a government school in Dwarka on 6 May 2025 . The session was designed to introduce students to modern agricultural techniques through an experimental learning format, promoting environmental education and sustainable awareness.',
+                // targetAudience: 'Target audience to be provided',
                 keyObjectives: [
-                  'Objective 1 (to be provided)',
-                  'Objective 2 (to be provided)'
+                  'Educate school students about sustainable and water efficient agriculture',
+                  'Encourage youth participation and awareness in environmental responsibilty'
                 ],
                 agenda: [
-                  'Agenda item 1 (to be provided)',
-                  'Agenda item 2 (to be provided)'
+                  'Introduction to hydroponics and sustainability ',
+                  'Interactive Q & A session with students'
                 ],
                 notableSpeakers: [
-                  { name: 'Speaker Name', topic: 'Topic/Presentation' }
+                  { name: 'Dr. Akhilesh Dubey' }
                 ],
                 keyMoments: [
-                  'Key moment 1 (to be provided)',
-                  'Key moment 2 (to be provided)'
+                  'Enthusiastic student participation during hydroponics demonstration',
+                  'Curious questions from young learners '
                 ],
                 achievements: [
-                  'Achievement 1 (to be provided)',
-                  'Achievement 2 (to be provided)'
+                  'Successful engagement of 100+ students through experiential learning',
+                  'Positive collaboration between academia and local stakeholders'
                 ],
                 funFacts: [
-                  'Fun fact 1 (to be provided)'
+                  'Many students were surprised to learn that plants can grow without soil'
                 ],
-                totalAttendance: 'Number to be provided',
-                demographics: 'Demographics breakdown to be provided',
-                feedback: 'Feedback summary to be provided',
+                totalAttendance: '100+',
+                demographics: 'Students, Faculty ',
+                feedback: 'Students found the session fun and insightful particularly live plant setup ',
                 successMetrics: [
-                  'Metric 1 (to be provided)',
-                  'Metric 2 (to be provided)'
+                  'Schools Reached: 1 government school',
+                  'Students engaged: 100+'
                 ],
-                sponsorshipImpact: 'Sponsorship impact to be provided',
-                financialSummary: 'Financial summary to be provided',
+                // sponsorshipImpact: 'Sponsorship impact to be provided',
+                // financialSummary: 'Financial summary to be provided',
                 lessonsLearned: [
-                  'Lesson 1 (to be provided)',
-                  'Lesson 2 (to be provided)'
+                  'Early coordination with schools help tailor sessions to students at early age',
+                  'Live demos significantly boost understanding and retention compared to passive presentations'
                 ],
                 recommendations: [
-                  'Recommendation 1 (to be provided)',
-                  'Recommendation 2 (to be provided)'
+                  'Consider expanding the outreach to more schools and rural institutions with limited exposure to agro-tech',
+                  'Establish a feedback loop to assess long term impact and curiosity retention'
                 ],
                 visuals: [
                   { type: 'photo', src: '/schoolpartnership.jpg', alt: 'Event photo 1' },
@@ -270,7 +272,7 @@ const SocialResponsibility = () => {
                   'Foster environmental awareness',
                 ],
                 details: 'Through our school partnerships, we set up hydroponic gardens and run interactive sessions that make environmental education engaging and practical. Students gain hands-on experience in sustainable agriculture, fostering a new generation of environmentally conscious leaders.',
-                icon: <FaSchool className="text-5xl text-[#0A3622] mb-4" />, 
+                icon: <FaLightbulb className="text-5xl text-[#0A3622] mb-4" />, 
                 quote: '"Growing the next generation"',
                 accent: 'bg-gradient-to-b from-[#0A3622] to-[#b3e5fc]',
                 subtitle: undefined,
@@ -306,109 +308,121 @@ const SocialResponsibility = () => {
               </div>
               {/* Modal */}
               {modalIdx !== null && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center" style={{ background: 'none' }}>
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4" onClick={() => setModalIdx(null)}>
                   <div
-                    className="w-full max-w-3xl rounded-2xl shadow-xl border border-[#b2dfdb] bg-gradient-to-br from-[#e8f5e9] via-white to-[#f5f9f5] p-4 sm:p-8 font-montserrat overflow-y-auto text-left"
+                    className="w-full max-w-4xl rounded-lg shadow-2xl bg-white p-6 sm:p-8 md:p-10 font-montserrat overflow-y-auto text-left relative"
                     style={{ maxHeight: '90vh' }}
                     onClick={e => e.stopPropagation()}
                   >
                     <button
-                      className="absolute top-4 right-4 text-2xl text-[#0A3622] hover:text-[#07300f] focus:outline-none z-20 bg-white/80 rounded-full p-2 shadow"
-                      style={{ right: '1.5rem', top: '1.5rem' }}
+                      className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 focus:outline-none"
                       onClick={() => setModalIdx(null)}
                       aria-label="Close"
                     >
-                      &times;
+                      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
                     </button>
-                    <h4 className="text-2xl sm:text-3xl font-bold text-[#0A3622] mb-4 tracking-tight border-b border-[#b2dfdb] pb-2 text-left">Post-Event Report</h4>
-                    <div className="space-y-6">
+                    <h4 className="text-3xl sm:text-4xl font-bold text-[#0A3622] mb-6 border-b-2 border-gray-200 pb-4 text-center">Post-Event Report</h4>
+                    <div className="space-y-8">
                       {/* 1. Event Overview */}
                       <div>
-                        <h5 className="text-xl font-semibold text-[#0A3622] mb-2">Event Overview</h5>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2">
-                          <div><span className="font-semibold">Name:</span> {programs[modalIdx].name}</div>
-                          <div><span className="font-semibold">Date & Time:</span> {programs[modalIdx].dateTime}</div>
-                          <div><span className="font-semibold">Location:</span> {programs[modalIdx].location}</div>
-                          <div><span className="font-semibold">Target Audience:</span> {programs[modalIdx].targetAudience}</div>
-                        </div>
-                        <div className="mb-2"><span className="font-semibold">Brief Description:</span> {programs[modalIdx].briefDescription}</div>
-                        <div className="mb-2"><span className="font-semibold">Key Objectives:</span>
-                          <ul className="list-disc pl-6 mt-1 text-[#0A3622]/90 space-y-1">
-                            {programs[modalIdx].keyObjectives.map((obj, i) => <li key={i}>{obj}</li>)}
-                          </ul>
+                        <h5 className="text-2xl font-semibold text-[#0A3622] mb-4 border-b pb-2">Event Overview</h5>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+                          <div><span className="font-semibold text-gray-600">Name:</span> <p className="text-gray-900">{programs[modalIdx].name}</p></div>
+                          <div><span className="font-semibold text-gray-600">Date & Time:</span> <p className="text-gray-900">{programs[modalIdx].dateTime}</p></div>
+                          <div className="col-span-2"><span className="font-semibold text-gray-600">Location:</span> <p className="text-gray-900">{programs[modalIdx].location}</p></div>
+                          <div className="col-span-2"><span className="font-semibold text-gray-600">Brief Description:</span> <p className="text-gray-800 leading-relaxed">{programs[modalIdx].briefDescription}</p></div>
+                          <div className="col-span-2"><span className="font-semibold text-gray-600">Key Objectives:</span>
+                            <ul className="list-disc pl-6 mt-2 text-gray-800 space-y-1">
+                              {programs[modalIdx].keyObjectives.map((obj, i) => <li key={i}>{obj}</li>)}
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                      <hr className="border-[#b2dfdb]" />
+                      
                       {/* 2. Event Highlights */}
                       <div>
-                        <h5 className="text-xl font-semibold text-[#0A3622] mb-2">Event Highlights</h5>
-                        <div className="mb-2"><span className="font-semibold">Agenda:</span>
-                          <ul className="list-disc pl-6 mt-1 text-[#0A3622]/90 space-y-1">
-                            {programs[modalIdx].agenda.map((item, i) => <li key={i}>{item}</li>)}
-                          </ul>
-                        </div>
-                        <div className="mb-2"><span className="font-semibold">Notable Speakers/Presentations:</span>
-                          <ul className="list-disc pl-6 mt-1 text-[#0A3622]/90 space-y-1">
-                            {programs[modalIdx].notableSpeakers.map((sp, i) => <li key={i}><span className="font-semibold">{sp.name}</span>: {sp.topic}</li>)}
-                          </ul>
-                        </div>
-                        <div className="mb-2"><span className="font-semibold">Key Moments:</span>
-                          <ul className="list-disc pl-6 mt-1 text-[#0A3622]/90 space-y-1">
-                            {programs[modalIdx].keyMoments.map((m, i) => <li key={i}>{m}</li>)}
-                          </ul>
-                        </div>
-                        <div className="mb-2"><span className="font-semibold">Achievements:</span>
-                          <ul className="list-disc pl-6 mt-1 text-[#0A3622]/90 space-y-1">
-                            {programs[modalIdx].achievements.map((a, i) => <li key={i}>{a}</li>)}
-                          </ul>
-                        </div>
-                        <div className="mb-2"><span className="font-semibold">Fun Facts:</span>
-                          <ul className="list-disc pl-6 mt-1 text-[#0A3622]/90 space-y-1">
-                            {programs[modalIdx].funFacts.map((f, i) => <li key={i}>{f}</li>)}
-                          </ul>
+                        <h5 className="text-2xl font-semibold text-[#0A3622] mb-4 border-b pb-2">Event Highlights</h5>
+                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                          <div>
+                            <h6 className="font-semibold text-gray-600 mb-2">Agenda:</h6>
+                            <ul className="list-disc pl-5 text-gray-800 space-y-1">
+                              {programs[modalIdx].agenda.map((item, i) => <li key={i}>{item}</li>)}
+                            </ul>
+                          </div>
+                          {programs[modalIdx].notableSpeakers && (
+                            <div>
+                              <h6 className="font-semibold text-gray-600 mb-2">Notable Speakers:</h6>
+                              <ul className="list-disc pl-5 text-gray-800 space-y-1">
+                                {programs[modalIdx].notableSpeakers?.map((sp, i) => <li key={i}>{sp.name}</li>)}
+                              </ul>
+                            </div>
+                          )}
+                          <div>
+                            <h6 className="font-semibold text-gray-600 mb-2">Key Moments:</h6>
+                            <ul className="list-disc pl-5 text-gray-800 space-y-1">
+                              {programs[modalIdx].keyMoments.map((m, i) => <li key={i}>{m}</li>)}
+                            </ul>
+                          </div>
+                          <div>
+                            <h6 className="font-semibold text-gray-600 mb-2">Achievements:</h6>
+                            <ul className="list-disc pl-5 text-gray-800 space-y-1">
+                              {programs[modalIdx].achievements.map((a, i) => <li key={i}>{a}</li>)}
+                            </ul>
+                          </div>
+                          <div className="col-span-2">
+                            <h6 className="font-semibold text-gray-600 mb-2">Fun Facts:</h6>
+                            <ul className="list-disc pl-5 text-gray-800 space-y-1">
+                              {programs[modalIdx].funFacts.map((f, i) => <li key={i}>{f}</li>)}
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                      <hr className="border-[#b2dfdb]" />
+
                       {/* 3. Attendee Information */}
                       <div>
-                        <h5 className="text-xl font-semibold text-[#0A3622] mb-2">Attendee Information</h5>
-                        <div className="mb-2"><span className="font-semibold">Total Attendance:</span> {programs[modalIdx].totalAttendance}</div>
-                        <div className="mb-2"><span className="font-semibold">Demographics:</span> {programs[modalIdx].demographics}</div>
-                        <div className="mb-2"><span className="font-semibold">Feedback:</span> {programs[modalIdx].feedback}</div>
+                        <h5 className="text-2xl font-semibold text-[#0A3622] mb-4 border-b pb-2">Attendee Information</h5>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+                          <div><span className="font-semibold text-gray-600">Total Attendance:</span> <p className="text-gray-900">{programs[modalIdx].totalAttendance}</p></div>
+                          <div><span className="font-semibold text-gray-600">Demographics:</span> <p className="text-gray-900">{programs[modalIdx].demographics}</p></div>
+                          <div className="col-span-2"><span className="font-semibold text-gray-600">Feedback:</span> <p className="text-gray-800 leading-relaxed">{programs[modalIdx].feedback}</p></div>
+                        </div>
                       </div>
-                      <hr className="border-[#b2dfdb]" />
+
                       {/* 4. Outcomes and Impact */}
                       <div>
-                        <h5 className="text-xl font-semibold text-[#0A3622] mb-2">Outcomes and Impact</h5>
-                        <div className="mb-2"><span className="font-semibold">Success Metrics:</span>
-                          <ul className="list-disc pl-6 mt-1 text-[#0A3622]/90 space-y-1">
-                            {programs[modalIdx].successMetrics.map((m, i) => <li key={i}>{m}</li>)}
-                          </ul>
-                        </div>
-                        <div className="mb-2"><span className="font-semibold">Sponsorship Impact:</span> {programs[modalIdx].sponsorshipImpact}</div>
-                        <div className="mb-2"><span className="font-semibold">Financial Summary:</span> {programs[modalIdx].financialSummary}</div>
-                        <div className="mb-2"><span className="font-semibold">Lessons Learned:</span>
-                          <ul className="list-disc pl-6 mt-1 text-[#0A3622]/90 space-y-1">
-                            {programs[modalIdx].lessonsLearned.map((l, i) => <li key={i}>{l}</li>)}
-                          </ul>
-                        </div>
-                        <div className="mb-2"><span className="font-semibold">Recommendations:</span>
-                          <ul className="list-disc pl-6 mt-1 text-[#0A3622]/90 space-y-1">
-                            {programs[modalIdx].recommendations.map((r, i) => <li key={i}>{r}</li>)}
-                          </ul>
+                        <h5 className="text-2xl font-semibold text-[#0A3622] mb-4 border-b pb-2">Outcomes and Impact</h5>
+                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                            <div>
+                                <h6 className="font-semibold text-gray-600 mb-2">Success Metrics:</h6>
+                                <ul className="list-disc pl-5 text-gray-800 space-y-1">
+                                {programs[modalIdx].successMetrics.map((m, i) => <li key={i}>{m}</li>)}
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 className="font-semibold text-gray-600 mb-2">Lessons Learned:</h6>
+                                <ul className="list-disc pl-5 text-gray-800 space-y-1">
+                                {programs[modalIdx].lessonsLearned.map((l, i) => <li key={i}>{l}</li>)}
+                                </ul>
+                            </div>
+                            <div className="col-span-2">
+                                <h6 className="font-semibold text-gray-600 mb-2">Recommendations:</h6>
+                                <ul className="list-disc pl-5 text-gray-800 space-y-1">
+                                {programs[modalIdx].recommendations.map((r, i) => <li key={i}>{r}</li>)}
+                                </ul>
+                            </div>
                         </div>
                       </div>
                       {/* 5. Visuals */}
                       <div>
-                        <h5 className="text-xl font-semibold text-[#0A3622] mb-2">Visuals</h5>
-                        <div className="flex flex-wrap gap-4 mb-2">
+                        <h5 className="text-2xl font-semibold text-[#0A3622] mb-4 border-b pb-2">Visuals</h5>
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                           {programs[modalIdx].visuals.map((v, i) => (
-                            <img key={i} src={v.src} alt={v.alt} className="rounded-lg shadow w-32 h-24 object-cover border border-[#b2dfdb]" />
+                            <img key={i} src={v.src} alt={v.alt} className="rounded-lg shadow-md w-full h-32 object-cover border border-gray-200" />
                           ))}
-                        </div>
-                        <div className="flex flex-wrap gap-4">
-                          {programs[modalIdx].infographics.map((info, i) => info.src && (
-                            <img key={i} src={info.src} alt={info.alt} className="rounded-lg shadow w-40 h-32 object-cover border border-[#b2dfdb]" />
+                           {programs[modalIdx].infographics.map((info, i) => info.src && (
+                            <img key={i} src={info.src} alt={info.alt} className="rounded-lg shadow-md w-full h-32 object-cover border border-gray-200" />
                           ))}
                         </div>
                       </div>
@@ -425,7 +439,7 @@ const SocialResponsibility = () => {
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
           <div className="flex flex-col items-center mb-8 sm:mb-12">
-            <FaGraduationCap className="text-green-700 text-4xl sm:text-5xl mb-4" />
+            <FaLightbulb className="text-green-700 text-4xl sm:text-5xl mb-4" />
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

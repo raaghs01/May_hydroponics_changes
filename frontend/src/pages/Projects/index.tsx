@@ -1,6 +1,7 @@
 import { type FC } from 'react'
 import { motion } from 'framer-motion'
 // import { BsArrowRightCircle } from 'react-icons/bs'
+import { BsArrowRightCircle } from 'react-icons/bs'
 
 export const Projects: FC = () => {
   return (
@@ -59,32 +60,32 @@ export const Projects: FC = () => {
                   {
                     title: "Focus on Medicinal Plants",
                     description:
-                      "Establishing protocols for the efficient cultivation of Indian medicinal plants such as Ashwagandha, Tulsi, and Brahmi.",
+                      "Efficiently cultivating key Indian medicinal plants.",
                   },
                   {
                     title: "Abiotic Stress Response Studies",
                     description:
-                      "Studying how plants in hydroponic systems respond to environmental stresses such as heat, cold, and nutrient deficiencies.",
+                      "Analyzing plant responses to environmental stress in hydroponics.",
                   },
                   {
                     title: "Hyperspectral Imaging",
                     description:
-                      "Creating predictive models to assess plant health, growth, and quality without destructive sampling.",
+                      "Using predictive models for non-destructive plant health analysis.",
                   },
                   {
                     title: "Comprehensive Database",
                     description:
-                      "Compiling a unique repository of plant images, growth parameters, and metabolite profiles for medicinal plants",
+                      "Building a database of medicinal plant images and growth data.",
                   },
                   {
                     title: "Plant Microbe Interaction",
                     description:
-                      "Investigating the role of beneficial microbes in promoting plant growth and enhancing nutrient uptake in hydroponic systems.",
+                      "Exploring beneficial microbes for enhanced plant growth and nutrient uptake.",
                   },
                   {
                     title: "Plant Interactions on Animal Models",
                     description:
-                      "Studying the therapeutic effects of hydroponically grown medicinal plants in animal models.",
+                      "Evaluating therapeutic effects of our medicinal plants on animal models.",
                   },
                 ].map((project, index) => (
                   <motion.div
@@ -194,8 +195,84 @@ export const Projects: FC = () => {
         </div>
       </section> */}
 
+      {/* Research Papers Section */}
+        <section id = "researchpapers">
+      <div className="py-12 sm:py-16 md:py-24 bg-[#e8f5e9]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-16">
+            {/* Title Section */}
+            <div className="w-full md:w-1/3 flex flex-col justify-center items-center font-montserrat font-weight: 600">
+              <h2 className="text-[#003300] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['Marcellus'] leading-tight font-montserrat font-weight: 600 text-center">
+                Our Published Research Papers
+              </h2>
+            </div>
+
+            {/* Papers Grid */}
+            <div className="w-full md:w-2/3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+                {[
+                  {
+                    id: "paper1",
+                    journal: "Journal of Functional Foods",
+                    title: `This study investigates the use of tellurium-doped ZnO nanoparticles to boost phenolics, flavonoids, and antioxidants in buckwheat microgreens and sprouts. Optimal concentrations led to a 20–30% increase in key nutraceuticals, with FRAP activity reaching 203 mg Fe(II)/g FW. Results suggest nanoparticle elicitation as a novel method to enhance nutritional quality in hydroponic greens.`,
+                    sourceUrl: "https://link.springer.com/article/10.1007/s11694-025-03163-3"
+                  },
+                  {
+                    id: "paper2",
+                    journal: "International Journal of Food Science",
+                    title: `This study evaluates the effect of elicitors like citric acid, ascorbic acid, and NaCl on hydroponically grown buckwheat sprouts. Citric acid (10 mM) and NaCl (150 mM) significantly enhanced phenolics, flavonoids, rutin, and antioxidant activity—demonstrating up to 30% improvement. A strong correlation was observed between antioxidant potential and elevated levels of bioactives. These findings support the targeted use of natural elicitors to enhance nutritional profiles in hydroponic systems.`,
+                    sourceUrl: "https://ifst.onlinelibrary.wiley.com/doi/abs/10.1111/ijfs.16119"
+                  },
+                  {
+                    id: "paper3",
+                    journal: "Journal of Applied Plant Physiology",
+                    title: `This study analyzes the dynamic phytochemical profile of hydroponically grown buckwheat. Phenolic and flavonoid levels peaked at harvest, while antioxidant activity (DPPH) was highest during flowering. UPLC-DAD analysis showed that hydroponically cultivated seeds contained more rutin, quercetin, and ferulic acid than commercial seeds. These findings validate hydroponic methods as superior for enhancing nutritional content throughout buckwheat's growth cycle.`,
+                    sourceUrl: "https://www.sciencedirect.com/science/article/abs/pii/S0305197823000303"
+                  },
+                  {
+                    id: "paper4",
+                    journal: "Journal of Sustainable Energy Systems",
+                    title: `This study optimized a Canna indica-driven Plant Microbial Fuel Cell (PMFC) using wastewater as nutrient input and carbon cloth electrodes. After 30 days, the setup achieved a peak power density of 81 mW/m². Key influencing factors—wastewater pH, electrode surface area, and electrode spacing—were identified via Plackett-Burman and modeled using Response Surface Methodology. The strong synergy between pH and electrode area highlights potential for eco-friendly, wastewater-powered energy generation.`,
+                    sourceUrl: "https://www.sciencedirect.com/science/article/abs/pii/S2214785323011574"
+                  },
+                ].map((paper, index) => (
+                  <a
+                    key={index}
+                    href={paper.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#003300] p-6 sm:p-8 rounded-lg flex flex-col min-h-[250px] sm:min-h-[300px] justify-between group cursor-pointer hover:shadow-xl transition-all duration-300 relative font-montserrat font-weight: 600"
+                  >
+                    <div>
+                      <h3 className=" text-xl sm:text-2xl font-medium mb-4 sm:mb-6 text-center font-['Marcellus'] font-montserrat font-weight: 600" style={{ color: "#C8F4B4" }}>
+                        {paper.journal}
+                      </h3>
+                      <p className="text-white/90 text-sm sm:text-base line-clamp-4 text-center font-['Questrial'] font-montserrat font-weight: 600">
+                        {paper.title}
+                      </p>
+                    </div>
+                    <div className="mt-4 sm:mt-6">
+                      <div className="flex items-center justify-center gap-2  group-hover:gap-4 transition-all duration-300" style={{ color: "#C8F4B4" }}>
+                        <span className="text-sm font-medium flex items-center gap-2">
+                          Read More <BsArrowRightCircle className="text-xl" />
+                        </span>
+                      </div>
+                      <div className="absolute bottom-0 left-0 w-full h-1 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      
+
+
       {/* Innovations & Technologies Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#e8f5e9]">
+      {/* <section className="py-12 sm:py-16 md:py-20 bg-[#e8f5e9]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -206,9 +283,9 @@ export const Projects: FC = () => {
             <h2 className="text-3xl sm:text-4xl font-montserrat text-[#0A3622] mb-6 sm:mb-8 text-center font-weight: 600">
              Innovations & Technologies Used
             </h2>
-            {/* <p className="text-lg text-gray-700 text-center mb-12">
+            <p className="text-lg text-gray-700 text-center mb-12">
               Learn about the tools and systems powering our green revolution.
-            </p> */}
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
               {[
                 {
@@ -242,7 +319,7 @@ export const Projects: FC = () => {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Research & Development Section */}
       {/* <section className="py-20 bg-white">
@@ -418,44 +495,6 @@ export const Projects: FC = () => {
         </div>
       </section>
 
-      {/* Future Initiatives Section */}
-      {/* <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto"
-          >
-            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center">
-              🎯 Future Initiatives
-            </h2>
-            <p className="text-lg text-gray-700 text-center mb-12">
-              What's next on our roadmap toward food sustainability.
-            </p>
-            <div className="bg-[#E8F3E8] p-8 rounded-lg">
-              <div className="space-y-6">
-                <ul className="space-y-4">
-                  {[
-                    "Expansion of urban farming networks",
-                    "Development of new hydroponic systems",
-                    "Integration of AI and machine learning",
-                    "Community education programs",
-                    "Sustainable packaging solutions",
-                    "Renewable energy integration"
-                  ].map((initiative, index) => (
-                    <li key={index} className="flex items-start space-x-3">
-                      <span className="text-[#0A3622] text-xl">•</span>
-                      <span className="text-gray-700">{initiative}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
-
       {/* Pilot Programs Section */}
       <section className="py-12 sm:py-16 md:py-20 bg-[#e8f5e9]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -505,6 +544,47 @@ export const Projects: FC = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Future Initiatives Section */}
+      {/* <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl mx-auto"
+          >
+            <h2 className="text-4xl font-montserrat text-[#0A3622] mb-8 text-center">
+              🎯 Future Initiatives
+            </h2>
+            <p className="text-lg text-gray-700 text-center mb-12">
+              What's next on our roadmap toward food sustainability.
+            </p>
+            <div className="bg-[#E8F3E8] p-8 rounded-lg">
+              <div className="space-y-6">
+                <ul className="space-y-4">
+                  {[
+                    "Expansion of urban farming networks",
+                    "Development of new hydroponic systems",
+                    "Integration of AI and machine learning",
+                    "Community education programs",
+                    "Sustainable packaging solutions",
+                    "Renewable energy integration"
+                  ].map((initiative, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <span className="text-[#0A3622] text-xl">•</span>
+                      <span className="text-gray-700">{initiative}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section> */}
+
+     
+      
     </div>
   )
 } 

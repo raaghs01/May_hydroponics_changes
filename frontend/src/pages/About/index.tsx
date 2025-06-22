@@ -2,7 +2,7 @@ import { type FC, useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 // import { IoClose } from 'react-icons/io5'
-import { BsArrowRightCircle } from 'react-icons/bs'
+
 
 import LazyImage from '../../components/LazyImage'
 
@@ -144,9 +144,9 @@ const About: FC = () => {
       </div>
 
       {/* Our Story Section */}
-      <section className="min-h-screen grid grid-cols-1 md:grid-cols-3">
+      {/* <section className="min-h-screen grid grid-cols-1 md:grid-cols-3"> */}
         {/* Left Column - Title and Subtitle */}
-        <div className="bg-[#e8f5e9] p-8 sm:p-12 md:p-16 flex flex-col justify-center items-center">
+        {/* <div className="bg-[#e8f5e9] p-8 sm:p-12 md:p-16 flex flex-col justify-center items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -167,19 +167,19 @@ const About: FC = () => {
               Agriculture
             </p>
           </motion.div>
-        </div>
+        </div> */}
 
         {/* Middle Column - Image */}
-        <div className="relative h-[300px] sm:h-[400px] md:h-auto">
+        {/* <div className="relative h-[300px] sm:h-[400px] md:h-auto">
           <LazyImage
             src="\system5.png"
             alt="Our Story"
             className="absolute inset-0 w-full h-full object-cover"
           />
-        </div>
+        </div> */}
 
         {/* Right Column - Content */}
-        <div className="bg-[#0A3622] p-8 sm:p-12 md:p-16 flex flex-col justify-center">
+        {/* <div className="bg-[#0A3622] p-8 sm:p-12 md:p-16 flex flex-col justify-center">
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -192,80 +192,12 @@ const About: FC = () => {
               having created a state-of-the-art facility that serves as a beacon of sustainable agriculture.
             </p>
           </motion.div>
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
 
       
-      {/* Research Papers Section */}
-      <div className="py-12 sm:py-16 md:py-24 bg-[#e8f5e9]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-16">
-            {/* Title Section */}
-            <div className="w-full md:w-1/3 font-montserrat font-weight: 600">
-              <h2 className="text-[#003300] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-['Marcellus'] leading-tight sticky top-24 font-montserrat font-weight: 600">
-                Our Published Research Papers
-              </h2>
-            </div>
-
-            {/* Papers Grid */}
-            <div className="w-full md:w-2/3">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-                {[
-                  {
-                    id: "paper1",
-                    journal: "Journal of Functional Foods",
-                    title: `This study investigates the use of tellurium-doped ZnO nanoparticles to boost phenolics, flavonoids, and antioxidants in buckwheat microgreens and sprouts. Optimal concentrations led to a 20–30% increase in key nutraceuticals, with FRAP activity reaching 203 mg Fe(II)/g FW. Results suggest nanoparticle elicitation as a novel method to enhance nutritional quality in hydroponic greens.`,
-                    sourceUrl: "https://link.springer.com/article/10.1007/s11694-025-03163-3"
-                  },
-                  {
-                    id: "paper2",
-                    journal: "International Journal of Food Science",
-                    title: `This study evaluates the effect of elicitors like citric acid, ascorbic acid, and NaCl on hydroponically grown buckwheat sprouts. Citric acid (10 mM) and NaCl (150 mM) significantly enhanced phenolics, flavonoids, rutin, and antioxidant activity—demonstrating up to 30% improvement. A strong correlation was observed between antioxidant potential and elevated levels of bioactives. These findings support the targeted use of natural elicitors to enhance nutritional profiles in hydroponic systems.`,
-                    sourceUrl: "https://ifst.onlinelibrary.wiley.com/doi/abs/10.1111/ijfs.16119"
-                  },
-                  {
-                    id: "paper3",
-                    journal: "Journal of Applied Plant Physiology",
-                    title: `This study analyzes the dynamic phytochemical profile of hydroponically grown buckwheat. Phenolic and flavonoid levels peaked at harvest, while antioxidant activity (DPPH) was highest during flowering. UPLC-DAD analysis showed that hydroponically cultivated seeds contained more rutin, quercetin, and ferulic acid than commercial seeds. These findings validate hydroponic methods as superior for enhancing nutritional content throughout buckwheat's growth cycle.`,
-                    sourceUrl: "https://www.sciencedirect.com/science/article/abs/pii/S0305197823000303"
-                  },
-                  {
-                    id: "paper4",
-                    journal: "Journal of Sustainable Energy Systems",
-                    title: `This study optimized a Canna indica-driven Plant Microbial Fuel Cell (PMFC) using wastewater as nutrient input and carbon cloth electrodes. After 30 days, the setup achieved a peak power density of 81 mW/m². Key influencing factors—wastewater pH, electrode surface area, and electrode spacing—were identified via Plackett-Burman and modeled using Response Surface Methodology. The strong synergy between pH and electrode area highlights potential for eco-friendly, wastewater-powered energy generation.`,
-                    sourceUrl: "https://www.sciencedirect.com/science/article/abs/pii/S2214785323011574"
-                  },
-                ].map((paper, index) => (
-                  <a
-                    key={index}
-                    href={paper.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#003300] p-6 sm:p-8 rounded-lg flex flex-col min-h-[250px] sm:min-h-[300px] justify-between group cursor-pointer hover:shadow-xl transition-all duration-300 relative font-montserrat font-weight: 600"
-                  >
-                    <div>
-                      <h3 className=" text-xl sm:text-2xl font-medium mb-4 sm:mb-6 text-center font-['Marcellus'] font-montserrat font-weight: 600" style={{ color: "#C8F4B4" }}>
-                        {paper.journal}
-                      </h3>
-                      <p className="text-white/90 text-sm sm:text-base line-clamp-4 text-center font-['Questrial'] font-montserrat font-weight: 600">
-                        {paper.title}
-                      </p>
-                    </div>
-                    <div className="mt-4 sm:mt-6">
-                      <div className="flex items-center justify-center gap-2  group-hover:gap-4 transition-all duration-300" style={{ color: "#C8F4B4" }}>
-                        <span className="text-sm font-medium flex items-center gap-2">
-                          Read More <BsArrowRightCircle className="text-xl" />
-                        </span>
-                      </div>
-                      <div className="absolute bottom-0 left-0 w-full h-1 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      
 
       {/* Facilities Section */}
       <section className="py-12 sm:py-16 md:py-20" id="facilities">

@@ -25,7 +25,7 @@ export const Navbar = () => {
   const navigationItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Vision & Mission', path: '/vision-and-mission' },
+    { name: 'Our Ambition', path: '/Ambition' },
     { name: 'Projects', path: '/projects' },
     { name: 'Social Responsibility', path: '/social-responsibility' },
     // { name: 'News', path: '/news' },

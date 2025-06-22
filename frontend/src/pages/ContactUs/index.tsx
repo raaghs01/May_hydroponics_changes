@@ -197,7 +197,9 @@ export const Contact: FC = () => {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-montserrat font-weight: 600 text-white text-center mb-6 drop-shadow-lg"
           >
-            Get in touch with our COE HYDROPONICS
+            Get in touch with 
+            <br />
+             COE HYDROPONICS
           </motion.h1>
           <motion.p
            initial={{ opacity: 0, y: 20 }}
@@ -458,16 +460,17 @@ export const Contact: FC = () => {
             transition={{ duration: 0.8 }}
             className="text-5xl text-[#0A3622] font-montserrat font-weight: 600  mb-4 text-center"
           >
-            Growing Clarity:
+            Frequently Asked questions
           </motion.h2>
-          <motion.p
+          <br />
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-2xl font-montserrat text-[#0A3622] font-weight: 600 mb-8 text-center"
           >
             Your Questions, Our Answers
-          </motion.p>
+          </motion.p> */}
           <div className="space-y-4">
             {faqItems.map((item, index) => (
               <motion.div

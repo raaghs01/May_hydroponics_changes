@@ -13,7 +13,7 @@ import { FAQ } from './pages/FAQ';
 import { Achievements } from './pages/Achievements';
 // import { Training } from './pages/Training';
 import { Projects }  from './pages/Projects';
-import VisionAndMission from './pages/VisionAndMission';
+import Ambition from './pages/Ambition';
 import  SocialResponsibility  from './pages/SocialResponsibility';
 import GetInvolved from './pages/GetInvolved';
 import PdfViewer from './pages/PdfViewer';
@@ -55,7 +55,7 @@ function App() {
             <Route path="/achievements" element={<Achievements />} />
             {/* <Route path="/training" element={<Training />} /> */}
             <Route path="/projects" element={<Projects />} />
-            <Route path="/vision-and-mission" element={<VisionAndMission />} />
+            <Route path="/Ambition" element={<Ambition />} />
             <Route path="/social-responsibility" element={<SocialResponsibility />} />
             <Route path="/our-startup" element={<OurStartup />} />
             <Route path="/get-involved" element={<GetInvolved />} />
