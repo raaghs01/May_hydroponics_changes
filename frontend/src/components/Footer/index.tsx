@@ -36,8 +36,8 @@ export const Footer = () => {
             <ul className="space-y-2">
               {/* <li><Link to="/achievements" className="hover:underline">Achievements</Link></li> */}
               <li><Link to="/contactus#faq" className="hover:underline">FAQ</Link></li>
-              <li><Link to="/blog" className="hover:underline">Blog</Link></li>
-              <li><Link to="/News" className="hover:underline">News and Updates</Link></li>
+              {/* <li><Link to="/blog" className="hover:underline">Blog</Link></li> */}
+              {/* <li><Link to="/News" className="hover:underline">News and Updates</Link></li> */}
             </ul>
           </div>
 
@@ -45,9 +45,9 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-montserrat mb-6">Get Involved</h3>
             <ul className="space-y-2">
-              <li><Link to="/get-involved" className="hover:underline">Partnerships</Link></li>
-              <li><Link to="/get-involved" className="hover:underline">Volunteer Opportunities</Link></li>
-              <li><Link to="/get-involved" className="hover:underline">Career Opportunities</Link></li>
+              <li><Link to="/get-involved#research-collaborations" className="hover:underline">Partnerships</Link></li>
+              <li><Link to="/get-involved#volunteer-opportunities" className="hover:underline">Volunteer Opportunities</Link></li>
+              <li><Link to="/get-involved#internships" className="hover:underline">Career Opportunities</Link></li>
             </ul>
           </div>
 

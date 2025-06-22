@@ -193,7 +193,7 @@ const GetInvolved = () => {
           </div>
           <div className="w-full md:w-1/2">
             
-            <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Internships</h2>
+            <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6" id="internships">Internships</h2>
             <p className="text-lg text-left font-montserrat font-weight: 600 text-gray-800 mb-4">
               Interns and volunteers at our facility work closely with research teams, help manage hydroponic systems, participate in community outreach, and contribute to educational content and events. These opportunities are ideal for students, recent graduates, and anyone passionate about sustainable agriculture and hands-on learning.
             </p>
@@ -222,7 +222,7 @@ const GetInvolved = () => {
           </div>
           <div className="w-full md:w-1/2">
             
-            <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Research Collaborations</h2>
+            <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6" id="research-collaborations">Research Collaborations</h2>
             <p className="text-lg text-left font-montserrat font-weight: 600 text-gray-800 mb-4">
               We partner with leading institutions and companies to advance hydroponic science, from plant-microbe interactions to climate-resilient agriculture and smart farming technologies. Our collaborative research projects focus on innovation, technology development, and knowledge sharing to push the boundaries of sustainable agriculture.
             </p>
@@ -251,7 +251,7 @@ const GetInvolved = () => {
           </div>
           <div className="w-full md:w-1/2">
             
-            <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6">Volunteer Opportunities</h2>
+            <h2 className="text-4xl font-montserrat font-weight: 600 text-[#0A3622] mb-6" id="volunteer-opportunities">Volunteer Opportunities</h2>
             <p className="text-lg text-left font-montserrat font-weight: 600 text-gray-800 mb-4">
             
 

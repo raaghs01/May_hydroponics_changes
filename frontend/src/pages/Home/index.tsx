@@ -444,7 +444,7 @@ export const Home: FC = () => {
         </div>
       </section>
 
-      {/* 8. Events and News Section */}
+      {/* 8. Events and News Section
       <section className="bg-[#0A3622] py-12 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-start mb-8 sm:mb-12">
@@ -455,22 +455,22 @@ export const Home: FC = () => {
             <br />
             <Link
               to="/news"
-              className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-green-700 text-white rounded-md font-weight: 600 hover:bg-green-200 transition-colors duration-300"
+              className="inline-block x-6 sm:px-8 py-2 sm:py-3 bg-green-700 text-white rounded-md font-weight: 600 hover:bg-green-200 transition-colors duration-300"
             >
               View More
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-            {/* Event 1 - Facility Inauguration */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"> */}
+            {/* Event 1 - Facility Inauguration
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="flex flex-col md:flex-row bg-white/10 backdrop-blur-md rounded-lg p-6 shadow-lg overflow-hidden group relative"
             >
-              <div className="p-8 flex-1 flex flex-col items-start">
-                {/* <span className="text-white/90 font-montserrat font-weight: 600 text-sm">Event</span> */}
+              <div className="p-8 flex-1 flex flex-col items-start"> */}
+                {/* <span className="text-white/90 font-montserrat font-weight: 600 text-sm">Event</span>
                 <h3 className="text-2xl font-montserrat font-weight: 600 font-light mt-2 mb-4 text-white text-left">
                   Facility Inauguration
                 </h3>
@@ -496,7 +496,7 @@ export const Home: FC = () => {
             </motion.div>
 
             {/* Event 2 - School Students Event */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -504,21 +504,21 @@ export const Home: FC = () => {
             >
               <div className="p-8 flex-1 flex flex-col items-start">
                 {/* <span className="text-white/90 text-sm">Event</span> */}
-                <h3 className="text-2xl font-montserrat font-weight: 600 font-light mt-2 mb-4 text-white text-left">
+                {/* <h3 className="text-2xl font-montserrat font-weight: 600 font-light mt-2 mb-4 text-white text-left">
                   Hydroponics Event for School Students
-                </h3>
-                <p className="text-white/90 font-montserrat font-weight: 600 leading-relaxed text-sm text-left">
+                </h3> */}
+                {/* <p className="text-white/90 font-montserrat font-weight: 600 leading-relaxed text-sm text-left">
                   As part of our commitment to inspiring the next generation of sustainable 
                   agriculture leaders, we recently hosted a special event for school students 
                   at the Centre of Excellence in Hydroponics.
-                </p>
-                <Link
+                </p> */}
+                {/* <Link
                   to="/news/school-students-event"
                   className="mt-auto pt-4 inline-flex font-montserrat font-weight: 600 items-center  gap-2 text-white opacity-0 group-hover:opacity-100 transition-colors duration-300 hover:underline"
-                >
-                  Read More <BsArrowRight />
-                </Link>
-              </div>
+                > */}
+                  {/* Read More <BsArrowRight /> */}
+                {/* </Link> */} 
+              {/* </div>
               <div className="w-full md:w-1/2">
                 <img 
                   src="\students-event.avif"
@@ -528,8 +528,8 @@ export const Home: FC = () => {
               </div>
             </motion.div>
           </div>
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */} 
 
       {/* FAQ Section */}
       <section className="bg-[#e8f5e9] py-12 sm:py-16">
@@ -600,7 +600,7 @@ export const Home: FC = () => {
             {/* More Button */}
             <div className="text-center mt-6 sm:mt-8">
               <Link
-                to="/faq"
+                to="/contactus#faq"
                 className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-[#07370f] text-white rounded-md font-weight: 600 hover:bg-[#0A3622] transition-colors duration-300"
               >
                 More Questions
