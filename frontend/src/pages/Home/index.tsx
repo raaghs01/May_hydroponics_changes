@@ -1,9 +1,9 @@
 import { type FC, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BsArrowRight } from 'react-icons/bs'
+// import { BsArrowRight } from 'react-icons/bs'
 import { motion } from 'framer-motion'
 import { BsHourglassSplit } from 'react-icons/bs'
-import LazyImage from '../../components/LazyImage'
+// import LazyImage from '../../components/LazyImage'
 
 
 export const Home: FC = () => {
