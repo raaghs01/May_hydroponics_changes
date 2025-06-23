@@ -138,7 +138,7 @@ const SocialResponsibility = () => {
               {
                 name: 'Veggies Distribution and Awareness Drive',
                 dateTime: '11 March 2025',
-                location: 'COE-Hydroponics Facility, NSUT Campus',
+                location: 'NSUT Campus',
                 briefDescription: 'On 11 March 2025, the Centre of Excellence in Hydroponics Training and Research Facility (COE HHTRF) at NSUT organized a community outreach initiative to distribute fresh, chemical-free produce and raise awareness about nutrition and food equity. The event engaged students, faculty, and local residents to promote clean eating and the benefits of hydroponic farming.',
                 // targetAudience: 'Target audience to be provided',
                 keyObjectives: [
@@ -400,7 +400,7 @@ const SocialResponsibility = () => {
                                 {programs[modalIdx].successMetrics.map((m, i) => <li key={i}>{m}</li>)}
                                 </ul>
                             </div>
-                            <div>
+{/*                             <div>
                                 <h6 className="font-semibold text-gray-600 mb-2">Lessons Learned:</h6>
                                 <ul className="list-disc pl-5 text-gray-800 space-y-1">
                                 {programs[modalIdx].lessonsLearned.map((l, i) => <li key={i}>{l}</li>)}
@@ -411,7 +411,7 @@ const SocialResponsibility = () => {
                                 <ul className="list-disc pl-5 text-gray-800 space-y-1">
                                 {programs[modalIdx].recommendations.map((r, i) => <li key={i}>{r}</li>)}
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                       </div>
                       {/* 5. Visuals */}
