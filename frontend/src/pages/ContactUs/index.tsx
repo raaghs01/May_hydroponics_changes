@@ -227,7 +227,7 @@ export const Contact: FC = () => {
               <p>Dwarka, New Delhi, 110078
               </p>
 
-              <p>123-456-7890</p>
+              <p>+91 78388 86012 (Akhilesh sir)</p>
               <p>Coe.hydroponics@nsut.ac.in</p>
             </div>
             <div className="flex space-x-4">
