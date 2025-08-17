@@ -8,7 +8,35 @@ import LazyImage from '../../components/LazyImage'
 
 const About: FC = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
-  
+  const [currentSlide, setCurrentSlide] = useState(0)
+
+  // Team members for slider
+  const sliderMembers = [
+    {
+      name: "Dr. Nisha Kandhoul",
+      role: "Member",
+      image: "/system29.png"
+    },
+    {
+      name: "Dr. Gaurav Singal",
+      role: "Member",
+      image: "/system30.png"
+    },
+    {
+      name: "Dr. Jyoti Yadav",
+      role: "Member",
+      image: "/system31.png"
+    }
+  ]
+
+  // Auto-slide functionality
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % sliderMembers.length)
+    }, 3000) // Change slide every 3 seconds
+
+    return () => clearInterval(timer)
+  }, [sliderMembers.length])
 
   const images = [
     {
@@ -509,7 +537,9 @@ const About: FC = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto mb-12 sm:mb-16">
+          {/* Single Row with All Team Members */}
+          <div className="flex flex-wrap justify-center items-start gap-6 sm:gap-8 max-w-7xl mx-auto">
+            {/* First 4 static members */}
             {[
               {
                 name: "Dr. Akhilesh Dubey",
@@ -537,7 +567,7 @@ const About: FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center text-[#0A3622] font-montserrat font-weight: 600"
+                className="text-center text-[#0A3622] font-montserrat font-weight: 600 flex-shrink-0"
               >
                 <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden border-4 border-white/10">
                   <LazyImage
@@ -550,44 +580,66 @@ const About: FC = () => {
                 <p className="text-[#0A3622]/80 text-sm sm:text-base font-montserrat font-weight: 600">{member.role}</p>
               </motion.div>
             ))}
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                name: "Dr. Nisha Kandhoul",
-                role: "Member",
-                image: "/system29.png"
-              },
-              {
-                name: "Dr. Gaurav Singal",
-                role: "Member",
-                image: "/system30.png"
-              },
-              {
-                name: "Dr. Jyoti Yadav",
-                role: "Member",
-                image: "/system31.png"
-              }
-            ].map((member, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center font-montserrat text-[#0A3622] font-weight: 600"
+            {/* Slider for remaining members */}
+            <div className="relative flex-shrink-0">
+              <div className="overflow-hidden rounded-lg">
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={currentSlide}
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-center font-montserrat text-[#0A3622] font-weight: 600"
+                  >
+                    <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden border-4 border-white/10">
+                      <LazyImage
+                        src={sliderMembers[currentSlide].image}
+                        alt={sliderMembers[currentSlide].name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-[#0A3622] text-lg sm:text-xl font-semibold mb-2 font-montserrat font-weight: 600">
+                      {sliderMembers[currentSlide].name}
+                    </h3>
+                    <p className="text-[#0A3622]/80 text-sm sm:text-base font-montserrat font-weight: 600">
+                      {sliderMembers[currentSlide].role}
+                    </p>
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+
+              {/* Navigation Arrows */}
+              <button
+                onClick={() => setCurrentSlide((prev) => (prev - 1 + sliderMembers.length) % sliderMembers.length)}
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-8 bg-[#0A3622] text-white p-2 rounded-full hover:bg-[#0A3622]/80 transition-colors z-10"
+                aria-label="Previous team member"
               >
-                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 mx-auto mb-4 sm:mb-6 rounded-full overflow-hidden border-4 border-white/10">
-                  <LazyImage
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
+                <IoIosArrowBack size={16} />
+              </button>
+              <button
+                onClick={() => setCurrentSlide((prev) => (prev + 1) % sliderMembers.length)}
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-8 bg-[#0A3622] text-white p-2 rounded-full hover:bg-[#0A3622]/80 transition-colors z-10"
+                aria-label="Next team member"
+              >
+                <IoIosArrowForward size={16} />
+              </button>
+
+              {/* Dots Indicator */}
+              <div className="flex justify-center mt-2 space-x-1">
+                {sliderMembers.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentSlide(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === currentSlide ? 'bg-[#0A3622] w-4' : 'bg-[#0A3622]/30'
+                    }`}
+                    aria-label={`Go to team member ${index + 1}`}
                   />
-                </div>
-                <h3 className="text-[#0A3622] text-lg sm:text-xl font-semibold mb-2 font-montserrat font-weight: 600">{member.name}</h3>
-                <p className="text-[#0A3622]/80 text-sm sm:text-base font-montserrat font-weight: 600">{member.role}</p>
-              </motion.div>
-            ))}
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
